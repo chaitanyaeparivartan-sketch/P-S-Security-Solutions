@@ -1,5 +1,5 @@
 /**
- * SENTINEL CORE - APPLE-GRADE CANVAS WEBP IMAGE SEQUENCE ENGINE
+ * P & S SECURITY SOLUTIONS - APPLE-GRADE CANVAS WEBP IMAGE SEQUENCE ENGINE
  * Ultra-smooth, zero-latency frame scrubbing on HTML5 Canvas
  */
 
@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const introScrollPrompt = document.getElementById('introScrollPrompt');
   const hudOverlay1 = document.getElementById('hudOverlay1');
 
-  // Chapters configuration for WebP frame sequences
+  // Chapters configuration for WebP frame sequences (numbered 1 to 5, 30fps / 300 frames)
   const chapters = [
     {
       id: 'security',
       container: document.getElementById('chapter-security'),
       canvas: document.getElementById('canvas1'),
-      folder: 'frames/cctv',
-      totalFrames: 150,
+      folder: 'frames/1',
+      totalFrames: 300,
       isIntro: true,
       images: [],
       loaded: [],
@@ -31,22 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
       id: 'climate',
       container: document.getElementById('chapter-climate'),
       canvas: document.getElementById('canvas2'),
-      folder: 'frames/fan',
-      totalFrames: 150,
-      isIntro: false,
-      images: [],
-      loaded: [],
-      targetProgress: 0,
-      currentProgress: 0,
-      currentFrameIndex: -1,
-      ctx: null
-    },
-    {
-      id: 'hazard',
-      container: document.getElementById('chapter-hazard'),
-      canvas: document.getElementById('canvas3'),
-      folder: 'frames/stove',
-      totalFrames: 150,
+      folder: 'frames/2',
+      totalFrames: 300,
       isIntro: false,
       images: [],
       loaded: [],
@@ -58,9 +44,23 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       id: 'living',
       container: document.getElementById('chapter-living'),
+      canvas: document.getElementById('canvas3'),
+      folder: 'frames/3',
+      totalFrames: 300,
+      isIntro: false,
+      images: [],
+      loaded: [],
+      targetProgress: 0,
+      currentProgress: 0,
+      currentFrameIndex: -1,
+      ctx: null
+    },
+    {
+      id: 'hazard',
+      container: document.getElementById('chapter-hazard'),
       canvas: document.getElementById('canvas4'),
-      folder: 'frames/sofa',
-      totalFrames: 150,
+      folder: 'frames/4',
+      totalFrames: 300,
       isIntro: false,
       images: [],
       loaded: [],
@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
       id: 'network',
       container: document.getElementById('chapter-network'),
       canvas: document.getElementById('canvas5'),
-      folder: 'frames/network',
-      totalFrames: 150,
+      folder: 'frames/5',
+      totalFrames: 300,
       isIntro: false,
       images: [],
       loaded: [],

@@ -1,0 +1,12 @@
+# Ignore large video and archive files (exceeds GitHub 100MB limit)
+*.mov
+*.mp4
+*.zip
+*.tar
+*.tar.gz
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
