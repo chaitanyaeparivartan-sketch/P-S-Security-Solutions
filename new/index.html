@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P &amp; S Security Solutions | Next-Gen Security &amp; Intelligent Home Automation</title>
+  <meta name="description" content="P &amp; S Security Solutions - Immersive interactive showcase of next-generation CCTV security, smart home climate automation, hazard alarm systems, and enterprise network infrastructure.">
+  <meta name="application-name" content="P &amp; S Security Solutions">
+  <meta property="og:site_name" content="P &amp; S Security Solutions">
+  <meta property="og:title" content="P &amp; S Security Solutions | Next-Gen Security &amp; Intelligent Home Automation">
+  
+  <!-- Google Fonts: Geist & Geist Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       CHAPTER 1: CCTV VIDEO & SECURITY SOLUTIONS
+       ======================================================== -->
+  <div class="scrolly-chapter" id="chapter-security">
+    <div class="sticky-video-stage">
+      <!-- Apple-style Canvas WebP Image Sequence Stage -->
+      <canvas id="canvas1" class="scroll-canvas" width="3840" height="2160"></canvas>
+      <div class="video-overlay-gradient"></div>
+      
+      <!-- Initial Logo Zoom-In Reveal Overlay -->
+      <div class="logo-zoom-overlay" id="logoZoomOverlay">
+        <!-- Mask layer with transparent logo cutout revealing video -->
+        <img src="assets/Image-1_small.png" class="zoom-layer mask-layer" id="zoomMaskLayer" alt="P &amp; S Security Solutions Mask">
+        <!-- Initial solid logo shown first on page load -->
+        <img src="assets/Image-2_small.png" class="zoom-layer solid-layer" id="zoomSolidLayer" alt="P &amp; S Security Solutions Logo">
+        
+        <!-- Elegant subtle scroll prompt on initial white logo screen -->
+        <div class="intro-scroll-prompt" id="introScrollPrompt">
+          <span>SCROLL TO ENTER</span>
+          <div class="prompt-bar"><div class="prompt-dot"></div></div>
+        </div>
+      </div>
+
+      <div class="hud-overlay" id="hudOverlay1">
+        <div class="hud-top-left">
+
+          <h2 class="hud-title">Security Closed Circuit Cameras</h2>
+          <p class="hud-subtitle">Ultra-perimeter CCTV surveillance • Optical zoom locked • Autonomous AI tracking activated</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scrub distance before card slides over last frame (includes zoom reveal + video scrub) -->
+    <div class="scrub-track-spacer intro-spacer"></div>
+
+    <!-- White Card slides up OVER the sticky last frame -->
+    <section id="info-security" class="white-screen-section slide-over-card">
+      <div class="card-sheet-indicator"><div class="sheet-pill"></div></div>
+      <div class="container">
+        <div class="section-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+            <circle cx="12" cy="13" r="4"/>
+          </svg>
+          P &amp; Security Solutions
+        </div>
+        <h2 class="section-title">Security Closed Circuit Cameras &amp; Optical AI Defense</h2>
+        <p class="section-lede">
+          Engineered for zero blind spots, our commercial-grade Security Closed Circuit Camera (CCTV) ecosystem fuses 4K HDR low-light optics with continuous neural edge analytics to prevent intrusions before they materialize.
+        </p>
+
+        <div class="feature-grid three-col">
+          <div class="feature-card">
+            <div class="card-icon-box bg-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <h3>Continuous 360° Panoramic Vision</h3>
+            <p>Pan-tilt-zoom motorization with micro-stepper accuracy and optical tracking algorithms follows perimeter subjects with zero image drift.</p>
+            <ul class="spec-list">
+              <li>4K Sony STARVIS 2 Night-Optics</li>
+              <li>f/1.2 Ultra-Aperture Starlight Mode</li>
+              <li>Sub-20ms Low Latency Scrubbing</li>
+            </ul>
+          </div>
+
+          <div class="feature-card featured">
+            <div class="card-badge">Core Defense Architecture</div>
+            <div class="card-icon-box bg-emerald">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>Neural Perimeter Recognition</h3>
+            <p>Differentiates between human visitors, domestic animals, moving foliage, and unverified vehicles with 99.8% precision, eradicating false alerts.</p>
+            <ul class="spec-list">
+              <li>Biometric License Plate & Face ID</li>
+              <li>Tripwire & Loitering Virtual Zones</li>
+              <li>Encrypted Local NVR + Cloud Vault</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon-box bg-indigo">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <h3>Active Deterrence & Access Lock</h3>
+            <p>Integrated directional spotlights, 110dB two-tone acoustic sirens, and instant electronic deadbolt lockouts halt uninvited entry instantly.</p>
+            <ul class="spec-list">
+              <li>Two-Way Crisp Noise-Canceling Audio</li>
+              <li>Instant Push Broadcast to First Responders</li>
+              <li>Hardware Tamper Detection</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Live Interactive Stats Ribbon -->
+        <div class="stats-ribbon">
+          <div class="stat-item">
+            <div class="stat-number">0.03s</div>
+            <div class="stat-label">AI Threat Classification</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">4K 60Hz</div>
+            <div class="stat-label">Crystal Clear Sensor Feed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">30+ Days</div>
+            <div class="stat-label">Local High-End NVMe Storage</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Local Offline Operation</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ========================================================
+       CHAPTER 2: CEILING FAN & CLIMATE AUTOMATION
+       ======================================================== -->
+  <div class="scrolly-chapter" id="chapter-climate">
+    <div class="sticky-video-stage">
+      <!-- Apple-style Canvas WebP Image Sequence Stage -->
+      <canvas id="canvas2" class="scroll-canvas" width="3840" height="2160"></canvas>
+      <div class="video-overlay-gradient"></div>
+
+      <div class="hud-overlay">
+        <div class="hud-top-left">
+          <h2 class="hud-title">Whisper-Quiet Environmental Aerodynamics</h2>
+          <p class="hud-subtitle">Direct magnetic motor control • Temperature-synced RPM regulation</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scrub distance before card slides over last frame -->
+    <div class="scrub-track-spacer"></div>
+
+    <!-- White Card slides up OVER the sticky last frame -->
+    <section id="info-automation-1" class="white-screen-section slide-over-card">
+      <div class="card-sheet-indicator"><div class="sheet-pill"></div></div>
+      <div class="container">
+        <div class="section-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          Comfort Tier • Home Automation
+        </div>
+        <h2 class="section-title">Sensory Micro-Climate & Dynamic Air Management</h2>
+        <p class="section-lede">
+          Experience frictionless comfort where brushless DC motors, humidity probes, and solar irradiance sensors modulate indoor breeze patterns automatically without lifting a finger.
+        </p>
+
+        <div class="feature-grid two-col">
+          <div class="feature-card">
+            <div class="card-icon-box bg-sky">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+              </svg>
+            </div>
+            <h3>Thermal Harmony Equilibrium</h3>
+            <p>Ceiling fans and HVAC units collaborate in real-time. By distributing heated or chilled air evenly across ceilings and floors, cooling overhead drops by up to 34% annually.</p>
+            <div class="interactive-preview-box">
+              <div class="preview-row">
+                <span>Dynamic Airflow:</span>
+                <span class="badge-status online">Natural Breeze Mode (120 RPM)</span>
+              </div>
+              <div class="preview-row">
+                <span>Energy Saving:</span>
+                <span class="text-accent">+38% vs AC Alone</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon-box bg-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3>Presence & Hand-Gesture Sensing</h3>
+            <p>Millimeter-wave radar detects room occupancy down to shallow human breathing. The fan smoothly spins down when the room empties and awakens gently as someone enters.</p>
+            <div class="interactive-preview-box">
+              <div class="preview-row">
+                <span>Occupancy Radar:</span>
+                <span class="badge-status online">Living Room (1 Human Detected)</span>
+              </div>
+              <div class="preview-row">
+                <span>Acoustic Output:</span>
+                <span class="text-accent">&lt; 14 dB (Silent Magnet)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature Detail Checklist -->
+        <div class="specs-horizontal">
+          <div class="spec-col">
+            <h4>Smart Fan Features</h4>
+            <p>BLDC magnetic motor, reversible winter thermal destratification, step-less 1% speed ramping, and RGB status ring.</p>
+          </div>
+          <div class="spec-col">
+            <h4>Ecosystem Compatibility</h4>
+            <p>Apple HomeKit, Matter 1.3, Google Home, Home Assistant via local Thread and Zigbee protocols.</p>
+          </div>
+          <div class="spec-col">
+            <h4>Air Quality Index Sync</h4>
+            <p>Integrates with PM2.5 and CO2 scrubbers to purge stagnant air pockets automatically.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ========================================================
+       CHAPTER 3: LIVING ROOM SOFA & HOME AUTOMATION
+       ======================================================== -->
+  <div class="scrolly-chapter" id="chapter-living">
+    <div class="sticky-video-stage">
+      <!-- Apple-style Canvas WebP Image Sequence Stage -->
+      <canvas id="canvas3" class="scroll-canvas" width="3840" height="2160"></canvas>
+      <div class="video-overlay-gradient"></div>
+
+      <div class="hud-overlay">
+        <div class="hud-top-left">
+          <h2 class="hud-title">Effortless Smart Living & Media Spaces</h2>
+          <p class="hud-subtitle">One-touch scene orchestration • Ambient lighting & multi-room audio</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scrub distance before card slides over last frame -->
+    <div class="scrub-track-spacer"></div>
+
+    <!-- White Card slides up OVER the sticky last frame -->
+    <section id="info-automation-2" class="white-screen-section slide-over-card">
+      <div class="card-sheet-indicator"><div class="sheet-pill"></div></div>
+      <div class="container">
+        <div class="section-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>
+            <polyline points="17 2 12 7 7 2"/>
+          </svg>
+          Lifestyle Tier • Home Automation
+        </div>
+        <h2 class="section-title">Immersive Living Spaces & Ambient Intelligence</h2>
+        <p class="section-lede">
+          True automation feels invisible. Transition smoothly from morning productivity to cinematic evening entertainment with unified scene presets that orchestrate lighting, motorized drapes, and high-fidelity acoustics.
+        </p>
+
+        <div class="feature-grid three-col">
+          <div class="feature-card">
+            <div class="card-icon-box bg-emerald">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+              </svg>
+            </div>
+            <h3>Circadian Lighting Harmony</h3>
+            <p>Tunable white fixtures shift from crisp 6500K daylight to soothing 2200K amber warmth as the sun sets, stimulating natural circadian melatonin rhythms.</p>
+            <ul class="spec-list">
+              <li>CRI 98+ Studio Color Fidelity</li>
+              <li>Sub-1% Micro-Flicker Dimming</li>
+              <li>Motorized Blackout Roller Sync</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon-box bg-violet">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+            </div>
+            <h3>One-Touch Cinema Mode</h3>
+            <p>Say "Movie Night" or press a single tactile key on the coffee table: projector lowers, lights fade to dark indigo, subwoofers engage, and external doorbells silence.</p>
+            <ul class="spec-list">
+              <li>Dolby Atmos Spatial Audio Integration</li>
+              <li>Apple TV, Plex & Shield Auto-Wake</li>
+              <li>DND Security Perimeter Standby</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon-box bg-teal">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3>Unified Smart Wall Controls</h3>
+            <p>Replaces cluttered wall switch rows with sleek haptic touchscreen keypads. Controls climate, music, drapes, and locks from a single polished glass bezel.</p>
+            <ul class="spec-list">
+              <li>Custom Engraved Glass Panels</li>
+              <li>Built-In Voice Assistant Mic Array</li>
+              <li>Proximity Auto-Wake Sensor</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Living Mode Scene Cards -->
+        <div class="scenes-showcase">
+          <h3 class="scenes-heading">Instant Preset Archetypes</h3>
+          <div class="scene-pills">
+            <div class="scene-pill active">
+              <span class="scene-icon">🌅</span>
+              <div class="scene-info">
+                <strong>Morning Rise</strong>
+                <span>Drapes 100% • Warm 3500K • News Digest</span>
+              </div>
+            </div>
+            <div class="scene-pill">
+              <span class="scene-icon">🎬</span>
+              <div class="scene-info">
+                <strong>Cinema Relax</strong>
+                <span>Blinds Down • 10% Amber • Dolby 7.1</span>
+              </div>
+            </div>
+            <div class="scene-pill">
+              <span class="scene-info">🍷</span>
+              <div class="scene-info">
+                <strong>Entertain & Dine</strong>
+                <span>Jazz Audio • Accent Pendants • AC 22°C</span>
+              </div>
+            </div>
+            <div class="scene-pill">
+              <span class="scene-info">🌙</span>
+              <div class="scene-info">
+                <strong>Goodnight Secure</strong>
+                <span>All Off • Perimeter Armed • HVAC ECO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ========================================================
+       CHAPTER 4: STOVE FIRE & ALARM SYSTEMS
+       ======================================================== -->
+  <div class="scrolly-chapter" id="chapter-hazard">
+    <div class="sticky-video-stage">
+      <!-- Apple-style Canvas WebP Image Sequence Stage -->
+      <canvas id="canvas4" class="scroll-canvas" width="3840" height="2160"></canvas>
+      <div class="video-overlay-gradient"></div>
+
+      <div class="hud-overlay">
+        <div class="hud-top-left">
+          <h2 class="hud-title">Immediate Kitchen & Fire Mitigation</h2>
+          <p class="hud-subtitle">Optical flare detection • Automated fuel valve isolation</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scrub distance before card slides over last frame -->
+    <div class="scrub-track-spacer"></div>
+
+    <!-- White Card slides up OVER the sticky last frame -->
+    <section id="info-alarms" class="white-screen-section slide-over-card">
+      <div class="card-sheet-indicator"><div class="sheet-pill"></div></div>
+      <div class="container">
+        <div class="section-badge badge-warning">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+            <line x1="12" y1="9" x2="12" y2="13"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+          Life Safety Tier • Alarm Systems
+        </div>
+        <h2 class="section-title">Critical Life-Safety & Rapid Hazard Interception</h2>
+        <p class="section-lede">
+          Seconds matter when an unattended cooking surface flares or a combustion pipe faults. Our active alarm network initiates automated physical counter-measures before catastrophe unfolds.
+        </p>
+
+        <div class="feature-grid three-col">
+          <div class="feature-card">
+            <div class="card-icon-box bg-rose">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+              </svg>
+            </div>
+            <h3>Thermal & Optical Flare Sensing</h3>
+            <p>Thermal infrared matrix scanners detect runaway grease temperatures and open stovetop flames over 300°C within 1.2 seconds of ignition.</p>
+            <ul class="spec-list">
+              <li>Dual Spectrum Flame Analysis</li>
+              <li>Eliminates harmless steam false trips</li>
+              <li>Self-cleaning heat resistant lenses</li>
+            </ul>
+          </div>
+
+          <div class="feature-card featured">
+            <div class="card-badge bg-rose-badge">Emergency Automated Action</div>
+            <div class="card-icon-box bg-amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18.36 6.64a9 9 0 1 1-12.73 0"/>
+                <line x1="12" y1="2" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3>Instant Fuel & Power Kill-Switch</h3>
+            <p>In the event of an alarm confirmation, the smart panel sends an immediate shutoff command to gas solenoid valves and induction power circuits.</p>
+            <ul class="spec-list">
+              <li>Automatic Solenoid Gas Valve Trip</li>
+              <li>Exhaust Hood Speed Ramp to Max</li>
+              <li>Unlocks Exit Pathways for Evacuation</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon-box bg-red">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+              </svg>
+            </div>
+            <h3>Whole-Home Interlinked Siren Matrix</h3>
+            <p>All smoke, carbon monoxide, and water leakage sensors talk over a low-frequency redundant mesh to broadcast spoken voice warnings across every room.</p>
+            <ul class="spec-list">
+              <li>115dB Multi-tone Piezo Sounders</li>
+              <li>Cellular LTE Backup Dispatch</li>
+              <li>Emergency LED Pathway Guidance</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Action Banner -->
+        <div class="alert-box-interactive">
+          <div class="alert-box-content">
+            <h4>Continuous Zero-Failure Monitoring</h4>
+            <p>Battery backup cells guarantee up to 72 hours of uninterrupted physical protection during municipal grid blackouts.</p>
+          </div>
+          <div class="alert-box-status">
+            <span class="status-indicator-green"></span>
+            <span>VALVES OPERATIONAL & ARMED</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ========================================================
+       CHAPTER 5: NETWORK CONSOLE & INFRASTRUCTURE
+       ======================================================== -->
+  <div class="scrolly-chapter" id="chapter-network">
+    <div class="sticky-video-stage">
+      <!-- Apple-style Canvas WebP Image Sequence Stage -->
+      <canvas id="canvas5" class="scroll-canvas" width="3840" height="2160"></canvas>
+      <div class="video-overlay-gradient"></div>
+
+      <div class="hud-overlay">
+        <div class="hud-top-left">
+          <h2 class="hud-title">Enterprise Network & Unified Control Hub</h2>
+          <p class="hud-subtitle">10-Gigabit fiber backhaul • Zero-packet-drop surveillance streams</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scrub distance before card slides over last frame -->
+    <div class="scrub-track-spacer"></div>
+
+    <!-- White Card slides up OVER the sticky last frame -->
+    <section id="info-network" class="white-screen-section slide-over-card">
+      <div class="card-sheet-indicator"><div class="sheet-pill"></div></div>
+      <div class="container">
+        <div class="section-badge badge-network">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+            <line x1="6" y1="6" x2="6.01" y2="6"/>
+            <line x1="6" y1="18" x2="6.01" y2="18"/>
+          </svg>
+          Backbone Tier • Network Infrastructure
+        </div>
+        <h2 class="section-title">Mission-Critical Network & Resilient Foundation</h2>
+        <p class="section-lede">
+          A smart property is only as reliable as its packet layer. Our enterprise network architecture separates security video traffic, IoT devices, and personal gigabit browsing into hardened virtual LANs with multi-WAN failover.
+        </p>
+
+        <div class="feature-grid three-col">
+          <div class="feature-card">
+            <div class="card-icon-box bg-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/>
+              </svg>
+            </div>
+            <h3>Tri-Band Wi-Fi 7 Mesh Fabric</h3>
+            <p>320MHz wide channels delivering up to 9.6 Gbps throughput, ensuring 4K live streams and wireless AR devices experience zero stutter or buffer stalls.</p>
+            <ul class="spec-list">
+              <li>Seamless Roaming with 802.11k/v/r</li>
+              <li>Multi-Link Operation (MLO) Low Latency</li>
+              <li>High-Density Beamforming Antennas</li>
+            </ul>
+          </div>
+
+          <div class="feature-card featured">
+            <div class="card-badge">Zero-Trust Architecture</div>
+            <div class="card-icon-box bg-emerald">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <h3>Isolated VLAN Micro-Segmentation</h3>
+            <p>IoT lightbulbs and sensors cannot see your private NAS or banking laptops. Strict firewall access control prevents compromised smart devices from pivoting.</p>
+            <ul class="spec-list">
+              <li>Dedicated CCTV Security PoE Backhaul</li>
+              <li>Encrypted WireGuard Teleport VPN</li>
+              <li>Hardware DPI & Threat IPS/IDS Defense</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon-box bg-indigo">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3>Dual-WAN Cellular Hot-Failover</h3>
+            <p>If fiber trenching is accidentally severed, secondary 5G industrial gateways take over in under 300 milliseconds without dropping active alarm feeds.</p>
+            <ul class="spec-list">
+              <li>Uninterruptible Power Supply (UPS) Rack</li>
+              <li>Automatic Cloud Speedtest & Health Probe</li>
+              <li>Zero-Config Global Remote App Access</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- Final Footer & Contact Call to Action -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-text large">P &amp; S <span class="brand-sub">SECURITY SOLUTIONS</span></div>
+          <p>Precision-engineered smart security, dynamic climate automation, proactive hazard alarms, and high-performance networks.</p>
+        </div>
+        <div class="footer-cta">
+          <a href="#chapter-security" class="btn-primary">Return to Beginning</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 P &amp; S Security Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scrollytelling Interactive JS -->
+  <script src="script.js"></script>
+</body>
+</html>
