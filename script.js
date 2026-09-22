@@ -354,4 +354,82 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initial trigger
   onScroll();
   requestAnimationFrame(renderLoop);
+
+  // ========================================================
+  // Navbar Sliding Active Indicator on Navigation Click
+  // ========================================================
+  const navSlider = document.getElementById('navSlider');
+  const navLinks = document.querySelectorAll('.nav-links .nav-link');
+
+  function updateNavSlider(targetLink, animated = true) {
+    if (!navSlider || !targetLink) return;
+
+    if (!animated) {
+      navSlider.style.transition = 'none';
+    } else {
+      navSlider.style.transition = 'transform 0.38s cubic-bezier(0.25, 1, 0.5, 1), width 0.38s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.25s ease';
+    }
+
+    navSlider.style.width = `${targetLink.offsetWidth}px`;
+    navSlider.style.transform = `translateX(${targetLink.offsetLeft}px)`;
+    navSlider.style.opacity = '1';
+
+    navLinks.forEach(l => l.classList.toggle('active', l === targetLink));
+  }
+
+  let isClickScrolling = false;
+  let clickTimer = null;
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      isClickScrolling = true;
+      clearTimeout(clickTimer);
+      updateNavSlider(link, true);
+      clickTimer = setTimeout(() => {
+        isClickScrolling = false;
+      }, 1000);
+    });
+  });
+
+  // Position indicator on initial load
+  const initialActive = document.querySelector('.nav-links .nav-link.active') || navLinks[0];
+  if (initialActive) {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        updateNavSlider(initialActive, false);
+      });
+    });
+  }
+
+  window.addEventListener('resize', () => {
+    const active = document.querySelector('.nav-links .nav-link.active') || navLinks[0];
+    if (active) updateNavSlider(active, false);
+  }, { passive: true });
+
+  // Scroll-spy synchronization
+  const sectionNavMap = [
+    { id: 'chapter-security', link: document.getElementById('nav-home') },
+    { id: 'info-security', link: document.getElementById('nav-about') },
+    { id: 'info-automation-1', link: document.getElementById('nav-services') },
+    { id: 'info-alarms', link: document.getElementById('nav-testimonials') },
+  ];
+
+  window.addEventListener('scroll', () => {
+    if (isClickScrolling) return;
+    let bestLink = null;
+    for (let i = sectionNavMap.length - 1; i >= 0; i--) {
+      const el = document.getElementById(sectionNavMap[i].id);
+      if (el) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.45 && rect.bottom >= 0) {
+          bestLink = sectionNavMap[i].link;
+          break;
+        }
+      }
+    }
+    const currentActive = document.querySelector('.nav-links .nav-link.active');
+    if (bestLink && bestLink !== currentActive) {
+      updateNavSlider(bestLink, true);
+    }
+  }, { passive: true });
 });

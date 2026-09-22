@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us &amp; Request Consultation | P &amp; S Security Solutions</title>
+  <meta name="description" content="Speak directly with senior systems engineers at P & S Security Solutions. Schedule a site assessment, request architectural CAD blueprints, or get 24/7 technical support.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Main & Page Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body class="dedicated-page">
+
+  <!-- ========================================================
+       STICKY NAVIGATION BAR
+       ======================================================== -->
+  <header class="static-page-nav" role="banner">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="P & S Security Solutions Home">
+        <img src="assets/logo-white.png" alt="P & S Security Solutions Logo" class="nav-logo-img">
+      </a>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="contact.html" class="btn-contact" style="background:#0284c7; box-shadow: 0 0 16px rgba(2, 132, 199, 0.6);">
+          <svg width="13.5" height="13.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.36 2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          Contact
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       PAGE HERO BANNER
+       ======================================================== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        Direct Engineering Consultation
+      </div>
+
+      <h1 class="page-hero-title">
+        Let’s Build Something <span class="text-blue-highlight">Resilient &amp; Intelligent</span>
+      </h1>
+
+      <p class="page-hero-lede">
+        Whether you are designing a new architectural smart home, upgrading an enterprise surveillance network, or need emergency field dispatch, our senior systems team is ready to assist.
+      </p>
+
+      <!-- Quick Contact Info Strip -->
+      <div class="hero-stats-strip">
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">24<span>/7</span></div>
+          <div class="hero-stat-label">Critical Emergency Dispatch Line</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">&lt; 2<span>h</span></div>
+          <div class="hero-stat-label">Standard Inquiry Response Time</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">48<span>h</span></div>
+          <div class="hero-stat-label">Full CAD Blueprint &amp; Proposal Turnaround</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">Free</div>
+          <div class="hero-stat-label">Comprehensive On-Site Physical Survey</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       CONTACT FORM & SIDEBAR CHANNELS
+       ======================================================== -->
+  <section class="page-section bg-slate">
+    <div class="container">
+      <div class="contact-layout-grid">
+        
+        <!-- Interactive Consultation Form -->
+        <div class="contact-form-container">
+          <h3>Request an On-Site Assessment</h3>
+          <p>Fill out your project details below and an integration engineer will get in touch within 2 business hours.</p>
+
+          <form id="consultationForm" onsubmit="handleFormSubmit(event)">
+            
+            <div class="form-group-row">
+              <div class="form-field">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" placeholder="e.g. Vikram Singhania" required>
+              </div>
+              <div class="form-field">
+                <label for="phoneNumber">Direct Phone Number *</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="e.g. +91 98450 12345" required>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-field">
+                <label for="emailAddress">Email Address *</label>
+                <input type="email" id="emailAddress" name="emailAddress" placeholder="e.g. vikram@domain.com" required>
+              </div>
+              <div class="form-field">
+                <label for="propertyCategory">Property Category *</label>
+                <select id="propertyCategory" name="propertyCategory" required>
+                  <option value="" disabled selected>Select Property Type</option>
+                  <option value="Luxury Villa / Private Residence">Luxury Villa / Private Residence</option>
+                  <option value="Corporate Office / Tech Park">Corporate Office / Tech Park</option>
+                  <option value="Industrial Warehouse / Logistics">Industrial Warehouse / Logistics</option>
+                  <option value="Retail Showroom / Commercial">Retail Showroom / Commercial</option>
+                  <option value="Gated Society / Apartment Complex">Gated Society / Apartment Complex</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label>Disciplines Required (Select All That Apply):</label>
+              <div class="services-checkbox-grid">
+                <label class="checkbox-pill-label">
+                  <input type="checkbox" name="services" value="CCTV Surveillance" checked>
+                  <span>AI CCTV Surveillance</span>
+                </label>
+                <label class="checkbox-pill-label">
+                  <input type="checkbox" name="services" value="Climate & Fans">
+                  <span>Climate &amp; BLDC Fans</span>
+                </label>
+                <label class="checkbox-pill-label">
+                  <input type="checkbox" name="services" value="Smart Living & Lighting">
+                  <span>Smart Living &amp; Lighting</span>
+                </label>
+                <label class="checkbox-pill-label">
+                  <input type="checkbox" name="services" value="Alarm & Hazard Safety">
+                  <span>Alarms &amp; Life-Safety</span>
+                </label>
+                <label class="checkbox-pill-label">
+                  <input type="checkbox" name="services" value="Wi-Fi 6 & Fiber Networks">
+                  <span>Wi-Fi 6 &amp; Fiber Networks</span>
+                </label>
+                <label class="checkbox-pill-label">
+                  <input type="checkbox" name="services" value="Biometric Access Control">
+                  <span>Biometric Access &amp; Gates</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="projectTimeline">Project Timeline:</label>
+              <select id="projectTimeline" name="projectTimeline">
+                <option value="Immediate (Within 1-2 Weeks)">Immediate (Within 1-2 Weeks)</option>
+                <option value="Under Construction (Next 1-3 Months)" selected>Under Construction (Next 1-3 Months)</option>
+                <option value="Blueprint / Architectural Planning Phase">Blueprint / Architectural Planning Phase</option>
+                <option value="System Replacement / AMC Upgrade">System Replacement / AMC Upgrade</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="projectDetails">Project Location &amp; Specific Requirements:</label>
+              <textarea id="projectDetails" name="projectDetails" rows="4" placeholder="Briefly describe your property location, approximate square footage, or any specific security concerns..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-form-submit" id="submitBtn">
+              <span>Submit Consultation Request</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Column: Contact Channels & 24/7 Card -->
+        <div class="contact-sidebar">
+          
+          <!-- Experience Center & Office -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="contact-info-text">
+              <h4>Headquarters &amp; Experience Studio</h4>
+              <p>P &amp; S Security Solutions Building, 4th Floor<br>Outer Ring Road, Marathahalli – Sarjapur Corridor<br>Bengaluru, Karnataka 560103</p>
+              <strong>Mon – Sat: 9:00 AM – 7:30 PM</strong>
+            </div>
+          </div>
+
+          <!-- Direct Inquiries & Sales -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon green">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.36 2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="contact-info-text">
+              <h4>Direct Phone Consultations</h4>
+              <p>Speak directly with our senior technical estimation team.</p>
+              <strong>+91 98450 12345 / +91 80 4123 5678</strong>
+              <p style="margin-top: 4px; font-size: 13px; color: #0284c7;">solutions@pssecurity.in</p>
+            </div>
+          </div>
+
+          <!-- 24/7 Critical Emergency Hotline -->
+          <div class="emergency-callout-card">
+            <h4><span></span> 24/7 Critical Emergency Response</h4>
+            <p>
+              Dedicated direct dispatch line for active AMC clients experiencing critical system alarms, hardware failure, or network outages.
+            </p>
+            <a href="tel:+919845099911" class="emergency-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.36 2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Emergency NOC: +91 98450 99911</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FREQUENTLY ASKED QUESTIONS (FAQ) ACCORDION
+       ======================================================== -->
+  <section class="page-section bg-white">
+    <div class="container">
+      <div class="section-head-center">
+        <div class="page-hero-badge">Got Questions?</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions from property developers, architects, and estate owners.</p>
+      </div>
+
+      <div class="faq-accordion">
+        
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do you conduct on-site physical surveys before quoting?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, absolutely. We offer complimentary on-site technical surveys for all premier residential and commercial properties. A certified engineer visits the site to analyze optical angles, conduit routes, ambient lighting, and electrical loads before we generate your custom CAD blueprint and Bill of Materials.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Can you integrate with our existing cameras, sensors, or switches?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>In most cases, yes. Our systems are built on open industry standards like ONVIF, RTSP, KNX, and BACnet. During our site audit, we test your existing hardware to determine if it can be safely integrated into our cyber-hardened network or if upgrading key components would offer significantly superior performance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Can we visit and test the systems in person before deciding?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! We welcome clients, architects, and interior designers to our Experience Center on Outer Ring Road. You can interact directly with our live 4K AI cameras, experience whisper-quiet BLDC fan automation, test flush wall touch panels, and see the zero-latency facial recognition in real time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What warranty and ongoing maintenance support do you provide?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Every system comes with a 3-Year Comprehensive Hardware Warranty and 1 Year of complimentary Proactive AMC care. Our telemetry NOC monitors drive health, temperature, and camera connectivity, providing preventative servicing before any disruption occurs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Is my video footage and smart home data kept completely private?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Unlike consumer Wi-Fi gadgets that upload continuous video to third-party overseas cloud servers, our architecture prioritizes local on-premise NVR recording on segregated VLANs with AES-256 encryption. You retain 100% ownership and control of your private video and automation data.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       CONFIRMATION SUCCESS MODAL
+       ======================================================== -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+      <div class="modal-success-icon">✓</div>
+      <h3>Consultation Request Received!</h3>
+      <p id="modalMessage">Thank you for contacting P &amp; S Security Solutions. Your project brief has been assigned to our senior integration engineering team. We will call you within 2 business hours.</p>
+      <button class="btn-modal-close" onclick="closeModal()">Close &amp; Return</button>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       GLOBAL FOOTER
+       ======================================================== -->
+  <!-- ========================================================
+       LUXURY ARCHITECTURAL FOOTER
+       ======================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-content">
+      
+      <!-- Pre-Footer Action Banner -->
+      <div class="footer-pre-banner">
+        <div class="footer-cta-card">
+          <div class="footer-cta-text">
+            <h3>Planning a New Architectural Build or <span>Security Upgrade?</span></h3>
+            <p>Schedule a complimentary on-site engineering survey and get tailored CAD camera layouts and automation blueprints within 48 hours.</p>
+          </div>
+          <div class="footer-cta-buttons">
+            <a href="tel:+919845012345" class="footer-btn-secondary">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.36 2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 98450 12345</span>
+            </a>
+            <a href="contact.html" class="footer-btn-primary">
+              <span>Request CAD Blueprint</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Multi-Column Footer Grid -->
+      <div class="footer-main-grid">
+        
+        <!-- Column 1: Brand & Credibility -->
+        <div class="footer-brand-col">
+          <a href="index.html">
+            <img src="assets/logo-white.png" alt="P & S Security Solutions" class="footer-brand-logo">
+          </a>
+          <div class="footer-tagline-badge">SECURE &bull; SMART &bull; CONNECTED</div>
+          <p class="footer-brand-desc">
+            Precision-engineered electronic surveillance, intelligent climate automation, life-safety alarms, and high-performance network backbones across elite residences and commercial facilities.
+          </p>
+          <div class="footer-cert-badges">
+            <span class="cert-pill">ISO 9001:2015</span>
+            <span class="cert-pill">Hikvision Diamond</span>
+            <span class="cert-pill">UniFi Certified</span>
+            <span class="cert-pill">KNX Partner</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Core Disciplines -->
+        <div class="footer-col">
+          <h4>Core Disciplines</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html"><span class="chevron">›</span> AI CCTV Surveillance</a></li>
+            <li><a href="services.html"><span class="chevron">›</span> Smart Climate &amp; BLDC Fans</a></li>
+            <li><a href="services.html"><span class="chevron">›</span> Lighting &amp; Motorized Drapes</a></li>
+            <li><a href="services.html"><span class="chevron">›</span> Life-Safety &amp; Gas Alarms</a></li>
+            <li><a href="services.html"><span class="chevron">›</span> Enterprise Wi-Fi 6 Mesh</a></li>
+            <li><a href="services.html"><span class="chevron">›</span> Biometric Access &amp; Gates</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Navigation & Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><span class="chevron">›</span> Interactive Experience</a></li>
+            <li><a href="about.html"><span class="chevron">›</span> About Our Engineering</a></li>
+            <li><a href="services.html"><span class="chevron">›</span> Solutions &amp; Tiers</a></li>
+            <li><a href="testimonials.html"><span class="chevron">›</span> Client Case Studies</a></li>
+            <li><a href="contact.html"><span class="chevron">›</span> Request Site Survey</a></li>
+            <li><a href="contact.html"><span class="chevron">›</span> Annual AMC Contracts</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Studio -->
+        <div class="footer-col">
+          <h4>Experience Studio</h4>
+          <div class="footer-contact-details">
+            <div class="footer-contact-item">
+              <div class="footer-contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="footer-contact-text">
+                <strong>Outer Ring Road Corridor</strong>
+                <span>P&amp;S Tower, 4th Floor, Bengaluru, KA 560103</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <div class="footer-contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="footer-contact-text">
+                <strong>Engineering Desk</strong>
+                <a href="mailto:solutions@pssecurity.in">solutions@pssecurity.in</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <div class="footer-contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="footer-contact-text">
+                <strong>Studio Hours</strong>
+                <span>Mon – Sat: 9:00 AM – 7:30 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 5: 24/7 Rapid Emergency Dispatch -->
+        <div class="footer-col">
+          <h4>Emergency NOC</h4>
+          <div class="footer-emergency-box">
+            <div class="emergency-header">
+              <div class="pulse-indicator"></div>
+              <span>24/7 Active Dispatch</span>
+            </div>
+            <a href="tel:+919845099911" class="emergency-phone">+91 98450 99911</a>
+            <p class="emergency-desc">
+              Dedicated rapid response line for active AMC clients. Guaranteed &lt; 30 min technician dispatch for critical outages.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="footer-bottom-copy">&copy; 2026 P &amp; S Security Solutions. All rights reserved.</p>
+        <div class="footer-trust-strip">
+          <span>AES-256 Encrypted</span>
+          <span class="dot">&bull;</span>
+          <span>Zero Cloud Video Leaks</span>
+          <span class="dot">&bull;</span>
+          <span>3-Year Hardware Warranty Standard</span>
+        </div>
+        <a href="#" class="footer-scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+          <span>Back to Top</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Contact Form & FAQ Script -->
+  <script>
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) {
+        item.classList.add('open');
+      }
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('fullName').value.trim();
+      const phone = document.getElementById('phoneNumber').value.trim();
+      const btn = document.getElementById('submitBtn');
+      
+      btn.innerHTML = '<span>Processing Request...</span>';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        document.getElementById('modalMessage').textContent = 
+          `Thank you ${name}. Your consultation request has been received. Our lead systems engineer will contact you at ${phone} within 2 business hours.`;
+        document.getElementById('successModal').classList.add('active');
+        btn.innerHTML = '<span>Submit Consultation Request</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+        btn.disabled = false;
+        document.getElementById('consultationForm').reset();
+      }, 700);
+    }
+
+    function closeModal() {
+      document.getElementById('successModal').classList.remove('active');
+    }
+  </script>
+
+</body>
+</html>

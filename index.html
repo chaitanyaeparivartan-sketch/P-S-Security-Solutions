@@ -62,33 +62,36 @@
 
           <!-- Logo -->
           <a href="#chapter-security" class="nav-brand" id="nav-logo" aria-label="P & S Security Solutions – Home">
-            <img src="assets/logo.png" alt="P&S Security Solutions" class="nav-logo-img">
+            <img src="assets/logo-white.png" alt="P&S Security Solutions" class="nav-logo-img">
           </a>
 
           <!-- Nav Links -->
           <div class="nav-links" role="list">
-            <a href="#chapter-security" class="nav-link active" id="nav-home"   role="listitem">Home</a>
-            <a href="#info-security"    class="nav-link"        id="nav-about"  role="listitem">About</a>
-            <a href="#info-automation-1" class="nav-link"       id="nav-services" role="listitem">Services</a>
-            <a href="#info-alarms"      class="nav-link"        id="nav-testimonials" role="listitem">Testimonials</a>
-          </div>
+            <!-- Sliding active pill indicator -->
+            <div class="nav-slider" id="navSlider" aria-hidden="true"></div>
 
-          <!-- Contact CTA Button -->
-          <a href="#info-network" class="btn-contact" id="nav-contact" role="button">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.36 2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
-            Contact
-          </a>
+            <a href="index.html"        class="nav-link active" id="nav-home"   role="listitem">Home</a>
+            <a href="about.html"        class="nav-link"        id="nav-about"  role="listitem">About</a>
+            <a href="services.html"     class="nav-link"        id="nav-services" role="listitem">Services</a>
+            <a href="testimonials.html" class="nav-link"        id="nav-testimonials" role="listitem">Testimonials</a>
+            
+            <!-- Contact CTA Button inside the navbar pill -->
+            <a href="contact.html"      class="btn-contact"     id="nav-contact" role="button">
+              <svg width="13.5" height="13.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.36 2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              Contact
+            </a>
+          </div>
 
         </div>
       </nav>
 
       <div class="hud-overlay" id="hudOverlay1">
         <div class="hud-top-left">
-
-          <h2 class="hud-title">Security Closed Circuit Cameras</h2>
-          <p class="hud-subtitle">Ultra-perimeter CCTV surveillance • Optical zoom locked • Autonomous AI tracking activated</p>
+          <h2 class="hud-title">Intelligent CCTV Surveillance</h2>
+          <p class="hud-desc">Protect your property with high-definition cameras, intelligent video analytics and reliable recording designed for clear visibility and faster threat detection.</p>
+          <p class="hud-desc">Monitor critical areas remotely with smart alerts, night vision and scalable surveillance solutions tailored to homes, offices and commercial spaces.</p>
         </div>
       </div>
     </div>
@@ -97,91 +100,263 @@
     <div class="scrub-track-spacer intro-spacer"></div>
 
     <!-- White Card slides up OVER the sticky last frame -->
-    <section id="info-security" class="white-screen-section slide-over-card">
+    <!-- White Card slides up OVER the sticky last frame -->
+    <section id="info-security" class="white-screen-section slide-over-card cctv-showcase-section">
       <div class="card-sheet-indicator"><div class="sheet-pill"></div></div>
-      <div class="container">
-        <div class="section-badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-            <circle cx="12" cy="13" r="4"/>
-          </svg>
-          P &amp; Security Solutions
+      
+      <!-- CCTV Hero Header with Camera on Right -->
+      <div class="cctv-hero-header">
+        <div class="container cctv-header-content">
+          <div class="cctv-badge">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+              <circle cx="12" cy="13" r="4"/>
+            </svg>
+            P &amp; S Security Solutions
+          </div>
+
+          <h2 class="cctv-main-title">
+            CCTV Surveillance &amp;<br>
+            <span class="text-blue-highlight">Intelligent Video</span> Security
+          </h2>
+
+          <p class="cctv-main-lede">
+            Designed for homes, offices, commercial spaces and critical facilities, our CCTV solutions combine high-quality video, intelligent analytics and reliable recording to improve visibility, deter threats and help you respond faster.
+          </p>
         </div>
-        <h2 class="section-title">Security Closed Circuit Cameras &amp; Optical AI Defense</h2>
-        <p class="section-lede">
-          Engineered for zero blind spots, our commercial-grade Security Closed Circuit Camera (CCTV) ecosystem fuses 4K HDR low-light optics with continuous neural edge analytics to prevent intrusions before they materialize.
-        </p>
+      </div>
 
-        <div class="feature-grid three-col">
-          <div class="feature-card">
-            <div class="card-icon-box bg-blue">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="2" y1="12" x2="22" y2="12"/>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-              </svg>
+      <div class="container cctv-body-container">
+        <!-- 3 Feature Cards Grid -->
+        <div class="cctv-cards-grid">
+          
+          <!-- Card 1: Continuous High-Definition Vision -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/cctv_vision.jpg" alt="Continuous High-Definition Vision" class="cctv-card-img">
             </div>
-            <h3>Continuous 360° Panoramic Vision</h3>
-            <p>Pan-tilt-zoom motorization with micro-stepper accuracy and optical tracking algorithms follows perimeter subjects with zero image drift.</p>
-            <ul class="spec-list">
-              <li>4K Sony STARVIS 2 Night-Optics</li>
-              <li>f/1.2 Ultra-Aperture Starlight Mode</li>
-              <li>Sub-20ms Low Latency Scrubbing</li>
-            </ul>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                  <circle cx="12" cy="13" r="4"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Continuous High-Definition Vision</h3>
+              <p class="cctv-card-desc">
+                Get clear, dependable surveillance across key areas with cameras selected for the location, lighting conditions and security requirement.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>2MP / 4MP / 5MP / 8MP &amp; 4K camera options</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Night vision &amp; low-light surveillance</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Wide-angle, dome, bullet &amp; PTZ cameras</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-network" class="cctv-learn-more blue">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-network" class="cctv-circle-btn blue" aria-label="Learn more about Vision">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div class="feature-card featured">
-            <div class="card-badge">Core Defense Architecture</div>
-            <div class="card-icon-box bg-emerald">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                <path d="m9 12 2 2 4-4"/>
-              </svg>
+          <!-- Card 2: AI-Powered Video Intelligence -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/cctv_ai.jpg" alt="AI-Powered Video Intelligence" class="cctv-card-img">
             </div>
-            <h3>Neural Perimeter Recognition</h3>
-            <p>Differentiates between human visitors, domestic animals, moving foliage, and unverified vehicles with 99.8% precision, eradicating false alerts.</p>
-            <ul class="spec-list">
-              <li>Biometric License Plate & Face ID</li>
-              <li>Tripwire & Loitering Virtual Zones</li>
-              <li>Encrypted Local NVR + Cloud Vault</li>
-            </ul>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float green">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2"/>
+                  <rect x="9" y="9" width="6" height="6"/>
+                  <line x1="9" y1="1" x2="9" y2="4"/>
+                  <line x1="15" y1="1" x2="15" y2="4"/>
+                  <line x1="9" y1="20" x2="9" y2="23"/>
+                  <line x1="15" y1="20" x2="15" y2="23"/>
+                  <line x1="20" y1="9" x2="23" y2="9"/>
+                  <line x1="20" y1="14" x2="23" y2="14"/>
+                  <line x1="1" y1="9" x2="4" y2="9"/>
+                  <line x1="1" y1="14" x2="4" y2="14"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">AI-Powered Video Intelligence</h3>
+              <p class="cctv-card-desc">
+                Turn CCTV footage into useful security information with intelligent detection and event-based alerts that reduce unnecessary monitoring.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>AI human &amp; vehicle detection</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Intrusion, tripwire &amp; loitering detection</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Face recognition / ANPR where required</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-network" class="cctv-learn-more">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-network" class="cctv-circle-btn" aria-label="Learn more about AI Video Intelligence">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div class="feature-card">
-            <div class="card-icon-box bg-indigo">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-              </svg>
+          <!-- Card 3: Smart Monitoring & Active Security -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/cctv_monitor.jpg" alt="Smart Monitoring & Active Security" class="cctv-card-img">
             </div>
-            <h3>Active Deterrence & Access Lock</h3>
-            <p>Integrated directional spotlights, 110dB two-tone acoustic sirens, and instant electronic deadbolt lockouts halt uninvited entry instantly.</p>
-            <ul class="spec-list">
-              <li>Two-Way Crisp Noise-Canceling Audio</li>
-              <li>Instant Push Broadcast to First Responders</li>
-              <li>Hardware Tamper Detection</li>
-            </ul>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Smart Monitoring &amp; Active Security</h3>
+              <p class="cctv-card-desc">
+                Monitor your property remotely, receive important alerts and keep recorded evidence available whenever you need it.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Remote viewing on mobile &amp; computer</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>NVR recording with expandable storage</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Two-way audio, smart alerts &amp; tamper detection</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-network" class="cctv-learn-more">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-network" class="cctv-circle-btn" aria-label="Learn more about Smart Monitoring">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
           </div>
+
         </div>
 
-        <!-- Live Interactive Stats Ribbon -->
-        <div class="stats-ribbon">
-          <div class="stat-item">
-            <div class="stat-number">0.03s</div>
-            <div class="stat-label">AI Threat Classification</div>
+        <!-- Single Horizontal 6-Column Spec Ribbon -->
+        <div class="cctv-spec-ribbon">
+          <!-- 1. AI Enabled Camera -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon blue-bg">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8"/>
+                <circle cx="12" cy="12" r="9"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>AI Enabled</span>
+              <span>Camera</span>
+            </div>
           </div>
-          <div class="stat-item">
-            <div class="stat-number">4K 60Hz</div>
-            <div class="stat-label">Crystal Clear Sensor Feed</div>
+
+          <!-- 2. 4K Resolution -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="2"/>
+                <path d="M7 9v4h3v-4"/>
+                <path d="M10 11H7"/>
+                <path d="M14 9v6m3-6-3 3 3 3"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>4K</span>
+              <span>Resolution</span>
+            </div>
           </div>
-          <div class="stat-item">
-            <div class="stat-number">30+ Days</div>
-            <div class="stat-label">Local High-End NVMe Storage</div>
+
+          <!-- 3. Night Vision -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Night</span>
+              <span>Vision</span>
+            </div>
           </div>
-          <div class="stat-item">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Local Offline Operation</div>
+
+          <!-- 4. Video Analytics -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Video</span>
+              <span>Analytics</span>
+            </div>
           </div>
+
+          <!-- 5. Remote Monitoring -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Remote</span>
+              <span>Monitoring</span>
+            </div>
+          </div>
+
+          <!-- 6. Secure Storage -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="7" rx="2"/>
+                <rect x="2" y="13" width="20" height="7" rx="2"/>
+                <line x1="6" y1="7.5" x2="6.01" y2="7.5"/>
+                <line x1="6" y1="16.5" x2="6.01" y2="16.5"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Secure</span>
+              <span>Storage</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -198,8 +373,9 @@
 
       <div class="hud-overlay">
         <div class="hud-top-left">
-          <h2 class="hud-title">Whisper-Quiet Environmental Aerodynamics</h2>
-          <p class="hud-subtitle">Direct magnetic motor control • Temperature-synced RPM regulation</p>
+          <h2 class="hud-title">Smart Home Automation</h2>
+          <p class="hud-desc">Transform everyday living with intelligent control of lighting, climate, curtains, entertainment and connected devices through simple automated scenes.</p>
+          <p class="hud-desc">Enjoy greater comfort, convenience and control with mobile, voice and scheduled automation designed around your lifestyle and daily routines.</p>
         </div>
       </div>
     </div>
@@ -208,77 +384,255 @@
     <div class="scrub-track-spacer"></div>
 
     <!-- White Card slides up OVER the sticky last frame -->
-    <section id="info-automation-1" class="white-screen-section slide-over-card">
+    <section id="info-automation-1" class="cctv-showcase-section white-screen-section slide-over-card">
       <div class="card-sheet-indicator"><div class="sheet-pill"></div></div>
-      <div class="container">
-        <div class="section-badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"/>
-            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-          </svg>
-          Comfort Tier • Home Automation
-        </div>
-        <h2 class="section-title">Sensory Micro-Climate & Dynamic Air Management</h2>
-        <p class="section-lede">
-          Experience frictionless comfort where brushless DC motors, humidity probes, and solar irradiance sensors modulate indoor breeze patterns automatically without lifting a finger.
-        </p>
 
-        <div class="feature-grid two-col">
-          <div class="feature-card">
-            <div class="card-icon-box bg-sky">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <!-- Hero Header with Seamless Thematic Right-Fading Background -->
+      <div class="cctv-hero-header">
+        <div class="container cctv-header-content">
+          <div class="cctv-badge">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+            P &amp; S Security Solutions
+          </div>
+
+          <h2 class="cctv-main-title">
+            Smart <span class="text-blue-highlight">Climate &amp; Comfort</span> Automation
+          </h2>
+
+          <p class="cctv-main-lede">
+            Automate fans, air conditioning and other comfort systems to make your home more convenient, energy-efficient and perfectly tempered around your daily routines.
+          </p>
+        </div>
+      </div>
+
+      <div class="container cctv-body-container">
+        <!-- 3 Feature Cards Grid -->
+        <div class="cctv-cards-grid">
+          
+          <!-- Card 1: Intelligent Temperature & HVAC Control -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/climate_card1.jpg" alt="Smart Climate &amp; HVAC Control" class="cctv-card-img">
+            </div>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Smart Climate &amp; HVAC Control</h3>
+              <p class="cctv-card-desc">
+                Coordinate indoor airflow, brushless DC motors, and thermal regulation to purge stagnant air and elevate daily comfort.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Smart fan &amp; AC climate control</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Occupancy &amp; temperature synced regulation</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Energy-aware cooling with up to 35% savings</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-automation-2" class="cctv-learn-more blue">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-automation-2" class="cctv-circle-btn blue" aria-label="Learn more about Climate Control">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Intelligent Airflow & BLDC Fans -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/climate_fan.jpg" alt="Intelligent Airflow &amp; BLDC Fans" class="cctv-card-img">
+            </div>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float green">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 12c2-2 5-2 7 0s2 5 0 7-5 2-7 0"/>
+                  <path d="M12 12c-2-2-2-5 0-7s5-2 7 0 2 5 0 7"/>
+                  <path d="M12 12c-2 2-5 2-7 0s-2-5 0-7 5-2 7 0"/>
+                  <path d="M12 12c2 2 2 5 0 7s-5 2-7 0-2-5 0-7"/>
+                  <circle cx="12" cy="12" r="2"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Intelligent Airflow &amp; BLDC Fans</h3>
+              <p class="cctv-card-desc">
+                Whisper-quiet smart ceiling fans with reversible airflow that automatically adjust speeds based on real-time room comfort levels.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Reversible airflow &amp; whisper-quiet operation</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Multi-speed automated RPM regulation</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Integrated warm/cool ambient LED lighting</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-automation-2" class="cctv-learn-more">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-automation-2" class="cctv-circle-btn" aria-label="Learn more about Smart Airflow">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Automated Schedules & Scenes -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/climate_scene.jpg" alt="Automated Schedules &amp; Scenes" class="cctv-card-img">
+            </div>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Automated Schedules &amp; Scenes</h3>
+              <p class="cctv-card-desc">
+                Synchronize temperature and airflow presets to activate on wake-up, departure, movie time or customized sleep routines.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Good Morning, Away &amp; Goodnight scenes</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>One-touch wall panel &amp; smartphone app control</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Voice assistant integration with Alexa &amp; Google</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-automation-2" class="cctv-learn-more">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-automation-2" class="cctv-circle-btn" aria-label="Learn more about Schedules &amp; Scenes">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Single Horizontal 6-Column Spec Ribbon -->
+        <div class="cctv-spec-ribbon">
+          <!-- 1. Smart Climate -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon blue-bg">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
               </svg>
             </div>
-            <h3>Thermal Harmony Equilibrium</h3>
-            <p>Ceiling fans and HVAC units collaborate in real-time. By distributing heated or chilled air evenly across ceilings and floors, cooling overhead drops by up to 34% annually.</p>
-            <div class="interactive-preview-box">
-              <div class="preview-row">
-                <span>Dynamic Airflow:</span>
-                <span class="badge-status online">Natural Breeze Mode (120 RPM)</span>
-              </div>
-              <div class="preview-row">
-                <span>Energy Saving:</span>
-                <span class="text-accent">+38% vs AC Alone</span>
-              </div>
+            <div class="spec-ribbon-label">
+              <span>Smart</span>
+              <span>Climate</span>
             </div>
           </div>
 
-          <div class="feature-card">
-            <div class="card-icon-box bg-purple">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          <!-- 2. BLDC Fans -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 9V3M12 15v6M9 12H3M15 12h6"/>
               </svg>
             </div>
-            <h3>Presence & Hand-Gesture Sensing</h3>
-            <p>Millimeter-wave radar detects room occupancy down to shallow human breathing. The fan smoothly spins down when the room empties and awakens gently as someone enters.</p>
-            <div class="interactive-preview-box">
-              <div class="preview-row">
-                <span>Occupancy Radar:</span>
-                <span class="badge-status online">Living Room (1 Human Detected)</span>
-              </div>
-              <div class="preview-row">
-                <span>Acoustic Output:</span>
-                <span class="text-accent">&lt; 14 dB (Silent Magnet)</span>
-              </div>
+            <div class="spec-ribbon-label">
+              <span>BLDC Motor</span>
+              <span>Ceiling Fans</span>
             </div>
           </div>
-        </div>
 
-        <!-- Feature Detail Checklist -->
-        <div class="specs-horizontal">
-          <div class="spec-col">
-            <h4>Smart Fan Features</h4>
-            <p>BLDC magnetic motor, reversible winter thermal destratification, step-less 1% speed ramping, and RGB status ring.</p>
+          <!-- 3. Temp Sync -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="4" y1="21" x2="4" y2="14"/>
+                <line x1="4" y1="10" x2="4" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12" y2="3"/>
+                <line x1="20" y1="21" x2="20" y2="16"/>
+                <line x1="20" y1="12" x2="20" y2="3"/>
+                <line x1="1" y1="14" x2="7" y2="14"/>
+                <line x1="9" y1="8" x2="15" y2="8"/>
+                <line x1="17" y1="16" x2="23" y2="16"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Automated</span>
+              <span>Temp Sync</span>
+            </div>
           </div>
-          <div class="spec-col">
-            <h4>Ecosystem Compatibility</h4>
-            <p>Apple HomeKit, Matter 1.3, Google Home, Home Assistant via local Thread and Zigbee protocols.</p>
+
+          <!-- 4. Quiet Operation -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Whisper-Quiet</span>
+              <span>Acoustics</span>
+            </div>
           </div>
-          <div class="spec-col">
-            <h4>Air Quality Index Sync</h4>
-            <p>Integrates with PM2.5 and CO2 scrubbers to purge stagnant air pockets automatically.</p>
+
+          <!-- 5. Energy Saving -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>35% Energy</span>
+              <span>Efficiency</span>
+            </div>
           </div>
+
+          <!-- 6. Scene Automation -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Scene Preset</span>
+              <span>Automation</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -295,8 +649,9 @@
 
       <div class="hud-overlay">
         <div class="hud-top-left">
-          <h2 class="hud-title">Effortless Smart Living & Media Spaces</h2>
-          <p class="hud-subtitle">One-touch scene orchestration • Ambient lighting & multi-room audio</p>
+          <h2 class="hud-title">Smart Home Automation</h2>
+          <p class="hud-desc">Transform everyday living with intelligent control of lighting, climate, curtains, entertainment and connected devices through simple automated scenes.</p>
+          <p class="hud-desc">Enjoy greater comfort, convenience and control with mobile, voice and scheduled automation designed around your lifestyle and daily routines.</p>
         </div>
       </div>
     </div>
@@ -305,102 +660,246 @@
     <div class="scrub-track-spacer"></div>
 
     <!-- White Card slides up OVER the sticky last frame -->
-    <section id="info-automation-2" class="white-screen-section slide-over-card">
+    <section id="info-automation-2" class="cctv-showcase-section white-screen-section slide-over-card">
       <div class="card-sheet-indicator"><div class="sheet-pill"></div></div>
-      <div class="container">
-        <div class="section-badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>
-            <polyline points="17 2 12 7 7 2"/>
-          </svg>
-          Lifestyle Tier • Home Automation
+
+      <!-- Hero Header with Seamless Thematic Right-Fading Background -->
+      <div class="cctv-hero-header">
+        <div class="container cctv-header-content">
+          <div class="cctv-badge">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>
+              <polyline points="17 2 12 7 7 2"/>
+            </svg>
+            P &amp; S Security Solutions
+          </div>
+
+          <h2 class="cctv-main-title">
+            Smart Home <span class="text-blue-highlight">Automation &amp; Intelligent</span> Living
+          </h2>
+
+          <p class="cctv-main-lede">
+            Bring lighting, climate, curtains, entertainment and everyday controls together into one simple smart environment designed around comfort, luxury and effortless control.
+          </p>
         </div>
-        <h2 class="section-title">Immersive Living Spaces & Ambient Intelligence</h2>
-        <p class="section-lede">
-          True automation feels invisible. Transition smoothly from morning productivity to cinematic evening entertainment with unified scene presets that orchestrate lighting, motorized drapes, and high-fidelity acoustics.
-        </p>
+      </div>
 
-        <div class="feature-grid three-col">
-          <div class="feature-card">
-            <div class="card-icon-box bg-emerald">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
-              </svg>
+      <div class="container cctv-body-container">
+        <!-- 3 Feature Cards Grid -->
+        <div class="cctv-cards-grid">
+          
+          <!-- Card 1: Intelligent Lighting & Ambiance -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/auto_lighting.jpg" alt="Intelligent Lighting &amp; Ambiance" class="cctv-card-img">
             </div>
-            <h3>Circadian Lighting Harmony</h3>
-            <p>Tunable white fixtures shift from crisp 6500K daylight to soothing 2200K amber warmth as the sun sets, stimulating natural circadian melatonin rhythms.</p>
-            <ul class="spec-list">
-              <li>CRI 98+ Studio Color Fidelity</li>
-              <li>Sub-1% Micro-Flicker Dimming</li>
-              <li>Motorized Blackout Roller Sync</li>
-            </ul>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Intelligent Lighting &amp; Ambiance</h3>
+              <p class="cctv-card-desc">
+                Create the right atmosphere for every moment with architectural smart lighting and automated scenes that work around your daily routine.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Smart dimmable lights &amp; touch switches</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Scene-based architectural lighting presets</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Scheduling &amp; motion-based occupancy lighting</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-alarms" class="cctv-learn-more blue">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-alarms" class="cctv-circle-btn blue" aria-label="Learn more about Lighting">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div class="feature-card">
-            <div class="card-icon-box bg-violet">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="5 3 19 12 5 21 5 3"/>
-              </svg>
+          <!-- Card 2: Motorized Curtains & Shading -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/auto_curtains.jpg" alt="Motorized Curtains &amp; Shading" class="cctv-card-img">
             </div>
-            <h3>One-Touch Cinema Mode</h3>
-            <p>Say "Movie Night" or press a single tactile key on the coffee table: projector lowers, lights fade to dark indigo, subwoofers engage, and external doorbells silence.</p>
-            <ul class="spec-list">
-              <li>Dolby Atmos Spatial Audio Integration</li>
-              <li>Apple TV, Plex & Shield Auto-Wake</li>
-              <li>DND Security Perimeter Standby</li>
-            </ul>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float green">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M3 9h18M3 15h18M9 3v18"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Motorized Curtains &amp; Shading</h3>
+              <p class="cctv-card-desc">
+                Automated drapery and motorized shades that glide open gently with the morning sunrise and close securely at dusk.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Whisper-quiet motorized drapery &amp; blinds</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Sunlight &amp; time-of-day synchronization</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Touch-wand, remote &amp; smartphone activation</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-alarms" class="cctv-learn-more">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-alarms" class="cctv-circle-btn" aria-label="Learn more about Motorized Curtains">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div class="feature-card">
-            <div class="card-icon-box bg-teal">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
+          <!-- Card 3: Centralized Living & Unified Control -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/auto_control.jpg" alt="Centralized Living &amp; Unified Control" class="cctv-card-img">
             </div>
-            <h3>Unified Smart Wall Controls</h3>
-            <p>Replaces cluttered wall switch rows with sleek haptic touchscreen keypads. Controls climate, music, drapes, and locks from a single polished glass bezel.</p>
-            <ul class="spec-list">
-              <li>Custom Engraved Glass Panels</li>
-              <li>Built-In Voice Assistant Mic Array</li>
-              <li>Proximity Auto-Wake Sensor</li>
-            </ul>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                  <line x1="12" y1="18" x2="12.01" y2="18"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Centralized Living &amp; Unified Control</h3>
+              <p class="cctv-card-desc">
+                Control your home effortlessly from wall panels, mobile devices or voice assistants, with all sub-systems orchestrated together.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Mobile app &amp; centralized wall touchscreens</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Voice control with Alexa, Siri &amp; Google Home</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>TV, entertainment &amp; audio scene integration</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-alarms" class="cctv-learn-more">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-alarms" class="cctv-circle-btn" aria-label="Learn more about Unified Control">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
           </div>
+
         </div>
 
-        <!-- Living Mode Scene Cards -->
-        <div class="scenes-showcase">
-          <h3 class="scenes-heading">Instant Preset Archetypes</h3>
-          <div class="scene-pills">
-            <div class="scene-pill active">
-              <span class="scene-icon">🌅</span>
-              <div class="scene-info">
-                <strong>Morning Rise</strong>
-                <span>Drapes 100% • Warm 3500K • News Digest</span>
-              </div>
+        <!-- Single Horizontal 6-Column Spec Ribbon -->
+        <div class="cctv-spec-ribbon">
+          <!-- 1. Smart Lighting -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon blue-bg">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18h6M10 22h4M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .5 2.1 1.5 3.5.76.76 1.23 1.52 1.41 2.5"/>
+              </svg>
             </div>
-            <div class="scene-pill">
-              <span class="scene-icon">🎬</span>
-              <div class="scene-info">
-                <strong>Cinema Relax</strong>
-                <span>Blinds Down • 10% Amber • Dolby 7.1</span>
-              </div>
-            </div>
-            <div class="scene-pill">
-              <span class="scene-info">🍷</span>
-              <div class="scene-info">
-                <strong>Entertain & Dine</strong>
-                <span>Jazz Audio • Accent Pendants • AC 22°C</span>
-              </div>
-            </div>
-            <div class="scene-pill">
-              <span class="scene-info">🌙</span>
-              <div class="scene-info">
-                <strong>Goodnight Secure</strong>
-                <span>All Off • Perimeter Armed • HVAC ECO</span>
-              </div>
+            <div class="spec-ribbon-label">
+              <span>Smart</span>
+              <span>Lighting</span>
             </div>
           </div>
+
+          <!-- 2. Motorized Blinds -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M3 15h18"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Motorized</span>
+              <span>Blinds</span>
+            </div>
+          </div>
+
+          <!-- 3. Voice Control -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Voice</span>
+              <span>Control</span>
+            </div>
+          </div>
+
+          <!-- 4. Scene Automation -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Automated</span>
+              <span>Scenes</span>
+            </div>
+          </div>
+
+          <!-- 5. Touch Panels -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Wall Touch</span>
+              <span>Panels</span>
+            </div>
+          </div>
+
+          <!-- 6. Mobile Sync -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Mobile App</span>
+              <span>Sync</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -417,8 +916,9 @@
 
       <div class="hud-overlay">
         <div class="hud-top-left">
-          <h2 class="hud-title">Immediate Kitchen & Fire Mitigation</h2>
-          <p class="hud-subtitle">Optical flare detection • Automated fuel valve isolation</p>
+          <h2 class="hud-title">Advanced Alarm &amp; Life Safety</h2>
+          <p class="hud-desc">Create a stronger layer of protection with integrated systems for intrusion, fire, smoke, gas and other critical hazards across your property.</p>
+          <p class="hud-desc">Receive instant alerts and enable coordinated responses that help protect people, property and assets when every second matters.</p>
         </div>
       </div>
     </div>
@@ -427,82 +927,245 @@
     <div class="scrub-track-spacer"></div>
 
     <!-- White Card slides up OVER the sticky last frame -->
-    <section id="info-alarms" class="white-screen-section slide-over-card">
+    <section id="info-alarms" class="cctv-showcase-section white-screen-section slide-over-card">
       <div class="card-sheet-indicator"><div class="sheet-pill"></div></div>
-      <div class="container">
-        <div class="section-badge badge-warning">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-            <line x1="12" y1="9" x2="12" y2="13"/>
-            <line x1="12" y1="17" x2="12.01" y2="17"/>
-          </svg>
-          Life Safety Tier • Alarm Systems
-        </div>
-        <h2 class="section-title">Critical Life-Safety & Rapid Hazard Interception</h2>
-        <p class="section-lede">
-          Seconds matter when an unattended cooking surface flares or a combustion pipe faults. Our active alarm network initiates automated physical counter-measures before catastrophe unfolds.
-        </p>
 
-        <div class="feature-grid three-col">
-          <div class="feature-card">
-            <div class="card-icon-box bg-rose">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <!-- Hero Header with Seamless Thematic Right-Fading Background -->
+      <div class="cctv-hero-header">
+        <div class="container cctv-header-content">
+          <div class="cctv-badge">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            P &amp; S Security Solutions
+          </div>
+
+          <h2 class="cctv-main-title">
+            Alarm Systems &amp; <span class="text-blue-highlight">Life Safety</span> Defense
+          </h2>
+
+          <p class="cctv-main-lede">
+            Protect people and property with a layered alarm system that detects intrusion, fire, gas, water and other critical events, delivering instant alerts and coordinated response.
+          </p>
+        </div>
+      </div>
+
+      <div class="container cctv-body-container">
+        <!-- 3 Feature Cards Grid -->
+        <div class="cctv-cards-grid">
+          
+          <!-- Card 1: Intrusion & Perimeter Defense -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/alarm_intrusion.jpg" alt="Intrusion &amp; Perimeter Defense" class="cctv-card-img">
+            </div>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Intrusion &amp; Perimeter Defense</h3>
+              <p class="cctv-card-desc">
+                Detect unauthorized entry immediately with high-precision motion sensors, magnetic door contacts, and perimeter tripwires.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>PIR motion &amp; door/window opening sensors</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Glass-break acoustic &amp; vibration detection</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Multi-partition arming for night and away modes</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-network" class="cctv-learn-more blue">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-network" class="cctv-circle-btn blue" aria-label="Learn more about Intrusion Detection">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Fire, Smoke & Gas Protection -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/alarm_fire.jpg" alt="Fire, Smoke &amp; Gas Protection" class="cctv-card-img">
+            </div>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float green">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Fire, Smoke &amp; Gas Protection</h3>
+              <p class="cctv-card-desc">
+                Identify life-safety hazards early and trigger immediate warnings before a small incident escalates into a serious disaster.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Optical smoke &amp; rapid heat rise detection</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>LPG, CNG &amp; carbon monoxide gas leak sensors</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Automated gas valve shutoff integration</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-network" class="cctv-learn-more">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-network" class="cctv-circle-btn" aria-label="Learn more about Fire & Gas Protection">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Smart Alerts & Emergency Hub -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/alarm_siren.jpg" alt="Smart Alerts &amp; Emergency Hub" class="cctv-card-img">
+            </div>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Smart Alerts &amp; Emergency Hub</h3>
+              <p class="cctv-card-desc">
+                Keep property owners and security teams alerted with high-decibel acoustic sirens, strobe deterrents, and instant mobile alerts.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>110dB indoor &amp; outdoor weatherproof sirens</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Instant mobile push alerts, SMS &amp; auto-dialer</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Central monitoring station &amp; panic triggers</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-network" class="cctv-learn-more">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-network" class="cctv-circle-btn" aria-label="Learn more about Smart Alerts">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Single Horizontal 6-Column Spec Ribbon -->
+        <div class="cctv-spec-ribbon">
+          <!-- 1. Intrusion Alert -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon blue-bg">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Intrusion</span>
+              <span>Detection</span>
+            </div>
+          </div>
+
+          <!-- 2. Smoke Detection -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
               </svg>
             </div>
-            <h3>Thermal & Optical Flare Sensing</h3>
-            <p>Thermal infrared matrix scanners detect runaway grease temperatures and open stovetop flames over 300°C within 1.2 seconds of ignition.</p>
-            <ul class="spec-list">
-              <li>Dual Spectrum Flame Analysis</li>
-              <li>Eliminates harmless steam false trips</li>
-              <li>Self-cleaning heat resistant lenses</li>
-            </ul>
+            <div class="spec-ribbon-label">
+              <span>Smoke &amp; Heat</span>
+              <span>Sensors</span>
+            </div>
           </div>
 
-          <div class="feature-card featured">
-            <div class="card-badge bg-rose-badge">Emergency Automated Action</div>
-            <div class="card-icon-box bg-amber">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18.36 6.64a9 9 0 1 1-12.73 0"/>
-                <line x1="12" y1="2" x2="12" y2="12"/>
+          <!-- 3. Gas Leak Sensor -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 8v4M12 16h.01"/>
               </svg>
             </div>
-            <h3>Instant Fuel & Power Kill-Switch</h3>
-            <p>In the event of an alarm confirmation, the smart panel sends an immediate shutoff command to gas solenoid valves and induction power circuits.</p>
-            <ul class="spec-list">
-              <li>Automatic Solenoid Gas Valve Trip</li>
-              <li>Exhaust Hood Speed Ramp to Max</li>
-              <li>Unlocks Exit Pathways for Evacuation</li>
-            </ul>
+            <div class="spec-ribbon-label">
+              <span>Gas Leak</span>
+              <span>Protection</span>
+            </div>
           </div>
 
-          <div class="feature-card">
-            <div class="card-icon-box bg-red">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <!-- 4. Outdoor Siren -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
               </svg>
             </div>
-            <h3>Whole-Home Interlinked Siren Matrix</h3>
-            <p>All smoke, carbon monoxide, and water leakage sensors talk over a low-frequency redundant mesh to broadcast spoken voice warnings across every room.</p>
-            <ul class="spec-list">
-              <li>115dB Multi-tone Piezo Sounders</li>
-              <li>Cellular LTE Backup Dispatch</li>
-              <li>Emergency LED Pathway Guidance</li>
-            </ul>
+            <div class="spec-ribbon-label">
+              <span>110dB Outdoor</span>
+              <span>Sirens</span>
+            </div>
           </div>
-        </div>
 
-        <!-- Action Banner -->
-        <div class="alert-box-interactive">
-          <div class="alert-box-content">
-            <h4>Continuous Zero-Failure Monitoring</h4>
-            <p>Battery backup cells guarantee up to 72 hours of uninterrupted physical protection during municipal grid blackouts.</p>
+          <!-- 5. Instant Push -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Instant Push</span>
+              <span>Alerts</span>
+            </div>
           </div>
-          <div class="alert-box-status">
-            <span class="status-indicator-green"></span>
-            <span>VALVES OPERATIONAL & ARMED</span>
+
+          <!-- 6. 24/7 Monitoring -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>24/7 Active</span>
+              <span>Monitoring</span>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -519,8 +1182,9 @@
 
       <div class="hud-overlay">
         <div class="hud-top-left">
-          <h2 class="hud-title">Enterprise Network & Unified Control Hub</h2>
-          <p class="hud-subtitle">10-Gigabit fiber backhaul • Zero-packet-drop surveillance streams</p>
+          <h2 class="hud-title">Reliable Networking &amp; Wi-Fi</h2>
+          <p class="hud-desc">Build a strong connectivity foundation with structured cabling, high-performance Wi-Fi, PoE, fiber and professionally managed network infrastructure.</p>
+          <p class="hud-desc">Keep CCTV, automation, access control and business systems connected with secure, scalable and reliable network solutions.</p>
         </div>
       </div>
     </div>
@@ -529,73 +1193,252 @@
     <div class="scrub-track-spacer"></div>
 
     <!-- White Card slides up OVER the sticky last frame -->
-    <section id="info-network" class="white-screen-section slide-over-card">
+    <section id="info-network" class="cctv-showcase-section white-screen-section slide-over-card">
       <div class="card-sheet-indicator"><div class="sheet-pill"></div></div>
-      <div class="container">
-        <div class="section-badge badge-network">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
-            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
-            <line x1="6" y1="6" x2="6.01" y2="6"/>
-            <line x1="6" y1="18" x2="6.01" y2="18"/>
-          </svg>
-          Backbone Tier • Network Infrastructure
-        </div>
-        <h2 class="section-title">Mission-Critical Network & Resilient Foundation</h2>
-        <p class="section-lede">
-          A smart property is only as reliable as its packet layer. Our enterprise network architecture separates security video traffic, IoT devices, and personal gigabit browsing into hardened virtual LANs with multi-WAN failover.
-        </p>
 
-        <div class="feature-grid three-col">
-          <div class="feature-card">
-            <div class="card-icon-box bg-blue">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <!-- Hero Header with Seamless Thematic Right-Fading Background -->
+      <div class="cctv-hero-header">
+        <div class="container cctv-header-content">
+          <div class="cctv-badge">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+              <line x1="6" y1="6" x2="6.01" y2="6"/>
+              <line x1="6" y1="18" x2="6.01" y2="18"/>
+            </svg>
+            P &amp; S Security Solutions
+          </div>
+
+          <h2 class="cctv-main-title">
+            Networking, Wi-Fi &amp; <span class="text-blue-highlight">Infrastructure</span> Hub
+          </h2>
+
+          <p class="cctv-main-lede">
+            Build a stable foundation for CCTV, access control, automation, internet and business applications with properly designed wired and wireless network infrastructure.
+          </p>
+        </div>
+      </div>
+
+      <div class="container cctv-body-container">
+        <!-- 3 Feature Cards Grid -->
+        <div class="cctv-cards-grid">
+          
+          <!-- Card 1: Structured Cabling & Rack Systems -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/network_cabling.jpg" alt="Structured Cabling &amp; Rack Systems" class="cctv-card-img">
+            </div>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                  <line x1="6" y1="6" x2="6.01" y2="6"/>
+                  <line x1="6" y1="18" x2="6.01" y2="18"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Structured Network Infrastructure</h3>
+              <p class="cctv-card-desc">
+                Plan and install the physical network backbone for reliable connectivity across homes, offices and commercial environments.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Cat6 / Cat6A structured cabling</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Fiber optic networking backbones</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Clean server racks &amp; cable management</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-access" class="cctv-learn-more blue">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-access" class="cctv-circle-btn blue" aria-label="Learn more about Structured Cabling">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: High-Performance Wi-Fi -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/network_wifi.jpg" alt="High-Performance Wi-Fi" class="cctv-card-img">
+            </div>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float green">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">High-Performance Wi-Fi Mesh</h3>
+              <p class="cctv-card-desc">
+                Deliver consistent wireless coverage by designing access-point placement and network capacity around the actual property.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Professional Wi-Fi heatmapping &amp; design</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Enterprise Wi-Fi 6 seamless roaming mesh</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Guest Wi-Fi isolation &amp; QoS bandwidth</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-access" class="cctv-learn-more">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-access" class="cctv-circle-btn" aria-label="Learn more about High-Performance Wi-Fi">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Secure & Managed Networks -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/network_gateway.jpg" alt="Secure &amp; Managed Networks" class="cctv-card-img">
+            </div>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Secure &amp; Managed Networks</h3>
+              <p class="cctv-card-desc">
+                Improve reliability and security with properly configured routing, VLAN segmentation and ongoing proactive network management.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Managed switches, routers &amp; hardware firewall</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>VLAN &amp; IoT network isolation</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>High-power PoE+ network infrastructure</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#info-access" class="cctv-learn-more">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#info-access" class="cctv-circle-btn" aria-label="Learn more about Managed Networks">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Single Horizontal 6-Column Spec Ribbon -->
+        <div class="cctv-spec-ribbon">
+          <!-- 1. Wi-Fi Coverage -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon blue-bg">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/>
               </svg>
             </div>
-            <h3>Tri-Band Wi-Fi 7 Mesh Fabric</h3>
-            <p>320MHz wide channels delivering up to 9.6 Gbps throughput, ensuring 4K live streams and wireless AR devices experience zero stutter or buffer stalls.</p>
-            <ul class="spec-list">
-              <li>Seamless Roaming with 802.11k/v/r</li>
-              <li>Multi-Link Operation (MLO) Low Latency</li>
-              <li>High-Density Beamforming Antennas</li>
-            </ul>
+            <div class="spec-ribbon-label">
+              <span>Wi-Fi 6</span>
+              <span>Mesh</span>
+            </div>
           </div>
 
-          <div class="feature-card featured">
-            <div class="card-badge">Zero-Trust Architecture</div>
-            <div class="card-icon-box bg-emerald">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <!-- 2. PoE Networking -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>PoE+</span>
+              <span>Switches</span>
+            </div>
+          </div>
+
+          <!-- 3. Fiber Connectivity -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Fiber Optic</span>
+              <span>Backbone</span>
+            </div>
+          </div>
+
+          <!-- 4. Network Security -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                <line x1="12" y1="8" x2="12" y2="12"/>
-                <line x1="12" y1="16" x2="12.01" y2="16"/>
               </svg>
             </div>
-            <h3>Isolated VLAN Micro-Segmentation</h3>
-            <p>IoT lightbulbs and sensors cannot see your private NAS or banking laptops. Strict firewall access control prevents compromised smart devices from pivoting.</p>
-            <ul class="spec-list">
-              <li>Dedicated CCTV Security PoE Backhaul</li>
-              <li>Encrypted WireGuard Teleport VPN</li>
-              <li>Hardware DPI & Threat IPS/IDS Defense</li>
-            </ul>
+            <div class="spec-ribbon-label">
+              <span>VLAN</span>
+              <span>Segmentation</span>
+            </div>
           </div>
 
-          <div class="feature-card">
-            <div class="card-icon-box bg-indigo">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          <!-- 5. Firewall -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
               </svg>
             </div>
-            <h3>Dual-WAN Cellular Hot-Failover</h3>
-            <p>If fiber trenching is accidentally severed, secondary 5G industrial gateways take over in under 300 milliseconds without dropping active alarm feeds.</p>
-            <ul class="spec-list">
-              <li>Uninterruptible Power Supply (UPS) Rack</li>
-              <li>Automatic Cloud Speedtest & Health Probe</li>
-              <li>Zero-Config Global Remote App Access</li>
-            </ul>
+            <div class="spec-ribbon-label">
+              <span>Hardware</span>
+              <span>Firewall</span>
+            </div>
           </div>
+
+          <!-- 6. Network Monitoring -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>24/7 Traffic</span>
+              <span>Monitoring</span>
+            </div>
+          </div>
+
         </div>
-
       </div>
     </section>
   </div>
@@ -611,8 +1454,9 @@
 
       <div class="hud-overlay">
         <div class="hud-top-left">
-          <h2 class="hud-title">Intelligent Access Control & Entry Management</h2>
-          <p class="hud-subtitle">Biometric authentication • Smart lock integration • Visitor credentials on demand</p>
+          <h2 class="hud-title">Secure Access Control</h2>
+          <p class="hud-desc">Manage who enters your premises with modern biometric, facial recognition, RFID, PIN and mobile-based access solutions.</p>
+          <p class="hud-desc">Control permissions, monitor entry and exit activity, and secure multiple doors with flexible access management for homes and businesses.</p>
         </div>
       </div>
     </div>
@@ -621,111 +1465,390 @@
     <div class="scrub-track-spacer"></div>
 
     <!-- White Card slides up OVER the sticky last frame -->
-    <section id="info-access" class="white-screen-section slide-over-card">
+    <section id="info-access" class="cctv-showcase-section white-screen-section slide-over-card">
       <div class="card-sheet-indicator"><div class="sheet-pill"></div></div>
-      <div class="container">
-        <div class="section-badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-            <circle cx="12" cy="16" r="1"/>
-          </svg>
-          Access Control Tier • Smart Entry
-        </div>
-        <h2 class="section-title">Precision Access Control &amp; Identity Verification</h2>
-        <p class="section-lede">
-          Eliminate physical keys and vulnerable PIN pads. Our layered access control infrastructure combines multi-factor biometrics, encrypted RFID credentials, and cloud-managed smart locks to enforce who enters — and exactly when.
-        </p>
 
-        <div class="feature-grid three-col">
-          <div class="feature-card">
-            <div class="card-icon-box bg-indigo">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <!-- Hero Header with Seamless Thematic Right-Fading Background -->
+      <div class="cctv-hero-header">
+        <div class="container cctv-header-content">
+          <div class="cctv-badge">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+            P &amp; S Security Solutions
+          </div>
+
+          <h2 class="cctv-main-title">
+            Access Control &amp; <span class="text-blue-highlight">Secure Entry</span> Solutions
+          </h2>
+
+          <p class="cctv-main-lede">
+            Control who can enter, where they can enter and when they can enter. Modern biometric, facial recognition, RFID and smart credentials for flexible multi-door management.
+          </p>
+        </div>
+      </div>
+
+      <div class="container cctv-body-container">
+        <!-- 3 Feature Cards Grid -->
+        <div class="cctv-cards-grid">
+          
+          <!-- Card 1: Biometric & Facial Recognition -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/access_biometric.jpg" alt="Biometric &amp; Facial Recognition" class="cctv-card-img">
+            </div>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04.054-.09A13.916 13.916 0 0 0 8 11a4 4 0 1 1 8 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0 0 15.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 0 0 8 4.07"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Biometric &amp; Facial Recognition</h3>
+              <p class="cctv-card-desc">
+                Frictionless, lightning-fast identity verification using advanced 3D face recognition terminals and anti-spoof biometric fingerprint scanners.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Sub-second AI facial recognition &amp; liveness</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Optical &amp; capacitive biometric fingerprint readers</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Encrypted contactless RFID &amp; NFC smart cards</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#chapter-security" class="cctv-learn-more blue">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#chapter-security" class="cctv-circle-btn blue" aria-label="Learn more about Biometrics">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Smart Video Intercoms & Remote Release -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/access_intercom.jpg" alt="Smart Video Intercoms &amp; Remote Release" class="cctv-card-img">
+            </div>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float green">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Smart Video Intercoms &amp; Gates</h3>
+              <p class="cctv-card-desc">
+                See, speak with and grant entry to visitors from indoor touchscreen stations or anywhere in the world via your mobile phone.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>HD wide-angle camera with night vision stations</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>Two-way crystal clear audio noise cancellation</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon green">✓</span>
+                  <span>One-tap remote door, gate &amp; barrier release</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#chapter-security" class="cctv-learn-more">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#chapter-security" class="cctv-circle-btn" aria-label="Learn more about Video Intercoms">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Central Multi-Door & Audit Logs -->
+          <div class="cctv-card">
+            <div class="cctv-card-img-wrap">
+              <img src="assets/access_lock.jpg" alt="Central Multi-Door &amp; Audit Logs" class="cctv-card-img">
+            </div>
+            <div class="cctv-card-body">
+              <div class="cctv-icon-float blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+                  <rect x="9" y="3" width="6" height="4" rx="2"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+              <h3 class="cctv-card-title">Central Multi-Door &amp; Audit Logs</h3>
+              <p class="cctv-card-desc">
+                Centrally manage access rights, schedule automatic lock/unlock times, and inspect detailed audit trails of all entry activity.
+              </p>
+              <ul class="cctv-checklist">
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Multi-door network controllers &amp; maglocks</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Time-restricted schedules &amp; temporary PINs</span>
+                </li>
+                <li>
+                  <span class="cctv-check-icon blue">✓</span>
+                  <span>Complete audit trails &amp; attendance export</span>
+                </li>
+              </ul>
+              <div class="cctv-card-footer">
+                <a href="#chapter-security" class="cctv-learn-more">
+                  <span>Learn More</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#chapter-security" class="cctv-circle-btn" aria-label="Learn more about Multi-Door Audit Logs">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Single Horizontal 6-Column Spec Ribbon -->
+        <div class="cctv-spec-ribbon">
+          <!-- 1. Face Recognition -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon blue-bg">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>AI Face</span>
+              <span>Recognition</span>
+            </div>
+          </div>
+
+          <!-- 2. Biometric Scan -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04.054-.09A13.916 13.916 0 0 0 8 11a4 4 0 1 1 8 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0 0 15.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 0 0 8 4.07"/>
               </svg>
             </div>
-            <h3>Biometric Multi-Factor Authentication</h3>
-            <p>Fingerprint, facial recognition, and iris scanning combined with mobile-app approval provide layered identity verification resistant to spoofing and credential theft.</p>
-            <ul class="spec-list">
-              <li>Sub-500ms Fingerprint Match Speed</li>
-              <li>3D Liveness Anti-Spoofing Detection</li>
-              <li>Offline Biometric Fallback Mode</li>
-            </ul>
+            <div class="spec-ribbon-label">
+              <span>Biometric</span>
+              <span>Fingerprint</span>
+            </div>
           </div>
 
-          <div class="feature-card featured">
-            <div class="card-badge">Core Access Architecture</div>
-            <div class="card-icon-box bg-blue">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          <!-- 3. Smart Keycards -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="2"/>
+                <line x1="2" y1="10" x2="22" y2="10"/>
               </svg>
             </div>
-            <h3>Smart Lock &amp; Credential Management</h3>
-            <p>Remotely grant, revoke, or schedule access permissions from any device. Time-bound digital keys for contractors, guests, and vendors expire automatically without manual intervention.</p>
-            <ul class="spec-list">
-              <li>AES-256 Encrypted RFID &amp; NFC Fobs</li>
-              <li>Mobile Bluetooth &amp; App-Based Unlock</li>
-              <li>Instant Remote Lock/Unlock Override</li>
-            </ul>
+            <div class="spec-ribbon-label">
+              <span>RFID &amp; NFC</span>
+              <span>Keycards</span>
+            </div>
           </div>
 
-          <div class="feature-card">
-            <div class="card-icon-box bg-emerald">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <!-- 4. Video Intercom -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>HD Video</span>
+              <span>Intercoms</span>
+            </div>
+          </div>
+
+          <!-- 5. Remote Release -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
+              </svg>
+            </div>
+            <div class="spec-ribbon-label">
+              <span>Remote Gate</span>
+              <span>Release</span>
+            </div>
+          </div>
+
+          <!-- 6. Audit Logging -->
+          <div class="spec-ribbon-item">
+            <div class="spec-ribbon-icon outline">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
                 <rect x="9" y="3" width="6" height="4" rx="2"/>
                 <path d="m9 12 2 2 4-4"/>
               </svg>
             </div>
-            <h3>Visitor Management &amp; Audit Trail</h3>
-            <p>Pre-register visitors digitally with photo capture and document verification. Every entry and exit is timestamped, geo-tagged, and stored with tamper-proof cloud audit logs.</p>
-            <ul class="spec-list">
-              <li>QR Code Pre-Registration &amp; Self Check-In</li>
-              <li>Real-Time Occupancy Dashboard</li>
-              <li>Compliance-Ready Export Reports</li>
-            </ul>
+            <div class="spec-ribbon-label">
+              <span>Audit Trail</span>
+              <span>Attendance</span>
+            </div>
           </div>
-        </div>
 
-        <!-- Stats Ribbon -->
-        <div class="stats-ribbon">
-          <div class="stat-item">
-            <div class="stat-number">&lt;0.5s</div>
-            <div class="stat-label">Biometric Auth Speed</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">AES-256</div>
-            <div class="stat-label">Credential Encryption</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Tamper-Proof Audit Log</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">24/7</div>
-            <div class="stat-label">Remote Management</div>
-          </div>
         </div>
       </div>
     </section>
   </div>
 
-  <!-- Final Footer & Contact Call to Action -->
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="brand-text large">P &amp; S <span class="brand-sub">SECURITY SOLUTIONS</span></div>
-          <p>Precision-engineered smart security, dynamic climate automation, proactive hazard alarms, and high-performance networks.</p>
-        </div>
-        <div class="footer-cta">
-          <a href="#chapter-security" class="btn-primary">Return to Beginning</a>
+  <!-- ========================================================
+       LUXURY ARCHITECTURAL FOOTER
+       ======================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-content">
+      
+      <!-- Pre-Footer Action Banner -->
+      <div class="footer-pre-banner">
+        <div class="footer-cta-card">
+          <div class="footer-cta-text">
+            <h3>Planning a New Architectural Build or <span>Security Upgrade?</span></h3>
+            <p>Schedule a complimentary on-site engineering survey and get tailored CAD camera layouts and automation blueprints within 48 hours.</p>
+          </div>
+          <div class="footer-cta-buttons">
+            <a href="tel:+919845012345" class="footer-btn-secondary">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.36 2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 98450 12345</span>
+            </a>
+            <a href="contact.html" class="footer-btn-primary">
+              <span>Request CAD Blueprint</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 P &amp; S Security Solutions. All rights reserved.</p>
+
+      <!-- Main Multi-Column Footer Grid -->
+      <div class="footer-main-grid">
+        
+        <!-- Column 1: Brand & Credibility -->
+        <div class="footer-brand-col">
+          <a href="index.html">
+            <img src="assets/logo-white.png" alt="P & S Security Solutions" class="footer-brand-logo">
+          </a>
+          <div class="footer-tagline-badge">SECURE &bull; SMART &bull; CONNECTED</div>
+          <p class="footer-brand-desc">
+            Precision-engineered electronic surveillance, intelligent climate automation, life-safety alarms, and high-performance network backbones across elite residences and commercial facilities.
+          </p>
+          <div class="footer-cert-badges">
+            <span class="cert-pill">ISO 9001:2015</span>
+            <span class="cert-pill">Hikvision Diamond</span>
+            <span class="cert-pill">UniFi Certified</span>
+            <span class="cert-pill">KNX Partner</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Core Disciplines -->
+        <div class="footer-col">
+          <h4>Core Disciplines</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html"><span class="chevron">›</span> AI CCTV Surveillance</a></li>
+            <li><a href="services.html"><span class="chevron">›</span> Smart Climate &amp; BLDC Fans</a></li>
+            <li><a href="services.html"><span class="chevron">›</span> Lighting &amp; Motorized Drapes</a></li>
+            <li><a href="services.html"><span class="chevron">›</span> Life-Safety &amp; Gas Alarms</a></li>
+            <li><a href="services.html"><span class="chevron">›</span> Enterprise Wi-Fi 6 Mesh</a></li>
+            <li><a href="services.html"><span class="chevron">›</span> Biometric Access &amp; Gates</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Navigation & Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><span class="chevron">›</span> Interactive Experience</a></li>
+            <li><a href="about.html"><span class="chevron">›</span> About Our Engineering</a></li>
+            <li><a href="services.html"><span class="chevron">›</span> Solutions &amp; Tiers</a></li>
+            <li><a href="testimonials.html"><span class="chevron">›</span> Client Case Studies</a></li>
+            <li><a href="contact.html"><span class="chevron">›</span> Request Site Survey</a></li>
+            <li><a href="contact.html"><span class="chevron">›</span> Annual AMC Contracts</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Studio -->
+        <div class="footer-col">
+          <h4>Experience Studio</h4>
+          <div class="footer-contact-details">
+            <div class="footer-contact-item">
+              <div class="footer-contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="footer-contact-text">
+                <strong>Outer Ring Road Corridor</strong>
+                <span>P&amp;S Tower, 4th Floor, Bengaluru, KA 560103</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <div class="footer-contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="footer-contact-text">
+                <strong>Engineering Desk</strong>
+                <a href="mailto:solutions@pssecurity.in">solutions@pssecurity.in</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <div class="footer-contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="footer-contact-text">
+                <strong>Studio Hours</strong>
+                <span>Mon – Sat: 9:00 AM – 7:30 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 5: 24/7 Rapid Emergency Dispatch -->
+        <div class="footer-col">
+          <h4>Emergency NOC</h4>
+          <div class="footer-emergency-box">
+            <div class="emergency-header">
+              <div class="pulse-indicator"></div>
+              <span>24/7 Active Dispatch</span>
+            </div>
+            <a href="tel:+919845099911" class="emergency-phone">+91 98450 99911</a>
+            <p class="emergency-desc">
+              Dedicated rapid response line for active AMC clients. Guaranteed &lt; 30 min technician dispatch for critical outages.
+            </p>
+          </div>
+        </div>
+
       </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="footer-bottom-copy">&copy; 2026 P &amp; S Security Solutions. All rights reserved.</p>
+        <div class="footer-trust-strip">
+          <span>AES-256 Encrypted</span>
+          <span class="dot">&bull;</span>
+          <span>Zero Cloud Video Leaks</span>
+          <span class="dot">&bull;</span>
+          <span>3-Year Hardware Warranty Standard</span>
+        </div>
+        <a href="#" class="footer-scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+          <span>Back to Top</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+
     </div>
   </footer>
 
