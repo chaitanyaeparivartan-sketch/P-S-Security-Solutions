@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const logoZoomOverlay    = document.getElementById('logoZoomOverlay');
   const zoomMaskLayer      = document.getElementById('zoomMaskLayer');
   const zoomSolidLayer     = document.getElementById('zoomSolidLayer');
+  const zoomTextLayer      = document.getElementById('zoomTextLayer');
   const introScrollPrompt  = document.getElementById('introScrollPrompt');
+  const introTagline       = document.getElementById('introTagline');
   const hudOverlay1        = document.getElementById('hudOverlay1');
   const mainNavbar         = document.getElementById('main-navbar');
 
@@ -222,7 +224,12 @@ document.addEventListener('DOMContentLoaded', () => {
           zoomMaskLayer.style.opacity = '1';
           zoomMaskLayer.style.transform = 'scale(1)';
           zoomSolidLayer.style.transform = 'scale(1)';
+          if (zoomTextLayer) {
+            zoomTextLayer.style.opacity = '1';
+            zoomTextLayer.style.transform = 'scale(1)';
+          }
           if (introScrollPrompt) introScrollPrompt.style.opacity = '1';
+          if (introTagline) introTagline.style.opacity = '1';
           if (hudOverlay1) hudOverlay1.style.opacity = '0';
           chapter.targetProgress = 0;
           setNavbarOpacity(0, -12);
@@ -245,6 +252,12 @@ document.addEventListener('DOMContentLoaded', () => {
           const currentScale = 1.0 + Math.pow(zoomProg, 2.2) * 46.0;
           zoomMaskLayer.style.transform = `scale(${currentScale.toFixed(3)})`;
           zoomSolidLayer.style.transform = `scale(${currentScale.toFixed(3)})`;
+
+          // Tagline zooms and crossfades in exact sync with the logo
+          if (zoomTextLayer) {
+            zoomTextLayer.style.opacity = `${solidAlpha.toFixed(3)}`;
+            zoomTextLayer.style.transform = `scale(${currentScale.toFixed(3)})`;
+          }
 
           // Fade out remaining mask borders as scale clears screen
           if (zoomProg > 0.75) {

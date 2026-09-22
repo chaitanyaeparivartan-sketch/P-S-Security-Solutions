@@ -479,6 +479,55 @@ body {
   background-color: #ffffff;
 }
 
+.zoom-text-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform-origin: 50% 50%;
+  will-change: transform, opacity;
+  z-index: 3;
+}
+
+.zoom-aspect-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 56.25vw;
+  min-width: 177.78vh;
+  min-height: 100vh;
+  pointer-events: none;
+}
+
+.intro-tagline {
+  position: absolute;
+  top: 62.5%;
+  left: 46.41%;
+  width: 21.82%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  color: #0d2e6b;
+  font-family: var(--font-family-sans);
+  font-size: clamp(0.72rem, 0.95vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity var(--motion-duration-normal) ease;
+}
+
+.intro-tagline .tagline-dot {
+  font-size: 0.7em;
+  opacity: 0.65;
+  color: #0d2e6b;
+}
+
 .intro-scroll-prompt {
   position: absolute;
   bottom: 38px;
