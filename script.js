@@ -196,6 +196,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Calculate target scrub progress and logo zoom on scroll
   function onScroll() {
     const windowHeight = window.innerHeight;
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    const zoomDistance = windowHeight * 1.1;
+
+    // Sticky navbar persistence: ensure navbar stays 100% visible once past the intro zoom
+    if (scrollY >= zoomDistance) {
+      setNavbarOpacity(1, 0);
+    }
 
     chapters.forEach((chapter) => {
       if (!chapter.container || !chapter.canvas) return;
