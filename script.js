@@ -5,11 +5,21 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // Chapter 1 Logo Zoom Elements
-  const logoZoomOverlay = document.getElementById('logoZoomOverlay');
-  const zoomMaskLayer = document.getElementById('zoomMaskLayer');
-  const zoomSolidLayer = document.getElementById('zoomSolidLayer');
-  const introScrollPrompt = document.getElementById('introScrollPrompt');
-  const hudOverlay1 = document.getElementById('hudOverlay1');
+  const logoZoomOverlay    = document.getElementById('logoZoomOverlay');
+  const zoomMaskLayer      = document.getElementById('zoomMaskLayer');
+  const zoomSolidLayer     = document.getElementById('zoomSolidLayer');
+  const introScrollPrompt  = document.getElementById('introScrollPrompt');
+  const hudOverlay1        = document.getElementById('hudOverlay1');
+  const mainNavbar         = document.getElementById('main-navbar');
+
+  // Drive the hero navbar with a 0-1 opacity + optional translateY offset
+  function setNavbarOpacity(opacity, translateY) {
+    if (!mainNavbar) return;
+    const clamped = Math.min(1, Math.max(0, opacity));
+    mainNavbar.style.opacity       = clamped.toFixed(3);
+    mainNavbar.style.pointerEvents = clamped > 0.05 ? 'auto' : 'none';
+    mainNavbar.style.transform     = `translateY(${(translateY || 0).toFixed(1)}px)`;
+  }
 
   // Chapters configuration for WebP frame sequences (numbered 1 to 5, 30fps / 300 frames)
   const chapters = [
@@ -74,6 +84,20 @@ document.addEventListener('DOMContentLoaded', () => {
       container: document.getElementById('chapter-network'),
       canvas: document.getElementById('canvas5'),
       folder: 'frames/5',
+      totalFrames: 300,
+      isIntro: false,
+      images: [],
+      loaded: [],
+      targetProgress: 0,
+      currentProgress: 0,
+      currentFrameIndex: -1,
+      ctx: null
+    },
+    {
+      id: 'access',
+      container: document.getElementById('chapter-access'),
+      canvas: document.getElementById('canvas6'),
+      folder: 'frames/6',
       totalFrames: 300,
       isIntro: false,
       images: [],
@@ -191,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const sequenceScrubDistance = Math.max(totalSpacerHeight - zoomDistance, windowHeight);
 
         if (scrolled <= 0) {
-          // 1. Initial State: Small Centered Logo on White Canvas
+          // 1. Initial State: White logo screen — navbar fully hidden
           logoZoomOverlay.style.display = 'flex';
           logoZoomOverlay.style.opacity = '1';
           zoomSolidLayer.style.opacity = '1';
@@ -201,6 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (introScrollPrompt) introScrollPrompt.style.opacity = '1';
           if (hudOverlay1) hudOverlay1.style.opacity = '0';
           chapter.targetProgress = 0;
+          setNavbarOpacity(0, -12);
         } else if (scrolled < zoomDistance) {
           // 2. Zooming in: Solid logo crossfades to transparent mask revealing Canvas sequence
           const zoomProg = scrolled / zoomDistance;
@@ -223,28 +248,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
           // Fade out remaining mask borders as scale clears screen
           if (zoomProg > 0.75) {
-            const maskFade = Math.max(0, (1.0 - zoomProg) / 0.25);
+            const revealProg = (zoomProg - 0.75) / 0.25;  // 0 → 1 as zoom finishes
+            const maskFade = Math.max(0, 1.0 - revealProg);
             logoZoomOverlay.style.opacity = `${maskFade.toFixed(3)}`;
             if (hudOverlay1) {
-              hudOverlay1.style.opacity = `${Math.min(1, (zoomProg - 0.75) / 0.25).toFixed(3)}`;
+              hudOverlay1.style.opacity = `${Math.min(1, revealProg).toFixed(3)}`;
             }
+            // Navbar slides in from -12px to 0 in exact sync with the reveal
+            const navY = -12 * (1 - revealProg);
+            setNavbarOpacity(revealProg, navY);
           } else {
             logoZoomOverlay.style.opacity = '1';
             if (hudOverlay1) hudOverlay1.style.opacity = '0';
+            setNavbarOpacity(0, -12);
           }
 
           chapter.targetProgress = 0;
         } else if (scrolled < totalSpacerHeight) {
-          // 3. Zoom reveal complete -> Canvas Sequence scrubs to last frame
+          // 3. Video scrubbing — navbar fully visible at top
           logoZoomOverlay.style.display = 'none';
           if (hudOverlay1) hudOverlay1.style.opacity = '1';
+          setNavbarOpacity(1, 0);
 
           const scrubScrolled = scrolled - zoomDistance;
           chapter.targetProgress = Math.min(Math.max(scrubScrolled / sequenceScrubDistance, 0), 1);
         } else {
-          // 4. Last frame reached: Locked at final frame while white card slides over
+          // 4. Last frame locked — navbar stays (gets covered by white card sliding over)
           logoZoomOverlay.style.display = 'none';
           if (hudOverlay1) hudOverlay1.style.opacity = '1';
+          setNavbarOpacity(1, 0);
           chapter.targetProgress = 1.0;
         }
       } else {

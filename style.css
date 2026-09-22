@@ -115,20 +115,27 @@ body {
 }
 
 
+/* ========================================================
+   NAVBAR — Hero Video Overlay
+   ======================================================== */
 
-/* Navbar */
+/* Sits at the very top of the sticky-video-stage (position:sticky/relative context) */
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
-  padding: 14px 28px;
-  background: rgba(7, 9, 14, 0.75);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  transition: all 0.3s ease;
+  z-index: 50;
+  padding: 16px 36px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 100%);
+  backdrop-filter: none;
+  border-bottom: none;
+  /* Hidden by default — JS drives opacity + translateY in sync with the hero zoom reveal */
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-12px);
+  /* No CSS transition on opacity/transform — scroll-driven values need no lag */
+  transition: padding 0.3s ease;
 }
 
 .nav-container {
@@ -137,118 +144,105 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
 }
 
+/* Logo image */
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
-  color: var(--text-light);
+  flex-shrink: 0;
+  /* White frosted pill background so the dark-navy logo is clearly visible */
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 5px 14px 5px 10px;
+  border-radius: 999px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.brand-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  background: linear-gradient(135deg, #1e293b, #0f172a);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: var(--radius-sm);
-  color: var(--accent-cyan);
+.nav-brand:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.22);
+  transform: scale(1.02);
 }
 
-.brand-text {
-  font-family: var(--font-family-primary);
-  font-size: var(--font-size-xl);
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  color: #fff;
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  /* No filter or blend-mode needed — white pill bg shows the logo in full color */
+  opacity: 1;
+  transition: opacity 0.2s ease;
 }
 
-.brand-text.large {
-  font-size: var(--font-size-4xl);
-  margin-bottom: var(--space-4);
-}
-
-.brand-sub {
-  color: var(--accent-cyan);
-  font-weight: 600;
-  margin-left: 3px;
-  font-size: var(--font-size-sm);
-}
-
+/* Nav links pill group */
 .nav-links {
   display: flex;
   align-items: center;
-  gap: var(--space-1);
-  background: rgba(255, 255, 255, 0.04);
-  padding: 4px var(--space-2);
-  border-radius: var(--radius-full);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  gap: 2px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 4px 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .nav-link {
-  color: var(--text-light-muted);
+  color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
-  font-size: var(--font-size-sm);
+  font-size: 13.5px;
   font-weight: 500;
-  padding: var(--space-1) var(--space-4);
-  border-radius: var(--radius-full);
-  transition: all var(--motion-duration-fast) ease;
+  letter-spacing: 0.01em;
+  padding: 6px 14px;
+  border-radius: 999px;
+  transition: color 0.15s ease, background 0.15s ease;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover {
   color: #fff;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.14);
 }
 
-.nav-link:focus-visible {
-  outline: 2px solid var(--primary);
-  outline-offset: 2px;
+.nav-link.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+  font-weight: 600;
 }
 
-.nav-link:active {
-  transform: scale(0.98);
-}
-
-.btn-pill {
+/* Contact CTA button */
+.btn-contact {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-2);
-  background: rgba(255, 255, 255, 0.1);
+  gap: 7px;
+  background: var(--primary);
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: var(--space-2) var(--space-6);
-  border-radius: var(--radius-full);
-  font-size: var(--font-size-sm);
+  border: none;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 13.5px;
   font-weight: 600;
+  text-decoration: none;
   cursor: pointer;
-  transition: all var(--motion-duration-fast) ease;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 4px 14px rgba(37,99,235,0.4);
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+  flex-shrink: 0;
 }
 
-.btn-pill:hover {
-  background: var(--primary);
-  border-color: var(--primary);
-  box-shadow: 0 0 16px var(--primary-glow);
+.btn-contact:hover {
+  background: #1d4ed8;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.18), 0 6px 20px rgba(37,99,235,0.55);
   transform: translateY(-1px);
 }
 
-.btn-pill:focus-visible {
-  outline: 2px solid var(--primary);
-  outline-offset: 2px;
-}
-
-.btn-pill:active {
+.btn-contact:active {
   transform: translateY(0);
 }
 
-.btn-pill:disabled, .btn-pill[aria-disabled="true"] {
-  opacity: 0.5;
-  cursor: not-allowed;
-  pointer-events: none;
-}
 
 .btn-primary {
   display: inline-flex;
@@ -560,14 +554,17 @@ body {
   padding: clamp(24px, 5vw, 64px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
   pointer-events: none;
   z-index: 10;
 }
 
 .hud-top-left {
-  max-width: 600px;
+  max-width: 700px;
+  text-align: center;
   animation: fadeIn 0.8s ease;
+  margin-bottom: 16px;
 }
 
 .hud-tag {
@@ -609,21 +606,24 @@ body {
 
 .hud-title {
   font-family: var(--font-family-primary);
-  font-size: clamp(24px, 3.2vw, var(--font-size-4xl));
+  font-size: clamp(28px, 3.8vw, 52px);
   font-weight: 700;
   color: #ffffff;
-  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.7);
-  line-height: 1.2;
-  margin-bottom: var(--space-2);
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.8), 0 2px 8px rgba(0,0,0,0.6);
+  line-height: 1.15;
+  margin-bottom: var(--space-4);
   letter-spacing: -0.02em;
+  text-align: center;
 }
 
 .hud-subtitle {
-  font-size: var(--font-size-md);
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.85);
+  font-size: clamp(14px, 1.4vw, 18px);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-  max-width: 520px;
+  max-width: 580px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hud-bottom-bar {

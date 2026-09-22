@@ -4,6 +4,7 @@
 *.zip
 *.tar
 *.tar.gz
+*.py
 
 # macOS system files
 .DS_Store
