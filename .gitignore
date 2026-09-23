@@ -11,3 +11,7 @@
 .AppleDouble
 .LSOverride
 ._*
+
+# Unutilized files dump
+dump/
+

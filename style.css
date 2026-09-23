@@ -3,13 +3,14 @@
    ======================================================== */
 
 :root {
-  /* Magnific Typography Tokens */
-  --font-family-primary: 'Geist', 'geist Fallback', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-family-stack: 'Geist', 'geist Fallback', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* Typography Tokens (Matching services.html) */
+  --font-family-primary: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-stack: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', 'Inter', sans-serif;
   --font-family-mono: 'Geist Mono', 'Space Grotesk', monospace;
 
   /* Aliases for backwards compatibility */
-  --font-display: var(--font-family-primary);
+  --font-display: var(--font-heading);
   --font-mono: var(--font-family-mono);
 
   --font-size-base: 15px;
@@ -167,20 +168,20 @@ body {
   flex-shrink: 0;
   height: 45px;
   box-sizing: border-box;
-  background: rgba(11, 23, 40, 0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(0, 0, 0, 0.07);
   padding: 2px 14px 2px 10px;
   border-radius: 999px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.25), 0 4px 14px rgba(0, 0, 0, 0.16);
   transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .nav-brand:hover {
-  background: rgba(15, 29, 52, 0.85);
-  border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.32);
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.32), 0 6px 18px rgba(0, 0, 0, 0.18);
   transform: scale(1.02);
 }
 
@@ -193,7 +194,7 @@ body {
   transition: opacity 0.2s ease;
 }
 
-/* Nav links pill group */
+/* Nav links pill group — White shade translucent luxury pill */
 .nav-links {
   position: relative;
   display: flex;
@@ -201,13 +202,13 @@ body {
   gap: 3px;
   height: 45px;
   box-sizing: border-box;
-  background: rgba(11, 23, 40, 0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   padding: 3px 4px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.25), 0 4px 14px rgba(0, 0, 0, 0.16);
   margin-left: auto;
 }
 
@@ -217,15 +218,15 @@ body {
   top: 3px;
   left: 0;
   height: 37px;
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(15, 23, 42, 0.06);
   border-radius: 999px;
   pointer-events: none;
   z-index: 1;
   transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1),
               width 0.35s cubic-bezier(0.25, 1, 0.5, 1),
               opacity 0.2s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
   box-sizing: border-box;
   opacity: 0;
 }
@@ -237,7 +238,7 @@ body {
   align-items: center;
   height: 37px;
   box-sizing: border-box;
-  color: rgba(255, 255, 255, 0.75);
+  color: #475569;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -249,45 +250,63 @@ body {
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: #0f172a;
 }
 
 .nav-link.active {
-  color: #fff;
+  color: #0f172a;
   font-weight: 600;
 }
 
-/* Contact CTA button inside the navbar pill */
+/* Contact CTA button inside the navbar pill — Luxury Black Pill with Circle Arrow */
 .btn-contact {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  height: 37px;
+  gap: 10px;
+  height: 36px;
   box-sizing: border-box;
-  background: var(--primary);
-  color: #fff;
-  border: none;
-  padding: 0 15px;
-  margin-left: 3px;
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 3px 4px 3px 15px;
+  margin-left: 5px;
   border-radius: 999px;
-  font-size: 14px;
-  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 3px 12px rgba(37,99,235,0.4);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
   flex-shrink: 0;
 }
 
 .btn-contact:hover {
-  background: #1d4ed8;
-  color: #fff;
-  box-shadow: 0 0 0 1px rgba(255,255,255,0.18), 0 5px 18px rgba(37,99,235,0.55);
+  background: #18181b;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
   transform: translateY(-1px);
+}
+
+.btn-contact:hover .btn-contact-arrow {
+  transform: translateX(2px);
 }
 
 .btn-contact:active {
   transform: translateY(0);
+}
+
+.btn-contact-arrow {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
 }
 
 
@@ -1821,98 +1840,53 @@ body {
 .cctv-hero-header {
   position: relative;
   background-color: #ffffff;
-  padding: 70px 0 35px;
-  overflow: hidden;
-  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+  padding: 60px 0 25px;
 }
 
-.cctv-hero-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  background-image: url('assets/cctv_hero_bg.jpg');
-  background-size: cover;
-  background-position: right center;
-  z-index: 1;
-}
-
-#info-security .cctv-hero-header::before {
-  background-image: url('assets/cctv_hero_bg.jpg');
-}
-
-#info-automation-1 .cctv-hero-header::before {
-  background-image: url('assets/climate_hero_bg.jpg');
-}
-
-#info-automation-2 .cctv-hero-header::before {
-  background-image: url('assets/automation_hero_bg.jpg');
-}
-
-#info-alarms .cctv-hero-header::before {
-  background-image: url('assets/alarms_hero_bg.jpg');
-}
-
-#info-network .cctv-hero-header::before {
-  background-image: url('assets/network_hero_bg.jpg');
-}
-
-#info-access .cctv-hero-header::before {
-  background-image: url('assets/access_hero_bg.jpg');
-}
-
+.cctv-hero-header::before,
 .cctv-hero-header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    #ffffff 0%,
-    #ffffff 42%,
-    rgba(255, 255, 255, 0.96) 54%,
-    rgba(255, 255, 255, 0.35) 70%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  z-index: 2;
-  pointer-events: none;
+  display: none !important;
 }
 
 .cctv-header-content {
   position: relative;
   z-index: 3;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
   padding-left: 24px;
   padding-right: 24px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cctv-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #f0f7ff;
-  border: 1px solid rgba(2, 132, 199, 0.24);
+  background: rgba(2, 132, 199, 0.08);
+  border: 1px solid rgba(2, 132, 199, 0.22);
   color: #0284c7;
-  font-family: var(--font-family-primary);
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-weight: 600;
   padding: 5px 16px;
   border-radius: 9999px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  letter-spacing: 0.01em;
 }
 
 .cctv-main-title {
-  font-family: var(--font-family-primary);
-  font-size: clamp(34px, 3.8vw, 52px);
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(30px, 3.4vw, 44px);
   font-weight: 800;
-  line-height: 1.14;
+  line-height: 1.2;
   letter-spacing: -0.025em;
   color: #0f172a;
-  margin-bottom: 18px;
+  margin: 0 0 16px 0;
+  text-align: center;
 }
 
 .cctv-main-title .text-blue-highlight {
@@ -1920,12 +1894,14 @@ body {
 }
 
 .cctv-main-lede {
-  max-width: 580px;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #475569;
-  margin: 0;
-  font-weight: 450;
+  max-width: 680px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #64748b;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400;
 }
 
 .cctv-body-container {
@@ -1942,28 +1918,37 @@ body {
   margin-bottom: 30px;
 }
 
-/* Default Plain White Card (matches Image 2) */
+/* Default Plain White Card (matches services.html card exactly) */
 .cctv-card {
   background: #ffffff;
-  border-radius: 22px;
-  overflow: hidden;
-  border: 1px solid rgba(226, 232, 240, 0.85);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 28px;
+  border: 1px solid #f1f5f9;
+  padding: 12px 12px 18px 12px;
+  box-shadow: 0 10px 30px -6px rgba(15, 23, 42, 0.06), 0 2px 8px rgba(15, 23, 42, 0.03);
   display: flex;
   flex-direction: column;
-  transition: background 0.35s cubic-bezier(0.25, 1, 0.5, 1),
-              border-color 0.35s ease,
-              transform 0.35s cubic-bezier(0.25, 1, 0.5, 1),
-              box-shadow 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  position: relative;
   cursor: pointer;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.cctv-card:hover {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  transform: translateY(-6px) !important;
+  box-shadow: 0 24px 50px -10px rgba(15, 23, 42, 0.1), 0 8px 20px -4px rgba(15, 23, 42, 0.05) !important;
 }
 
 .cctv-card-img-wrap {
   width: 100%;
-  height: 200px;
+  height: 230px;
+  border-radius: 20px;
   overflow: hidden;
   position: relative;
-  background: #e2e8f0;
+  background: #f1f5f9;
 }
 
 .cctv-card-img {
@@ -1971,179 +1956,161 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.5s ease;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cctv-card:hover .cctv-card-img {
+  transform: scale(1.05);
 }
 
 .cctv-card-body {
-  padding: 24px 26px 26px;
+  padding: 16px 8px 4px 8px;
   display: flex;
   flex-direction: column;
   flex: 1;
-  position: relative;
 }
 
 .cctv-icon-float {
-  position: absolute;
-  top: -25px;
-  left: 24px;
-  width: 48px;
-  height: 48px;
-  border-radius: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-  z-index: 5;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cctv-icon-float.blue {
-  background: #0284c7;
-  color: #ffffff;
-}
-
-.cctv-icon-float.green {
-  background: #10b981;
-  color: #ffffff;
+  display: none !important;
 }
 
 .cctv-card-title {
-  font-family: var(--font-family-primary);
-  font-size: 20px;
-  font-weight: 700;
-  color: #0f172a;
-  margin-top: 14px;
-  margin-bottom: 12px;
-  line-height: 1.3;
-  transition: color 0.3s ease;
+  font-family: inherit;
+  font-size: 19px;
+  font-weight: 650;
+  color: #0f172a !important;
+  line-height: 1.25;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.02em;
 }
 
 .cctv-card-desc {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.55;
-  color: #64748b;
-  margin-bottom: 22px;
-  transition: color 0.3s ease;
+  color: #64748b !important;
+  margin-bottom: 16px;
 }
 
 .cctv-checklist {
   list-style: none;
   padding: 0;
-  margin: 0 0 auto 0;
+  margin: 0 0 16px 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .cctv-checklist li {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 14px;
-  color: #475569;
+  font-size: 13px;
+  color: #475569 !important;
   font-weight: 500;
-  line-height: 1.45;
-  transition: color 0.3s ease;
+  line-height: 1.4;
 }
 
 .cctv-check-icon {
-  width: 19px;
-  height: 19px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 800;
-  color: #ffffff;
+  color: #ffffff !important;
   flex-shrink: 0;
   margin-top: 1px;
-  background: #0284c7;
-  transition: background 0.3s ease;
+  background: #0284c7 !important;
 }
 
 .cctv-check-icon.green {
-  background: #0284c7;
+  background: #10b981 !important;
 }
 
 .cctv-card-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 26px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(0, 0, 0, 0.07);
-  transition: border-color 0.3s ease;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
 }
 
 .cctv-learn-more {
   display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #0284c7;
+  align-items: baseline;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 750;
+  color: #0f172a !important;
+  letter-spacing: -0.02em;
   text-decoration: none;
-  transition: color 0.3s ease, gap 0.2s ease;
+  pointer-events: none;
 }
 
+.cctv-learn-more svg {
+  display: none;
+}
+
+.cctv-learn-more span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cctv-learn-more span::after {
+  content: " / Turnkey";
+  font-size: 12px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+/* Black Pill Button with Circular White Arrow (Exact services.html Match) */
 .cctv-circle-btn {
-  width: 38px;
-  height: 38px;
+  background: #000000 !important;
+  color: #ffffff !important;
+  border-radius: 9999px !important;
+  padding: 6px 6px 6px 14px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  width: auto !important;
+  height: auto !important;
+  text-decoration: none !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18) !important;
+}
+
+.cctv-circle-btn::before {
+  content: "Book Now";
+  color: #ffffff;
+}
+
+.cctv-circle-btn svg {
+  width: 11px;
+  height: 11px;
+  color: #000000;
+  background: #ffffff;
   border-radius: 50%;
-  background: #e0f2fe;
-  color: #0284c7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  padding: 5px;
+  box-sizing: content-box;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
 }
 
-/* ========================================================
-   HOVER STATE: TRANSFORMS INTO LUXURY DARK CARD (Image 1)
-   ======================================================== */
-.cctv-card:hover {
-  background: #0f1f38 !important;
-  border-color: rgba(255, 255, 255, 0.12) !important;
-  transform: translateY(-6px);
-  box-shadow: 0 20px 48px rgba(15, 31, 56, 0.32);
+.cctv-circle-btn:hover {
+  background: #2563eb !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.28) !important;
 }
 
-.cctv-card:hover .cctv-card-img {
-  transform: scale(1.04);
-}
-
-.cctv-card:hover .cctv-icon-float {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-}
-
-.cctv-card:hover .cctv-card-title {
-  color: #ffffff !important;
-}
-
-.cctv-card:hover .cctv-card-desc {
-  color: #94a3b8 !important;
-}
-
-.cctv-card:hover .cctv-checklist li {
-  color: #cbd5e1 !important;
-}
-
-/* Checkmarks in hover state: vibrant emerald green (Image 1) */
-.cctv-card:hover .cctv-check-icon.green,
-.cctv-card:hover .cctv-check-icon {
-  background: #10b981 !important;
-  color: #ffffff !important;
-}
-
-.cctv-card:hover .cctv-card-footer {
-  border-top-color: rgba(255, 255, 255, 0.12) !important;
-}
-
-.cctv-card:hover .cctv-learn-more {
-  color: #ffffff !important;
-  gap: 10px;
+.cctv-circle-btn:hover svg {
+  color: #2563eb;
+  transform: translate(1px, -1px);
 }
 
 .cctv-card:hover .cctv-circle-btn {
@@ -2152,29 +2119,39 @@ body {
   transform: scale(1.06);
 }
 
-/* Single Horizontal 6-Column Spec Ribbon */
+/* Single Horizontal Spec Ribbon (Marquee Scrolling) */
+marquee.cctv-spec-ribbon,
 .cctv-spec-ribbon {
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 18px 30px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 16px;
-  align-items: center;
+  border-radius: 20px;
+  padding: 14px 20px;
+  display: block;
+  overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.spec-ribbon-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 36px;
+  white-space: nowrap;
 }
 
 .spec-ribbon-item {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
+  min-width: max-content;
 }
 
 .spec-ribbon-icon {
   width: 42px;
   height: 42px;
-  border-radius: 10px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2195,9 +2172,10 @@ body {
 .spec-ribbon-label {
   display: flex;
   flex-direction: column;
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
   font-size: 13px;
   font-weight: 700;
-  color: #1e293b;
+  color: #0f172a;
   line-height: 1.25;
   letter-spacing: -0.01em;
 }
@@ -2206,24 +2184,226 @@ body {
   .cctv-cards-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  .cctv-spec-ribbon {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px 20px;
-  }
 }
 
 @media (max-width: 768px) {
   .cctv-hero-header {
-    padding: 60px 0 30px;
-  }
-  .cctv-hero-header::before {
-    width: 100%;
-    opacity: 0.15;
+    padding: 45px 0 20px;
   }
   .cctv-cards-grid {
     grid-template-columns: 1fr;
   }
-  .cctv-spec-ribbon {
-    grid-template-columns: repeat(2, 1fr);
+}
+
+/* ========================================================
+   MINIMALIST FLOATING CARD FOOTER (Universal Footer)
+   ======================================================== */
+.graphy-footer-section {
+  background: #ffffff !important;
+  padding: 10px 24px 42px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.graphy-footer-card {
+  max-width: 1360px;
+  margin: 0 auto;
+  background: #ffffff !important;
+  border-radius: 30px;
+  padding: 62px 70px 40px;
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.7);
+  box-sizing: border-box;
+}
+
+.graphy-footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+/* Brand Column */
+.graphy-brand-col {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.graphy-brand-link {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.graphy-brand-logo {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+.graphy-brand-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #64748b;
+  margin: 0 0 24px 0;
+}
+
+.graphy-socials-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.graphy-social-icon {
+  color: #0f172a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+}
+
+.graphy-social-icon:hover {
+  color: #2563eb;
+  transform: translateY(-1.5px);
+}
+
+/* Right Columns Group */
+.graphy-columns-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 90px;
+}
+
+.graphy-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.graphy-col-title {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 18px 0;
+  letter-spacing: -0.01em;
+}
+
+.graphy-col-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.graphy-col-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.graphy-col-links a {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.graphy-col-links a svg {
+  color: #94a3b8;
+  flex-shrink: 0;
+  transition: color 0.18s ease, transform 0.18s ease;
+}
+
+.graphy-col-links a:hover {
+  color: #0f172a;
+}
+
+.graphy-col-links a:hover svg {
+  color: #2563eb;
+  transform: translateX(2px);
+}
+
+/* Divider Line */
+.graphy-divider {
+  width: 100%;
+  height: 1px;
+  background: #f1f5f9;
+  margin: 48px 0 26px 0;
+}
+
+/* Bottom Sub-Bar */
+.graphy-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.graphy-copyright {
+  font-family: 'Inter', sans-serif;
+  font-size: 14.5px;
+  color: #94a3b8;
+}
+
+.graphy-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.graphy-legal-links a {
+  font-family: 'Inter', sans-serif;
+  font-size: 14.5px;
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.graphy-legal-links a:hover {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  .graphy-footer-card {
+    padding: 42px 32px 30px;
+    border-radius: 22px;
+  }
+  .graphy-footer-top {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .graphy-columns-group {
+    width: 100%;
+    justify-content: space-between;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .graphy-footer-section {
+    padding: 10px 16px 30px;
+  }
+  .graphy-footer-card {
+    padding: 34px 22px 24px;
+    border-radius: 20px;
+  }
+  .graphy-columns-group {
+    flex-direction: column;
+    gap: 28px;
+  }
+  .graphy-footer-bottom {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 16px;
   }
 }
