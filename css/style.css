@@ -328,16 +328,16 @@ body {
 }
 
 
-/* Contact CTA button inside the navbar pill — Luxury Black Pill with Circle Arrow */
+/* Contact CTA button inside the navbar pill — Brand Blue Pill with Circle Arrow */
 .btn-contact {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   height: 36px;
   box-sizing: border-box;
-  background: #000000;
+  background: #01246B;
   color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 37, 111, 0.2);
   padding: 3px 4px 3px 15px;
   margin-left: 5px;
   border-radius: 999px;
@@ -346,15 +346,15 @@ body {
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 37, 111, 0.25);
   transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
   flex-shrink: 0;
 }
 
 .btn-contact:hover {
-  background: #18181b;
+  background: #001b52;
   color: #ffffff;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 16px rgba(0, 37, 111, 0.4);
   transform: translateY(-1px);
 }
 
@@ -371,7 +371,7 @@ body {
   height: 28px;
   border-radius: 50%;
   background: #ffffff;
-  color: #000000;
+  color: #01246B;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -384,7 +384,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #0f172a;
+  background: #01246B;
   color: #fff;
   padding: var(--space-4) 28px;
   border-radius: var(--radius-full);
@@ -395,9 +395,9 @@ body {
 }
 
 .btn-primary:hover {
-  background: var(--primary);
+  background: #001b52;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 37, 111, 0.35);
 }
 
 .btn-primary:focus-visible {
@@ -1493,21 +1493,21 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #0284c7;
+  background: #01246B;
   color: #ffffff;
   padding: 13px 26px;
   border-radius: 999px;
   font-size: 14.5px;
   font-weight: 700;
   text-decoration: none;
-  box-shadow: 0 4px 18px rgba(2, 132, 199, 0.4);
+  box-shadow: 0 4px 18px rgba(0, 37, 111, 0.4);
   transition: all 0.25s ease;
 }
 
 .footer-btn-primary:hover {
-  background: #0369a1;
+  background: #001b52;
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(2, 132, 199, 0.55);
+  box-shadow: 0 6px 24px rgba(0, 37, 111, 0.55);
 }
 
 .footer-btn-secondary {
@@ -2207,9 +2207,9 @@ body {
   display: none !important;
 }
 
-/* Black Pill Button with Circular White Arrow (Exact services.html Match) */
+/* Brand Blue Pill Button with Circular White Arrow (Exact services.html Match) */
 .cctv-circle-btn {
-  background: #000000 !important;
+  background: #01246B !important;
   color: #ffffff !important;
   border-radius: 9999px !important;
   padding: 6px 6px 6px 16px !important;
@@ -2223,7 +2223,7 @@ body {
   font-weight: 600 !important;
   line-height: 1 !important;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18) !important;
+  box-shadow: 0 2px 8px rgba(0, 37, 111, 0.25) !important;
   cursor: pointer;
 }
 
@@ -2239,7 +2239,7 @@ body {
 .cctv-circle-btn svg {
   width: 11px !important;
   height: 11px !important;
-  color: #000000 !important;
+  color: #01246B !important;
   background: #ffffff !important;
   border-radius: 50% !important;
   padding: 6px !important;
@@ -2254,9 +2254,9 @@ body {
 /* Hover state: exact match with services.html (.service-pill-btn:hover) */
 .cctv-circle-btn:hover,
 .cctv-card .cctv-circle-btn:hover {
-  background: #2563eb !important;
+  background: #001b52 !important;
   transform: translateY(-1px) !important;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.28) !important;
+  box-shadow: 0 4px 14px rgba(0, 37, 111, 0.35) !important;
   color: #ffffff !important;
 }
 
@@ -2267,7 +2267,7 @@ body {
 
 .cctv-circle-btn:hover svg,
 .cctv-card .cctv-circle-btn:hover svg {
-  color: #2563eb !important;
+  color: #001b52 !important;
   background: #ffffff !important;
   transform: translate(1px, -1px) !important;
 }
@@ -2410,11 +2410,11 @@ body {
 .graphy-footer-card {
   max-width: 1360px;
   margin: 0 auto;
-  background: #ffffff !important;
+  background: #01246B !important;
   border-radius: 30px;
   padding: 62px 70px 40px;
   box-shadow: none !important;
-  border: 1px solid rgba(226, 232, 240, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   box-sizing: border-box;
 }
 
@@ -2445,11 +2445,21 @@ body {
   display: block;
 }
 
+.graphy-brand-tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin: -10px 0 18px 0;
+}
+
 .graphy-brand-desc {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   line-height: 1.65;
-  color: #64748b;
+  color: #ffffff;
+  opacity: 0.9;
   margin: 0 0 24px 0;
 }
 
@@ -2460,16 +2470,17 @@ body {
 }
 
 .graphy-social-icon {
-  color: #0f172a;
+  color: #ffffff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
   text-decoration: none;
 }
 
 .graphy-social-icon:hover {
-  color: #2563eb;
+  color: #ffffff;
+  opacity: 0.8;
   transform: translateY(-1.5px);
 }
 
@@ -2489,7 +2500,7 @@ body {
   font-family: 'Inter', -apple-system, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #0f172a;
+  color: #ffffff;
   margin: 0 0 18px 0;
   letter-spacing: -0.01em;
 }
@@ -2511,26 +2522,27 @@ body {
 .graphy-col-links a {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
-  color: #64748b;
+  color: #ffffff;
   text-decoration: none;
-  transition: color 0.18s ease;
+  transition: opacity 0.18s ease;
   display: inline-flex;
   align-items: center;
   gap: 10px;
 }
 
 .graphy-col-links a svg {
-  color: #94a3b8;
+  color: #ffffff !important;
   flex-shrink: 0;
-  transition: color 0.18s ease, transform 0.18s ease;
+  transition: transform 0.18s ease, opacity 0.18s ease;
 }
 
 .graphy-col-links a:hover {
-  color: #0f172a;
+  color: #ffffff;
+  opacity: 0.85;
 }
 
 .graphy-col-links a:hover svg {
-  color: #2563eb;
+  color: #ffffff !important;
   transform: translateX(2px);
 }
 
@@ -2538,7 +2550,7 @@ body {
 .graphy-divider {
   width: 100%;
   height: 1px;
-  background: #f1f5f9;
+  background: rgba(255, 255, 255, 0.15);
   margin: 48px 0 26px 0;
 }
 
@@ -2553,7 +2565,8 @@ body {
 .graphy-copyright {
   font-family: 'Inter', sans-serif;
   font-size: 14.5px;
-  color: #94a3b8;
+  color: #ffffff;
+  opacity: 0.85;
 }
 
 .graphy-legal-links {
@@ -2565,9 +2578,14 @@ body {
 .graphy-legal-links a {
   font-family: 'Inter', sans-serif;
   font-size: 14.5px;
-  color: #64748b;
+  color: #ffffff;
+  opacity: 0.85;
   text-decoration: none;
-  transition: color 0.18s ease;
+  transition: opacity 0.18s ease;
+}
+
+.graphy-legal-links a:hover {
+  opacity: 1;
 }
 
 .graphy-legal-links a:hover {

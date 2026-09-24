@@ -271,16 +271,17 @@
     // Only apply on dedicated subpages
     if (!document.body.classList.contains('dedicated-page')) return;
 
-    // Major sections and cards
+    // Major sections and cards (excluding sticky containers from container-level transforms)
     const selector = [
-      'section:not(.services-hero-section):not(.costa-hero-section)',
+      'section:not(.services-hero-section):not(.costa-hero-section):not(.faq-modern-section)',
       '.section-head-center',
       '.service-catalog-card',
       '.about-trio-card',
       '.about-founder-card',
       '.stat-card-modern',
       '.fan-testimonial-card',
-      '.faq-modern-container > *',
+      '.faq-modern-item',
+      '.faq-blue-card',
       '.location-split-wrap > *',
       '.legal-layout > *',
       '.page-cta-banner'
