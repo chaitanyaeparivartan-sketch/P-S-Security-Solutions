@@ -8,14 +8,16 @@
   <meta name="application-name" content="P &amp; S Security Solutions">
   <meta property="og:site_name" content="P &amp; S Security Solutions">
   <meta property="og:title" content="P &amp; S Security Solutions | Next-Gen Security &amp; Intelligent Home Automation">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo/favicon.png">
   
   <!-- Google Fonts: Plus Jakarta Sans, Outfit & Inter (Same as services.html) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
 
@@ -27,17 +29,24 @@
       <div class="nav-container">
 
         <!-- Logo -->
-        <a href="#chapter-security" class="nav-brand" id="nav-logo" aria-label="P & S Security Solutions – Home">
-          <img src="assets/logo.png" alt="P&S Security Solutions" class="nav-logo-img">
+        <a href="#home" class="nav-brand" id="nav-logo" aria-label="P & S Security Solutions – Home">
+          <img src="assets/logo/logo.png" alt="P&S Security Solutions" class="nav-logo-img">
         </a>
 
+        <!-- Mobile Hamburger Button -->
+        <button class="nav-hamburger" id="navHamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+
         <!-- Nav Links -->
-        <div class="nav-links" role="list">
+        <div class="nav-links" id="navLinks" role="list">
           <!-- Sliding active pill indicator -->
           <div class="nav-slider" id="navSlider" aria-hidden="true"></div>
 
-          <a href="index.html"        class="nav-link active" id="nav-home"   role="listitem">Home</a>
-          <a href="about.html"        class="nav-link"        id="nav-about"  role="listitem">About</a>
+          <a href="#home"             class="nav-link active" id="nav-home"   role="listitem">Home</a>
+          <a href="about.html"        class="nav-link"        id="nav-about"  role="listitem">About Us</a>
           <a href="services.html"     class="nav-link"        id="nav-services" role="listitem">Services</a>
           <a href="testimonials.html" class="nav-link"        id="nav-testimonials" role="listitem">Testimonials</a>
           
@@ -69,9 +78,9 @@
       <!-- Initial Logo Zoom-In Reveal Overlay -->
       <div class="logo-zoom-overlay" id="logoZoomOverlay">
         <!-- Mask layer with transparent logo cutout revealing video -->
-        <img src="assets/Image-1_small.png" class="zoom-layer mask-layer" id="zoomMaskLayer" alt="P &amp; S Security Solutions Mask">
+        <img src="assets/logo/logo-mask.png" class="zoom-layer mask-layer" id="zoomMaskLayer" alt="P &amp; S Security Solutions Mask">
         <!-- Initial solid logo shown first on page load -->
-        <img src="assets/Image-2_small.png" class="zoom-layer solid-layer" id="zoomSolidLayer" alt="P &amp; S Security Solutions Logo">
+        <img src="assets/logo/logo-solid.png" class="zoom-layer solid-layer" id="zoomSolidLayer" alt="P &amp; S Security Solutions Logo">
         
         <!-- Tagline container scaling in exact sync with the logo -->
         <div class="zoom-text-layer" id="zoomTextLayer">
@@ -113,13 +122,7 @@
       <!-- CCTV Hero Header with Camera on Right -->
       <div class="cctv-hero-header">
         <div class="container cctv-header-content">
-          <div class="cctv-badge">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-              <circle cx="12" cy="13" r="4"/>
-            </svg>
-            P &amp; S Security Solutions
-          </div>
+          <div class="cctv-badge">Our Solutions</div>
 
           <h2 class="cctv-main-title">
             CCTV Surveillance &amp;<br>
@@ -139,7 +142,7 @@
           <!-- Card 1: Continuous High-Definition Vision -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/cctv_vision.jpg" alt="Continuous High-Definition Vision" class="cctv-card-img">
+              <img src="assets/home/cc-camera/cc-camera-1.png" alt="Continuous High-Definition Vision" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float blue">
@@ -167,12 +170,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-network" class="cctv-learn-more blue">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-network" class="cctv-circle-btn blue" aria-label="Learn more about Vision">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn blue" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -181,7 +180,7 @@
           <!-- Card 2: AI-Powered Video Intelligence -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/cctv_ai.jpg" alt="AI-Powered Video Intelligence" class="cctv-card-img">
+              <img src="assets/home/cc-camera/cc-camera-2.png" alt="AI-Powered Video Intelligence" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float green">
@@ -217,12 +216,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-network" class="cctv-learn-more">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-network" class="cctv-circle-btn" aria-label="Learn more about AI Video Intelligence">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -231,7 +226,7 @@
           <!-- Card 3: Smart Monitoring & Active Security -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/cctv_monitor.jpg" alt="Smart Monitoring & Active Security" class="cctv-card-img">
+              <img src="assets/home/cc-camera/cc-camera-3.png" alt="Smart Monitoring & Active Security" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float blue">
@@ -260,12 +255,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-network" class="cctv-learn-more">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-network" class="cctv-circle-btn" aria-label="Learn more about Smart Monitoring">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -273,187 +264,258 @@
 
         </div>
 
-        <!-- Single Horizontal 6-Column Spec Ribbon (Marquee) -->
-        <marquee class="cctv-spec-ribbon" behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
-          <div class="spec-ribbon-track">
-            <!-- 1. AI Enabled Camera -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon blue-bg">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"/>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8"/>
-                  <circle cx="12" cy="12" r="9"/>
-                </svg>
+        <!-- Full-Width Spec Ribbon Carousel -->
+        <div class="cctv-spec-ribbon" role="region" aria-label="Security Specifications Carousel">
+          <div class="spec-carousel-track">
+            <!-- Group 1 -->
+            <div class="spec-carousel-group">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8"/>
+                    <circle cx="12" cy="12" r="9"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>AI Enabled Camera</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>AI Enabled</span>
-                <span>Camera</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <path d="M7 9v4h3v-4"/>
+                    <path d="M10 11H7"/>
+                    <path d="M14 9v6m3-6-3 3 3 3"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>4K Resolution</span></div>
               </div>
-            </div>
-
-            <!-- 2. 4K Resolution -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="5" width="20" height="14" rx="2"/>
-                  <path d="M7 9v4h3v-4"/>
-                  <path d="M10 11H7"/>
-                  <path d="M14 9v6m3-6-3 3 3 3"/>
-                </svg>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Night Vision</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>4K</span>
-                <span>Resolution</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Video Analytics</span></div>
               </div>
-            </div>
-
-            <!-- 3. Night Vision -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                </svg>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Remote Monitoring</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Night</span>
-                <span>Vision</span>
-              </div>
-            </div>
-
-            <!-- 4. Video Analytics -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="18" y1="20" x2="18" y2="10"/>
-                  <line x1="12" y1="20" x2="12" y2="4"/>
-                  <line x1="6" y1="20" x2="6" y2="14"/>
-                </svg>
-              </div>
-              <div class="spec-ribbon-label">
-                <span>Video</span>
-                <span>Analytics</span>
-              </div>
-            </div>
-
-            <!-- 5. Remote Monitoring -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
-                </svg>
-              </div>
-              <div class="spec-ribbon-label">
-                <span>Remote</span>
-                <span>Monitoring</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="7" rx="2"/>
+                    <rect x="2" y="13" width="20" height="7" rx="2"/>
+                    <line x1="6" y1="7.5" x2="6.01" y2="7.5"/>
+                    <line x1="6" y1="16.5" x2="6.01" y2="16.5"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Secure Storage</span></div>
               </div>
             </div>
 
-            <!-- 6. Secure Storage -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="4" width="20" height="7" rx="2"/>
-                  <rect x="2" y="13" width="20" height="7" rx="2"/>
-                  <line x1="6" y1="7.5" x2="6.01" y2="7.5"/>
-                  <line x1="6" y1="16.5" x2="6.01" y2="16.5"/>
-                </svg>
+            <!-- Group 2 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8"/>
+                    <circle cx="12" cy="12" r="9"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>AI Enabled Camera</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Secure</span>
-                <span>Storage</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <path d="M7 9v4h3v-4"/>
+                    <path d="M10 11H7"/>
+                    <path d="M14 9v6m3-6-3 3 3 3"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>4K Resolution</span></div>
               </div>
-            </div>
-
-            <!-- Duplicate set for seamless looping -->
-            <!-- 1. AI Enabled Camera -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon blue-bg">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"/>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8"/>
-                  <circle cx="12" cy="12" r="9"/>
-                </svg>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Night Vision</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>AI Enabled</span>
-                <span>Camera</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Video Analytics</span></div>
               </div>
-            </div>
-
-            <!-- 2. 4K Resolution -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="5" width="20" height="14" rx="2"/>
-                  <path d="M7 9v4h3v-4"/>
-                  <path d="M10 11H7"/>
-                  <path d="M14 9v6m3-6-3 3 3 3"/>
-                </svg>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Remote Monitoring</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>4K</span>
-                <span>Resolution</span>
-              </div>
-            </div>
-
-            <!-- 3. Night Vision -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                </svg>
-              </div>
-              <div class="spec-ribbon-label">
-                <span>Night</span>
-                <span>Vision</span>
-              </div>
-            </div>
-
-            <!-- 4. Video Analytics -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="18" y1="20" x2="18" y2="10"/>
-                  <line x1="12" y1="20" x2="12" y2="4"/>
-                  <line x1="6" y1="20" x2="6" y2="14"/>
-                </svg>
-              </div>
-              <div class="spec-ribbon-label">
-                <span>Video</span>
-                <span>Analytics</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="7" rx="2"/>
+                    <rect x="2" y="13" width="20" height="7" rx="2"/>
+                    <line x1="6" y1="7.5" x2="6.01" y2="7.5"/>
+                    <line x1="6" y1="16.5" x2="6.01" y2="16.5"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Secure Storage</span></div>
               </div>
             </div>
 
-            <!-- 5. Remote Monitoring -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
-                </svg>
+            <!-- Group 3 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8"/>
+                    <circle cx="12" cy="12" r="9"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>AI Enabled Camera</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Remote</span>
-                <span>Monitoring</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <path d="M7 9v4h3v-4"/>
+                    <path d="M10 11H7"/>
+                    <path d="M14 9v6m3-6-3 3 3 3"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>4K Resolution</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Night Vision</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Video Analytics</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Remote Monitoring</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="7" rx="2"/>
+                    <rect x="2" y="13" width="20" height="7" rx="2"/>
+                    <line x1="6" y1="7.5" x2="6.01" y2="7.5"/>
+                    <line x1="6" y1="16.5" x2="6.01" y2="16.5"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Secure Storage</span></div>
               </div>
             </div>
 
-            <!-- 6. Secure Storage -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="4" width="20" height="7" rx="2"/>
-                  <rect x="2" y="13" width="20" height="7" rx="2"/>
-                  <line x1="6" y1="7.5" x2="6.01" y2="7.5"/>
-                  <line x1="6" y1="16.5" x2="6.01" y2="16.5"/>
-                </svg>
+            <!-- Group 4 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8"/>
+                    <circle cx="12" cy="12" r="9"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>AI Enabled Camera</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Secure</span>
-                <span>Storage</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <path d="M7 9v4h3v-4"/>
+                    <path d="M10 11H7"/>
+                    <path d="M14 9v6m3-6-3 3 3 3"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>4K Resolution</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Night Vision</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Video Analytics</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Remote Monitoring</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="7" rx="2"/>
+                    <rect x="2" y="13" width="20" height="7" rx="2"/>
+                    <line x1="6" y1="7.5" x2="6.01" y2="7.5"/>
+                    <line x1="6" y1="16.5" x2="6.01" y2="16.5"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Secure Storage</span></div>
               </div>
             </div>
           </div>
-        </marquee>
+        </div>
       </div>
     </section>
   </div>
@@ -469,9 +531,9 @@
 
       <div class="hud-overlay">
         <div class="hud-top-left">
-          <h2 class="hud-title">Smart Home Automation</h2>
-          <p class="hud-desc">Transform everyday living with intelligent control of lighting, climate, curtains, entertainment and connected devices through simple automated scenes.</p>
-          <p class="hud-desc">Enjoy greater comfort, convenience and control with mobile, voice and scheduled automation designed around your lifestyle and daily routines.</p>
+          <h2 class="hud-title">Intelligent Climate &amp; Automation</h2>
+          <p class="hud-desc">Experience climate and automation systems that intuitively adapt to your lifestyle, delivering personalized thermal comfort and superior energy savings.</p>
+          <p class="hud-desc">Unify BLDC ceiling fans, air conditioning, and motorized ventilation under automated routines for effortless whole-home comfort.</p>
         </div>
       </div>
     </div>
@@ -486,12 +548,7 @@
       <!-- Hero Header with Seamless Thematic Right-Fading Background -->
       <div class="cctv-hero-header">
         <div class="container cctv-header-content">
-          <div class="cctv-badge">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-            </svg>
-            P &amp; S Security Solutions
-          </div>
+          <div class="cctv-badge">Our Solutions</div>
 
           <h2 class="cctv-main-title">
             Smart <span class="text-blue-highlight">Climate &amp; Comfort</span> Automation
@@ -510,7 +567,7 @@
           <!-- Card 1: Intelligent Temperature & HVAC Control -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/climate_card1.jpg" alt="Smart Climate &amp; HVAC Control" class="cctv-card-img">
+              <img src="assets/home/smart-automation/smart-automation-1.png" alt="Smart Climate &amp; HVAC Control" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float blue">
@@ -537,12 +594,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-automation-2" class="cctv-learn-more blue">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-automation-2" class="cctv-circle-btn blue" aria-label="Learn more about Climate Control">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn blue" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -551,7 +604,7 @@
           <!-- Card 2: Intelligent Airflow & BLDC Fans -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/climate_fan.jpg" alt="Intelligent Airflow &amp; BLDC Fans" class="cctv-card-img">
+              <img src="assets/home/smart-automation/smart-automation-2.png" alt="Intelligent Airflow &amp; BLDC Fans" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float green">
@@ -582,12 +635,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-automation-2" class="cctv-learn-more">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-automation-2" class="cctv-circle-btn" aria-label="Learn more about Smart Airflow">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -596,7 +645,7 @@
           <!-- Card 3: Automated Schedules & Scenes -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/climate_scene.jpg" alt="Automated Schedules &amp; Scenes" class="cctv-card-img">
+              <img src="assets/home/smart-automation/smart-automation-3.png" alt="Automated Schedules &amp; Scenes" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float blue">
@@ -626,12 +675,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-automation-2" class="cctv-learn-more">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-automation-2" class="cctv-circle-btn" aria-label="Learn more about Schedules &amp; Scenes">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -639,187 +684,258 @@
 
         </div>
 
-        <!-- Single Horizontal 6-Column Spec Ribbon (Marquee) -->
-        <marquee class="cctv-spec-ribbon" behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
-          <div class="spec-ribbon-track">
-            <!-- 1. Smart Climate -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon blue-bg">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
-                </svg>
+        <!-- Full-Width Spec Ribbon Carousel -->
+        <div class="cctv-spec-ribbon" role="region" aria-label="Climate Automation Specifications Carousel">
+          <div class="spec-carousel-track">
+            <!-- Group 1 -->
+            <div class="spec-carousel-group">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Smart Climate</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Smart</span>
-                <span>Climate</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 9V3M12 15v6M9 12H3M15 12h6"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>BLDC Motor Fans</span></div>
               </div>
-            </div>
-
-            <!-- 2. BLDC Fans -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="3"/>
-                  <path d="M12 9V3M12 15v6M9 12H3M15 12h6"/>
-                </svg>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="4" y1="21" x2="4" y2="14"/>
+                    <line x1="4" y1="10" x2="4" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12" y2="3"/>
+                    <line x1="20" y1="21" x2="20" y2="16"/>
+                    <line x1="20" y1="12" x2="20" y2="3"/>
+                    <line x1="1" y1="14" x2="7" y2="14"/>
+                    <line x1="9" y1="8" x2="15" y2="8"/>
+                    <line x1="17" y1="16" x2="23" y2="16"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Automated Temp Sync</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>BLDC Motor</span>
-                <span>Ceiling Fans</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Whisper-Quiet Acoustics</span></div>
               </div>
-            </div>
-
-            <!-- 3. Temp Sync -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="4" y1="21" x2="4" y2="14"/>
-                  <line x1="4" y1="10" x2="4" y2="3"/>
-                  <line x1="12" y1="21" x2="12" y2="12"/>
-                  <line x1="12" y1="8" x2="12" y2="3"/>
-                  <line x1="20" y1="21" x2="20" y2="16"/>
-                  <line x1="20" y1="12" x2="20" y2="3"/>
-                  <line x1="1" y1="14" x2="7" y2="14"/>
-                  <line x1="9" y1="8" x2="15" y2="8"/>
-                  <line x1="17" y1="16" x2="23" y2="16"/>
-                </svg>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>35% Energy Efficiency</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Automated</span>
-                <span>Temp Sync</span>
-              </div>
-            </div>
-
-            <!-- 4. Quiet Operation -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
-                </svg>
-              </div>
-              <div class="spec-ribbon-label">
-                <span>Whisper-Quiet</span>
-                <span>Acoustics</span>
-              </div>
-            </div>
-
-            <!-- 5. Energy Saving -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                </svg>
-              </div>
-              <div class="spec-ribbon-label">
-                <span>35% Energy</span>
-                <span>Efficiency</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Scene Automation</span></div>
               </div>
             </div>
 
-            <!-- 6. Scene Automation -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
-                </svg>
+            <!-- Group 2 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Smart Climate</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Scene Preset</span>
-                <span>Automation</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 9V3M12 15v6M9 12H3M15 12h6"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>BLDC Motor Fans</span></div>
               </div>
-            </div>
-
-            <!-- Duplicate set for seamless looping -->
-            <!-- 1. Smart Climate -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon blue-bg">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
-                </svg>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="4" y1="21" x2="4" y2="14"/>
+                    <line x1="4" y1="10" x2="4" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12" y2="3"/>
+                    <line x1="20" y1="21" x2="20" y2="16"/>
+                    <line x1="20" y1="12" x2="20" y2="3"/>
+                    <line x1="1" y1="14" x2="7" y2="14"/>
+                    <line x1="9" y1="8" x2="15" y2="8"/>
+                    <line x1="17" y1="16" x2="23" y2="16"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Automated Temp Sync</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Smart</span>
-                <span>Climate</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Whisper-Quiet Acoustics</span></div>
               </div>
-            </div>
-
-            <!-- 2. BLDC Fans -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="3"/>
-                  <path d="M12 9V3M12 15v6M9 12H3M15 12h6"/>
-                </svg>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>35% Energy Efficiency</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>BLDC Motor</span>
-                <span>Ceiling Fans</span>
-              </div>
-            </div>
-
-            <!-- 3. Temp Sync -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="4" y1="21" x2="4" y2="14"/>
-                  <line x1="4" y1="10" x2="4" y2="3"/>
-                  <line x1="12" y1="21" x2="12" y2="12"/>
-                  <line x1="12" y1="8" x2="12" y2="3"/>
-                  <line x1="20" y1="21" x2="20" y2="16"/>
-                  <line x1="20" y1="12" x2="20" y2="3"/>
-                  <line x1="1" y1="14" x2="7" y2="14"/>
-                  <line x1="9" y1="8" x2="15" y2="8"/>
-                  <line x1="17" y1="16" x2="23" y2="16"/>
-                </svg>
-              </div>
-              <div class="spec-ribbon-label">
-                <span>Automated</span>
-                <span>Temp Sync</span>
-              </div>
-            </div>
-
-            <!-- 4. Quiet Operation -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
-                </svg>
-              </div>
-              <div class="spec-ribbon-label">
-                <span>Whisper-Quiet</span>
-                <span>Acoustics</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Scene Automation</span></div>
               </div>
             </div>
 
-            <!-- 5. Energy Saving -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                </svg>
+            <!-- Group 3 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Smart Climate</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>35% Energy</span>
-                <span>Efficiency</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 9V3M12 15v6M9 12H3M15 12h6"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>BLDC Motor Fans</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="4" y1="21" x2="4" y2="14"/>
+                    <line x1="4" y1="10" x2="4" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12" y2="3"/>
+                    <line x1="20" y1="21" x2="20" y2="16"/>
+                    <line x1="20" y1="12" x2="20" y2="3"/>
+                    <line x1="1" y1="14" x2="7" y2="14"/>
+                    <line x1="9" y1="8" x2="15" y2="8"/>
+                    <line x1="17" y1="16" x2="23" y2="16"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Automated Temp Sync</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Whisper-Quiet Acoustics</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>35% Energy Efficiency</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Scene Automation</span></div>
               </div>
             </div>
 
-            <!-- 6. Scene Automation -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
-                </svg>
+            <!-- Group 4 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Smart Climate</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Scene Preset</span>
-                <span>Automation</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 9V3M12 15v6M9 12H3M15 12h6"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>BLDC Motor Fans</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="4" y1="21" x2="4" y2="14"/>
+                    <line x1="4" y1="10" x2="4" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12" y2="3"/>
+                    <line x1="20" y1="21" x2="20" y2="16"/>
+                    <line x1="20" y1="12" x2="20" y2="3"/>
+                    <line x1="1" y1="14" x2="7" y2="14"/>
+                    <line x1="9" y1="8" x2="15" y2="8"/>
+                    <line x1="17" y1="16" x2="23" y2="16"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Automated Temp Sync</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Whisper-Quiet Acoustics</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>35% Energy Efficiency</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Scene Automation</span></div>
               </div>
             </div>
           </div>
-        </marquee>
+        </div>
       </div>
     </section>
   </div>
@@ -852,13 +968,7 @@
       <!-- Hero Header with Seamless Thematic Right-Fading Background -->
       <div class="cctv-hero-header">
         <div class="container cctv-header-content">
-          <div class="cctv-badge">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>
-              <polyline points="17 2 12 7 7 2"/>
-            </svg>
-            P &amp; S Security Solutions
-          </div>
+          <div class="cctv-badge">Our Solutions</div>
 
           <h2 class="cctv-main-title">
             Smart Home <span class="text-blue-highlight">Automation &amp; Intelligent</span> Living
@@ -877,7 +987,7 @@
           <!-- Card 1: Intelligent Lighting & Ambiance -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/auto_lighting.jpg" alt="Intelligent Lighting &amp; Ambiance" class="cctv-card-img">
+              <img src="assets/home/home-automation/home-automation-1.png" alt="Intelligent Lighting &amp; Ambiance" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float blue">
@@ -904,12 +1014,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-alarms" class="cctv-learn-more blue">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-alarms" class="cctv-circle-btn blue" aria-label="Learn more about Lighting">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn blue" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -918,7 +1024,7 @@
           <!-- Card 2: Motorized Curtains & Shading -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/auto_curtains.jpg" alt="Motorized Curtains &amp; Shading" class="cctv-card-img">
+              <img src="assets/home/home-automation/home-automation-2.png" alt="Motorized Curtains &amp; Shading" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float green">
@@ -946,12 +1052,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-alarms" class="cctv-learn-more">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-alarms" class="cctv-circle-btn" aria-label="Learn more about Motorized Curtains">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -960,7 +1062,7 @@
           <!-- Card 3: Centralized Living & Unified Control -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/auto_control.jpg" alt="Centralized Living &amp; Unified Control" class="cctv-card-img">
+              <img src="assets/home/home-automation/home-automation-3.png" alt="Centralized Living &amp; Unified Control" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float blue">
@@ -988,12 +1090,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-alarms" class="cctv-learn-more">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-alarms" class="cctv-circle-btn" aria-label="Learn more about Unified Control">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -1001,177 +1099,238 @@
 
         </div>
 
-        <!-- Single Horizontal 6-Column Spec Ribbon (Marquee) -->
-        <marquee class="cctv-spec-ribbon" behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
-          <div class="spec-ribbon-track">
-            <!-- 1. Smart Lighting -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon blue-bg">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9 18h6M10 22h4M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .5 2.1 1.5 3.5.76.76 1.23 1.52 1.41 2.5"/>
-                </svg>
+        <!-- Full-Width Spec Ribbon Carousel -->
+        <div class="cctv-spec-ribbon" role="region" aria-label="Home Automation Specifications Carousel">
+          <div class="spec-carousel-track">
+            <!-- Group 1 -->
+            <div class="spec-carousel-group">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18h6M10 22h4M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .5 2.1 1.5 3.5.76.76 1.23 1.52 1.41 2.5"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Smart Lighting</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Smart</span>
-                <span>Lighting</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M3 9h18M3 15h18"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Motorized Blinds</span></div>
               </div>
-            </div>
-
-            <!-- 2. Motorized Blinds -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="3" y="3" width="18" height="18" rx="2"/>
-                  <path d="M3 9h18M3 15h18"/>
-                </svg>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Voice Control</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Motorized</span>
-                <span>Blinds</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Automated Scenes</span></div>
               </div>
-            </div>
-
-            <!-- 3. Voice Control -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
-                  <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/>
-                </svg>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Wall Touch Panels</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Voice</span>
-                <span>Control</span>
-              </div>
-            </div>
-
-            <!-- 4. Scene Automation -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
-                </svg>
-              </div>
-              <div class="spec-ribbon-label">
-                <span>Automated</span>
-                <span>Scenes</span>
-              </div>
-            </div>
-
-            <!-- 5. Touch Panels -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                  <line x1="8" y1="21" x2="16" y2="21"/>
-                  <line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
-              </div>
-              <div class="spec-ribbon-label">
-                <span>Wall Touch</span>
-                <span>Panels</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Mobile App Sync</span></div>
               </div>
             </div>
 
-            <!-- 6. Mobile Sync -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                  <line x1="12" y1="18" x2="12.01" y2="18"/>
-                </svg>
+            <!-- Group 2 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18h6M10 22h4M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .5 2.1 1.5 3.5.76.76 1.23 1.52 1.41 2.5"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Smart Lighting</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Mobile App</span>
-                <span>Sync</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M3 9h18M3 15h18"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Motorized Blinds</span></div>
               </div>
-            </div>
-
-            <!-- Duplicate set for seamless looping -->
-            <!-- 1. Smart Lighting -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon blue-bg">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9 18h6M10 22h4M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .5 2.1 1.5 3.5.76.76 1.23 1.52 1.41 2.5"/>
-                </svg>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Voice Control</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Smart</span>
-                <span>Lighting</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Automated Scenes</span></div>
               </div>
-            </div>
-
-            <!-- 2. Motorized Blinds -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="3" y="3" width="18" height="18" rx="2"/>
-                  <path d="M3 9h18M3 15h18"/>
-                </svg>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Wall Touch Panels</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Motorized</span>
-                <span>Blinds</span>
-              </div>
-            </div>
-
-            <!-- 3. Voice Control -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
-                  <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/>
-                </svg>
-              </div>
-              <div class="spec-ribbon-label">
-                <span>Voice</span>
-                <span>Control</span>
-              </div>
-            </div>
-
-            <!-- 4. Scene Automation -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
-                </svg>
-              </div>
-              <div class="spec-ribbon-label">
-                <span>Automated</span>
-                <span>Scenes</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Mobile App Sync</span></div>
               </div>
             </div>
 
-            <!-- 5. Touch Panels -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                  <line x1="8" y1="21" x2="16" y2="21"/>
-                  <line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
+            <!-- Group 3 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18h6M10 22h4M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .5 2.1 1.5 3.5.76.76 1.23 1.52 1.41 2.5"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Smart Lighting</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Wall Touch</span>
-                <span>Panels</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M3 9h18M3 15h18"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Motorized Blinds</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Voice Control</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Automated Scenes</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Wall Touch Panels</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Mobile App Sync</span></div>
               </div>
             </div>
 
-            <!-- 6. Mobile Sync -->
-            <div class="spec-ribbon-item">
-              <div class="spec-ribbon-icon outline">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                  <line x1="12" y1="18" x2="12.01" y2="18"/>
-                </svg>
+            <!-- Group 4 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18h6M10 22h4M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .5 2.1 1.5 3.5.76.76 1.23 1.52 1.41 2.5"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Smart Lighting</span></div>
               </div>
-              <div class="spec-ribbon-label">
-                <span>Mobile App</span>
-                <span>Sync</span>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M3 9h18M3 15h18"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Motorized Blinds</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Voice Control</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Automated Scenes</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Wall Touch Panels</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Mobile App Sync</span></div>
               </div>
             </div>
           </div>
-        </marquee>
+        </div>
       </div>
     </section>
   </div>
@@ -1204,12 +1363,7 @@
       <!-- Hero Header with Seamless Thematic Right-Fading Background -->
       <div class="cctv-hero-header">
         <div class="container cctv-header-content">
-          <div class="cctv-badge">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-            P &amp; S Security Solutions
-          </div>
+          <div class="cctv-badge">Our Solutions</div>
 
           <h2 class="cctv-main-title">
             Alarm Systems &amp; <span class="text-blue-highlight">Life Safety</span> Defense
@@ -1228,7 +1382,7 @@
           <!-- Card 1: Intrusion & Perimeter Defense -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/alarm_intrusion.jpg" alt="Intrusion &amp; Perimeter Defense" class="cctv-card-img">
+              <img src="assets/home/alarm-systems/alarm-systems-1.png" alt="Intrusion &amp; Perimeter Defense" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float blue">
@@ -1257,12 +1411,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-network" class="cctv-learn-more blue">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-network" class="cctv-circle-btn blue" aria-label="Learn more about Intrusion Detection">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn blue" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -1271,7 +1421,7 @@
           <!-- Card 2: Fire, Smoke & Gas Protection -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/alarm_fire.jpg" alt="Fire, Smoke &amp; Gas Protection" class="cctv-card-img">
+              <img src="assets/home/alarm-systems/alarm-systems-2.png" alt="Fire, Smoke &amp; Gas Protection" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float green">
@@ -1298,12 +1448,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-network" class="cctv-learn-more">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-network" class="cctv-circle-btn" aria-label="Learn more about Fire & Gas Protection">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -1312,7 +1458,7 @@
           <!-- Card 3: Smart Alerts & Emergency Hub -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/alarm_siren.jpg" alt="Smart Alerts &amp; Emergency Hub" class="cctv-card-img">
+              <img src="assets/home/alarm-systems/alarm-systems-3.png" alt="Smart Alerts &amp; Emergency Hub" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float blue">
@@ -1340,12 +1486,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-network" class="cctv-learn-more">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-network" class="cctv-circle-btn" aria-label="Learn more about Smart Alerts">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -1353,90 +1495,233 @@
 
         </div>
 
-        <!-- Single Horizontal 6-Column Spec Ribbon -->
-        <div class="cctv-spec-ribbon">
-          <!-- 1. Intrusion Alert -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon blue-bg">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
+        <!-- Full-Width Spec Ribbon Carousel -->
+        <div class="cctv-spec-ribbon" role="region" aria-label="Life Safety & Alarm Specifications Carousel">
+          <div class="spec-carousel-track">
+            <!-- Group 1 -->
+            <div class="spec-carousel-group">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Intrusion Detection</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Smoke &amp; Heat Sensors</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 8v4M12 16h.01"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Gas Leak Protection</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>110dB Outdoor Sirens</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Instant Push Alerts</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>24/7 Active Monitoring</span></div>
+              </div>
             </div>
-            <div class="spec-ribbon-label">
-              <span>Intrusion</span>
-              <span>Detection</span>
+
+            <!-- Group 2 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Intrusion Detection</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Smoke &amp; Heat Sensors</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 8v4M12 16h.01"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Gas Leak Protection</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>110dB Outdoor Sirens</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Instant Push Alerts</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>24/7 Active Monitoring</span></div>
+              </div>
+            </div>
+
+            <!-- Group 3 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Intrusion Detection</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Smoke &amp; Heat Sensors</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 8v4M12 16h.01"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Gas Leak Protection</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>110dB Outdoor Sirens</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Instant Push Alerts</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>24/7 Active Monitoring</span></div>
+              </div>
+            </div>
+
+            <!-- Group 4 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Intrusion Detection</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Smoke &amp; Heat Sensors</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 8v4M12 16h.01"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Gas Leak Protection</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>110dB Outdoor Sirens</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Instant Push Alerts</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>24/7 Active Monitoring</span></div>
+              </div>
             </div>
           </div>
-
-          <!-- 2. Smoke Detection -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>Smoke &amp; Heat</span>
-              <span>Sensors</span>
-            </div>
-          </div>
-
-          <!-- 3. Gas Leak Sensor -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="9"/>
-                <path d="M12 8v4M12 16h.01"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>Gas Leak</span>
-              <span>Protection</span>
-            </div>
-          </div>
-
-          <!-- 4. Outdoor Siren -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>110dB Outdoor</span>
-              <span>Sirens</span>
-            </div>
-          </div>
-
-          <!-- 5. Instant Push -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                <line x1="12" y1="18" x2="12.01" y2="18"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>Instant Push</span>
-              <span>Alerts</span>
-            </div>
-          </div>
-
-          <!-- 6. 24/7 Monitoring -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>24/7 Active</span>
-              <span>Monitoring</span>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -1470,15 +1755,7 @@
       <!-- Hero Header with Seamless Thematic Right-Fading Background -->
       <div class="cctv-hero-header">
         <div class="container cctv-header-content">
-          <div class="cctv-badge">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
-              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
-              <line x1="6" y1="6" x2="6.01" y2="6"/>
-              <line x1="6" y1="18" x2="6.01" y2="18"/>
-            </svg>
-            P &amp; S Security Solutions
-          </div>
+          <div class="cctv-badge">Our Solutions</div>
 
           <h2 class="cctv-main-title">
             Networking, Wi-Fi &amp; <span class="text-blue-highlight">Infrastructure</span> Hub
@@ -1497,7 +1774,7 @@
           <!-- Card 1: Structured Cabling & Rack Systems -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/network_cabling.jpg" alt="Structured Cabling &amp; Rack Systems" class="cctv-card-img">
+              <img src="assets/home/networking/networking-img-1.png" alt="Structured Cabling &amp; Rack Systems" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float blue">
@@ -1527,12 +1804,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-access" class="cctv-learn-more blue">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-access" class="cctv-circle-btn blue" aria-label="Learn more about Structured Cabling">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn blue" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -1541,7 +1814,7 @@
           <!-- Card 2: High-Performance Wi-Fi -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/network_wifi.jpg" alt="High-Performance Wi-Fi" class="cctv-card-img">
+              <img src="assets/home/networking/networking-img-2.png" alt="High-Performance Wi-Fi" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float green">
@@ -1568,12 +1841,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-access" class="cctv-learn-more">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-access" class="cctv-circle-btn" aria-label="Learn more about High-Performance Wi-Fi">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -1582,7 +1851,7 @@
           <!-- Card 3: Secure & Managed Networks -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/network_gateway.jpg" alt="Secure &amp; Managed Networks" class="cctv-card-img">
+              <img src="assets/home/networking/networking-img-3.png" alt="Secure &amp; Managed Networks" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float blue">
@@ -1611,12 +1880,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#info-access" class="cctv-learn-more">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#info-access" class="cctv-circle-btn" aria-label="Learn more about Managed Networks">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -1624,91 +1889,237 @@
 
         </div>
 
-        <!-- Single Horizontal 6-Column Spec Ribbon -->
-        <div class="cctv-spec-ribbon">
-          <!-- 1. Wi-Fi Coverage -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon blue-bg">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/>
-              </svg>
+        <!-- Full-Width Spec Ribbon Carousel -->
+        <div class="cctv-spec-ribbon" role="region" aria-label="Network Infrastructure Specifications Carousel">
+          <div class="spec-carousel-track">
+            <!-- Group 1 -->
+            <div class="spec-carousel-group">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Wi-Fi 6 Mesh</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>PoE+ Switches</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Fiber Optic Backbone</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>VLAN Segmentation</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Hardware Firewall</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>24/7 Traffic Monitoring</span></div>
+              </div>
             </div>
-            <div class="spec-ribbon-label">
-              <span>Wi-Fi 6</span>
-              <span>Mesh</span>
+
+            <!-- Group 2 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Wi-Fi 6 Mesh</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>PoE+ Switches</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Fiber Optic Backbone</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>VLAN Segmentation</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Hardware Firewall</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>24/7 Traffic Monitoring</span></div>
+              </div>
+            </div>
+
+            <!-- Group 3 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Wi-Fi 6 Mesh</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>PoE+ Switches</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Fiber Optic Backbone</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>VLAN Segmentation</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Hardware Firewall</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>24/7 Traffic Monitoring</span></div>
+              </div>
+            </div>
+
+            <!-- Group 4 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Wi-Fi 6 Mesh</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>PoE+ Switches</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Fiber Optic Backbone</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>VLAN Segmentation</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Hardware Firewall</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>24/7 Traffic Monitoring</span></div>
+              </div>
             </div>
           </div>
-
-          <!-- 2. PoE Networking -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>PoE+</span>
-              <span>Switches</span>
-            </div>
-          </div>
-
-          <!-- 3. Fiber Connectivity -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="2" y1="12" x2="22" y2="12"/>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>Fiber Optic</span>
-              <span>Backbone</span>
-            </div>
-          </div>
-
-          <!-- 4. Network Security -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>VLAN</span>
-              <span>Segmentation</span>
-            </div>
-          </div>
-
-          <!-- 5. Firewall -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>Hardware</span>
-              <span>Firewall</span>
-            </div>
-          </div>
-
-          <!-- 6. Network Monitoring -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="18" y1="20" x2="18" y2="10"/>
-                <line x1="12" y1="20" x2="12" y2="4"/>
-                <line x1="6" y1="20" x2="6" y2="14"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>24/7 Traffic</span>
-              <span>Monitoring</span>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -1742,13 +2153,7 @@
       <!-- Hero Header with Seamless Thematic Right-Fading Background -->
       <div class="cctv-hero-header">
         <div class="container cctv-header-content">
-          <div class="cctv-badge">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-            </svg>
-            P &amp; S Security Solutions
-          </div>
+          <div class="cctv-badge">Our Solutions</div>
 
           <h2 class="cctv-main-title">
             Access Control &amp; <span class="text-blue-highlight">Secure Entry</span> Solutions
@@ -1767,7 +2172,7 @@
           <!-- Card 1: Biometric & Facial Recognition -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/access_biometric.jpg" alt="Biometric &amp; Facial Recognition" class="cctv-card-img">
+              <img src="assets/home/access-control/access-control-1.png" alt="Biometric &amp; Facial Recognition" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float blue">
@@ -1794,12 +2199,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#chapter-security" class="cctv-learn-more blue">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#chapter-security" class="cctv-circle-btn blue" aria-label="Learn more about Biometrics">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn blue" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -1808,7 +2209,7 @@
           <!-- Card 2: Smart Video Intercoms & Remote Release -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/access_intercom.jpg" alt="Smart Video Intercoms &amp; Remote Release" class="cctv-card-img">
+              <img src="assets/home/access-control/access-control-2.png" alt="Smart Video Intercoms &amp; Remote Release" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float green">
@@ -1835,12 +2236,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#chapter-security" class="cctv-learn-more">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#chapter-security" class="cctv-circle-btn" aria-label="Learn more about Video Intercoms">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -1849,7 +2246,7 @@
           <!-- Card 3: Central Multi-Door & Audit Logs -->
           <div class="cctv-card">
             <div class="cctv-card-img-wrap">
-              <img src="assets/access_lock.jpg" alt="Central Multi-Door &amp; Audit Logs" class="cctv-card-img">
+              <img src="assets/home/access-control/access-control-3.png" alt="Central Multi-Door &amp; Audit Logs" class="cctv-card-img">
             </div>
             <div class="cctv-card-body">
               <div class="cctv-icon-float blue">
@@ -1878,12 +2275,8 @@
                 </li>
               </ul>
               <div class="cctv-card-footer">
-                <a href="#chapter-security" class="cctv-learn-more">
-                  <span>Learn More</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#chapter-security" class="cctv-circle-btn" aria-label="Learn more about Multi-Door Audit Logs">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <a href="contact.html" class="cctv-circle-btn" aria-label="Contact Us">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -1891,91 +2284,237 @@
 
         </div>
 
-        <!-- Single Horizontal 6-Column Spec Ribbon -->
-        <div class="cctv-spec-ribbon">
-          <!-- 1. Face Recognition -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon blue-bg">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
-                <circle cx="12" cy="12" r="3"/>
-              </svg>
+        <!-- Full-Width Spec Ribbon Carousel -->
+        <div class="cctv-spec-ribbon" role="region" aria-label="Access Control Specifications Carousel">
+          <div class="spec-carousel-track">
+            <!-- Group 1 -->
+            <div class="spec-carousel-group">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>AI Face Recognition</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04.054-.09A13.916 13.916 0 0 0 8 11a4 4 0 1 1 8 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0 0 15.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 0 0 8 4.07"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Biometric Fingerprint</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <line x1="2" y1="10" x2="22" y2="10"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>RFID &amp; NFC Keycards</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>HD Video Intercoms</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Remote Gate Release</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+                    <rect x="9" y="3" width="6" height="4" rx="2"/>
+                    <path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Audit Trail Attendance</span></div>
+              </div>
             </div>
-            <div class="spec-ribbon-label">
-              <span>AI Face</span>
-              <span>Recognition</span>
+
+            <!-- Group 2 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>AI Face Recognition</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04.054-.09A13.916 13.916 0 0 0 8 11a4 4 0 1 1 8 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0 0 15.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 0 0 8 4.07"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Biometric Fingerprint</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <line x1="2" y1="10" x2="22" y2="10"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>RFID &amp; NFC Keycards</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>HD Video Intercoms</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Remote Gate Release</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+                    <rect x="9" y="3" width="6" height="4" rx="2"/>
+                    <path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Audit Trail Attendance</span></div>
+              </div>
+            </div>
+
+            <!-- Group 3 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>AI Face Recognition</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04.054-.09A13.916 13.916 0 0 0 8 11a4 4 0 1 1 8 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0 0 15.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 0 0 8 4.07"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Biometric Fingerprint</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <line x1="2" y1="10" x2="22" y2="10"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>RFID &amp; NFC Keycards</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>HD Video Intercoms</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Remote Gate Release</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+                    <rect x="9" y="3" width="6" height="4" rx="2"/>
+                    <path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Audit Trail Attendance</span></div>
+              </div>
+            </div>
+
+            <!-- Group 4 -->
+            <div class="spec-carousel-group" aria-hidden="true">
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon blue-bg">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>AI Face Recognition</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04.054-.09A13.916 13.916 0 0 0 8 11a4 4 0 1 1 8 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0 0 15.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 0 0 8 4.07"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Biometric Fingerprint</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <line x1="2" y1="10" x2="22" y2="10"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>RFID &amp; NFC Keycards</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>HD Video Intercoms</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Remote Gate Release</span></div>
+              </div>
+              <div class="spec-ribbon-item">
+                <div class="spec-ribbon-icon outline">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+                    <rect x="9" y="3" width="6" height="4" rx="2"/>
+                    <path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </div>
+                <div class="spec-ribbon-label"><span>Audit Trail Attendance</span></div>
+              </div>
             </div>
           </div>
-
-          <!-- 2. Biometric Scan -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04.054-.09A13.916 13.916 0 0 0 8 11a4 4 0 1 1 8 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0 0 15.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 0 0 8 4.07"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>Biometric</span>
-              <span>Fingerprint</span>
-            </div>
-          </div>
-
-          <!-- 3. Smart Keycards -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="5" width="20" height="14" rx="2"/>
-                <line x1="2" y1="10" x2="22" y2="10"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>RFID &amp; NFC</span>
-              <span>Keycards</span>
-            </div>
-          </div>
-
-          <!-- 4. Video Intercom -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>HD Video</span>
-              <span>Intercoms</span>
-            </div>
-          </div>
-
-          <!-- 5. Remote Release -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>Remote Gate</span>
-              <span>Release</span>
-            </div>
-          </div>
-
-          <!-- 6. Audit Logging -->
-          <div class="spec-ribbon-item">
-            <div class="spec-ribbon-icon outline">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
-                <rect x="9" y="3" width="6" height="4" rx="2"/>
-                <path d="m9 12 2 2 4-4"/>
-              </svg>
-            </div>
-            <div class="spec-ribbon-label">
-              <span>Audit Trail</span>
-              <span>Attendance</span>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -1985,15 +2524,15 @@
        MINIMALIST FLOATING CARD FOOTER
        ======================================================== -->
   <footer class="graphy-footer-section" style="background: #ffffff;" role="contentinfo">
-    <div class="graphy-footer-card" style="background: #ffffff;">
+    <div class="graphy-footer-card" style="background: #ffffff; box-shadow: none !important;">
       
       <!-- Top Row: Brand & Columns -->
       <div class="graphy-footer-top">
         
         <!-- Brand Info -->
         <div class="graphy-brand-col">
-          <a href="index.html" class="graphy-brand-link">
-            <img src="assets/logo.png" alt="P & S Security Solutions" class="graphy-brand-logo">
+          <a href="#home" class="graphy-brand-link">
+            <img src="assets/logo/logo.png" alt="P & S Security Solutions" class="graphy-brand-logo">
           </a>
           <p class="graphy-brand-desc">
             P &amp; S Security Solutions empowers homes and enterprises with intelligent electronic surveillance, smart climate automation, life-safety defense, and enterprise cyber-hardened infrastructure.
@@ -2022,7 +2561,7 @@
             <h4 class="graphy-col-title">Quick Links</h4>
             <ul class="graphy-col-links">
               <li>
-                <a href="index.html">
+                <a href="#home">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                   Home
                 </a>
@@ -2123,9 +2662,9 @@
           &copy; 2026 P &amp; S Security Solutions. All rights reserved.
         </div>
         <div class="graphy-legal-links">
-          <a href="contact.html">Privacy Policy</a>
-          <a href="contact.html">Terms of Service</a>
-          <a href="contact.html">Cookies Settings</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html"></a>
         </div>
       </div>
 
@@ -2133,6 +2672,7 @@
   </footer>
 
   <!-- Scrollytelling Interactive JS -->
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/nav.js"></script>
 </body>
 </html>

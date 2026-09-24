@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Client Testimonials &amp; Case Studies | P &amp; S Security Solutions</title>
   <meta name="description" content="Discover verified client testimonials, architectural case studies, and engineering outcomes from homeowners, corporate enterprises, and industrial facilities trusting P & S Security Solutions.">
-  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo/favicon.png">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Main & Page Styles -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css?v=testimonialsWidthMatch">
 </head>
 <body class="dedicated-page testimonials-page">
 
@@ -25,16 +26,23 @@
 
         <!-- Logo -->
         <a href="index.html" class="nav-brand" id="nav-logo" aria-label="P & S Security Solutions – Home">
-          <img src="assets/logo.png" alt="P&S Security Solutions" class="nav-logo-img">
+          <img src="assets/logo/logo.png" alt="P&S Security Solutions" class="nav-logo-img">
         </a>
 
+        <!-- Mobile Hamburger Button -->
+        <button class="nav-hamburger" id="navHamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+
         <!-- Nav Links -->
-        <div class="nav-links" role="list">
+        <div class="nav-links" id="navLinks" role="list">
           <!-- Sliding active pill indicator -->
           <div class="nav-slider" id="navSlider" aria-hidden="true"></div>
 
           <a href="index.html"        class="nav-link"        id="nav-home"   role="listitem">Home</a>
-          <a href="about.html"        class="nav-link"        id="nav-about"  role="listitem">About</a>
+          <a href="about.html"        class="nav-link"        id="nav-about"  role="listitem">About Us</a>
           <a href="services.html"     class="nav-link"        id="nav-services" role="listitem">Services</a>
           <a href="testimonials.html" class="nav-link active" id="nav-testimonials" role="listitem">Testimonials</a>
           
@@ -115,7 +123,7 @@
           <!-- Card 1: Left Tilted -->
           <div class="fan-testimonial-card card-left">
             <div class="fan-card-avatar-wrap">
-              <img src="assets/testimonial_indra.jpg" alt="Indra M." class="fan-card-avatar">
+              <img src="assets/testimonials/testimonial-indra.jpg" alt="Indra M." class="fan-card-avatar">
             </div>
             <h4 class="fan-card-name">— Indra M., Private Estate Owner</h4>
             <p class="fan-card-role">Luxury Villa Resident &bull; Jubilee Hills</p>
@@ -139,7 +147,7 @@
           <!-- Card 2: Center Elevated -->
           <div class="fan-testimonial-card card-center">
             <div class="fan-card-avatar-wrap">
-              <img src="assets/testimonial_rina.jpg" alt="Rina P." class="fan-card-avatar">
+              <img src="assets/testimonials/testimonial-rina.jpg" alt="Rina P." class="fan-card-avatar">
             </div>
             <h4 class="fan-card-name">— Rina P., Commercial Business Owner</h4>
             <p class="fan-card-role">Retail Chain Director &bull; Hyderabad</p>
@@ -163,7 +171,7 @@
           <!-- Card 3: Right Tilted -->
           <div class="fan-testimonial-card card-right">
             <div class="fan-card-avatar-wrap">
-              <img src="assets/testimonial_maya.jpg" alt="Maya L." class="fan-card-avatar">
+              <img src="assets/testimonials/testimonial-maya.jpg" alt="Maya L." class="fan-card-avatar">
             </div>
             <h4 class="fan-card-name">— Maya L., Principal Architect</h4>
             <p class="fan-card-role">Design Director &bull; Contemporary Living</p>
@@ -191,7 +199,7 @@
           <!-- Card 1 -->
           <div class="fan-testimonial-card card-left">
             <div class="fan-card-avatar-wrap">
-              <img src="assets/founder_pavan.jpg" alt="Rajesh Singhania" class="fan-card-avatar">
+              <img src="assets/about-us/founder-pavan.jpg" alt="Rajesh Singhania" class="fan-card-avatar">
             </div>
             <h4 class="fan-card-name">— Rajesh Singhania, Managing Director</h4>
             <p class="fan-card-role">Singhania Holdings • 8,500 sq ft Luxury Villa</p>
@@ -213,7 +221,7 @@
           <!-- Card 2 -->
           <div class="fan-testimonial-card card-center">
             <div class="fan-card-avatar-wrap">
-              <img src="assets/founder_keshav.jpg" alt="Vikram Rao" class="fan-card-avatar">
+              <img src="assets/about-us/founder-keshav.jpg" alt="Vikram Rao" class="fan-card-avatar">
             </div>
             <h4 class="fan-card-name">— Vikram Rao, Chief Technology Officer</h4>
             <p class="fan-card-role">NexGen Pay • Corporate Headquarters</p>
@@ -235,7 +243,7 @@
           <!-- Card 3 -->
           <div class="fan-testimonial-card card-right">
             <div class="fan-card-avatar-wrap">
-              <img src="assets/testimonial_rina.jpg" alt="Dr. Shalini Mohan" class="fan-card-avatar">
+              <img src="assets/testimonials/testimonial-rina.jpg" alt="Dr. Shalini Mohan" class="fan-card-avatar">
             </div>
             <h4 class="fan-card-name">— Dr. Shalini Mohan, Director</h4>
             <p class="fan-card-role">Mohan Specialty Clinics • Healthcare Network</p>
@@ -332,7 +340,7 @@
         <!-- Brand Info -->
         <div class="graphy-brand-col">
           <a href="index.html" class="graphy-brand-link">
-            <img src="assets/logo.png" alt="P & S Security Solutions" class="graphy-brand-logo">
+            <img src="assets/logo/logo.png" alt="P & S Security Solutions" class="graphy-brand-logo">
           </a>
           <p class="graphy-brand-desc">
             P &amp; S Security Solutions empowers homes and enterprises with intelligent electronic surveillance, smart climate automation, life-safety defense, and enterprise cyber-hardened infrastructure.
@@ -462,9 +470,9 @@
           &copy; 2026 P &amp; S Security Solutions. All rights reserved.
         </div>
         <div class="graphy-legal-links">
-          <a href="contact.html">Privacy Policy</a>
-          <a href="contact.html">Terms of Service</a>
-          <a href="contact.html">Cookies Settings</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html"></a>
         </div>
       </div>
 
@@ -540,4 +548,5 @@
   </script>
 
 </body>
+  <script src="js/nav.js"></script>
 </html>

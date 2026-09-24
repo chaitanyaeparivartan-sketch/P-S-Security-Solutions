@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services &amp; Solutions | P &amp; S Security Solutions – CCTV, Automation &amp; Networks</title>
   <meta name="description" content="Explore end-to-end security and automation disciplines from P & S Security Solutions: AI CCTV, Smart Climate & Fans, Lighting & Curtains, Life-Safety Alarms, Wi-Fi 6, and Biometric Access.">
-  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo/favicon.png">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Main & Page Styles -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css?v=servicesWidthMatch">
 </head>
 <body class="dedicated-page services-page">
 
@@ -25,16 +26,23 @@
 
         <!-- Logo -->
         <a href="index.html" class="nav-brand" id="nav-logo" aria-label="P & S Security Solutions – Home">
-          <img src="assets/logo.png" alt="P&S Security Solutions" class="nav-logo-img">
+          <img src="assets/logo/logo.png" alt="P&S Security Solutions" class="nav-logo-img">
         </a>
 
+        <!-- Mobile Hamburger Button -->
+        <button class="nav-hamburger" id="navHamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+
         <!-- Nav Links -->
-        <div class="nav-links" role="list">
+        <div class="nav-links" id="navLinks" role="list">
           <!-- Sliding active pill indicator -->
           <div class="nav-slider" id="navSlider" aria-hidden="true"></div>
 
           <a href="index.html"        class="nav-link"        id="nav-home"   role="listitem">Home</a>
-          <a href="about.html"        class="nav-link"        id="nav-about"  role="listitem">About</a>
+          <a href="about.html"        class="nav-link"        id="nav-about"  role="listitem">About Us</a>
           <a href="services.html"     class="nav-link active" id="nav-services" role="listitem">Services</a>
           <a href="testimonials.html" class="nav-link"        id="nav-testimonials" role="listitem">Testimonials</a>
           
@@ -109,8 +117,8 @@
           </div>
         </div>
 
-        <!-- Card 2: 4K UHD (Featured default like reference) -->
-        <div class="stat-card-modern featured">
+        <!-- Card 2: 4K UHD -->
+        <div class="stat-card-modern">
           <div class="stat-card-top">
             <div class="stat-card-icon-badge" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -191,12 +199,11 @@
         <!-- Service 1: CCTV & Video Surveillance -->
         <div class="service-catalog-card">
           <div class="service-catalog-img-wrap">
-            <video src="products/CCTV.mp4" loop muted playsinline preload="auto" class="service-catalog-video" poster="products/cctv_thumb.jpg"></video>
+            <video src="assets/services/cctv/cctv.mp4" autoplay loop muted playsinline preload="auto" class="service-catalog-video" poster="assets/services/cctv/cctv-thumb.jpg"></video>
           </div>
           <div class="service-catalog-body">
             <div class="service-title-row">
               <h3 class="service-catalog-title">CCTV &amp; Video Surveillance</h3>
-              <span class="service-badge-pill">Top rated</span>
             </div>
             <div class="service-meta-row">Commercial &amp; Residential &bull; 24/7 Monitoring</div>
             <p class="service-catalog-desc">
@@ -207,7 +214,7 @@
                 <span class="price-val">Custom</span> <span class="price-unit">/ Project</span>
               </div>
               <a href="contact.html" class="service-pill-btn">
-                <span>Book Now</span>
+                <span>Contact Us</span>
                 <span class="pill-btn-icon">
                   <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -222,12 +229,11 @@
         <!-- Service 2: Home Automation -->
         <div class="service-catalog-card">
           <div class="service-catalog-img-wrap">
-            <video src="products/homeAutomation.mp4" loop muted playsinline preload="auto" class="service-catalog-video" poster="products/home_automation_thumb.jpg"></video>
+            <video src="assets/services/home-automation/home-automation.mp4" autoplay loop muted playsinline preload="auto" class="service-catalog-video" poster="assets/services/home-automation/home-automation-thumb.jpg"></video>
           </div>
           <div class="service-catalog-body">
             <div class="service-title-row">
               <h3 class="service-catalog-title">Home Automation</h3>
-              <span class="service-badge-pill">Popular</span>
             </div>
             <div class="service-meta-row">Smart Switches &bull; Scene Control</div>
             <p class="service-catalog-desc">
@@ -238,7 +244,7 @@
                 <span class="price-val">Turnkey</span> <span class="price-unit">/ Solution</span>
               </div>
               <a href="contact.html" class="service-pill-btn">
-                <span>Book Now</span>
+                <span>Contact Us</span>
                 <span class="pill-btn-icon">
                   <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -253,12 +259,11 @@
         <!-- Service 3: Alarm Systems -->
         <div class="service-catalog-card">
           <div class="service-catalog-img-wrap">
-            <img src="assets/alarm_fire.jpg" alt="Alarm Systems" class="service-catalog-img">
+            <video src="assets/services/alarm-systems/alarm-systems.mp4" autoplay loop muted playsinline preload="auto" class="service-catalog-video" poster="assets/services/alarm-systems/alarm-systems-thumb.jpg"></video>
           </div>
           <div class="service-catalog-body">
             <div class="service-title-row">
               <h3 class="service-catalog-title">Alarm Systems</h3>
-              <span class="service-badge-pill">High security</span>
             </div>
             <div class="service-meta-row">Instant Alert &bull; 24/7 Response</div>
             <p class="service-catalog-desc">
@@ -269,7 +274,7 @@
                 <span class="price-val">24/7</span> <span class="price-unit">/ Protection</span>
               </div>
               <a href="contact.html" class="service-pill-btn">
-                <span>Book Now</span>
+                <span>Contact Us</span>
                 <span class="pill-btn-icon">
                   <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -284,12 +289,11 @@
         <!-- Service 4: Access Control -->
         <div class="service-catalog-card">
           <div class="service-catalog-img-wrap">
-            <img src="assets/access_biometric.jpg" alt="Access Control" class="service-catalog-img">
+            <video src="assets/services/access-control/access-control.mp4" autoplay loop muted playsinline preload="auto" class="service-catalog-video" poster="assets/services/access-control/access-control-thumb.jpg"></video>
           </div>
           <div class="service-catalog-body">
             <div class="service-title-row">
               <h3 class="service-catalog-title">Access Control</h3>
-              <span class="service-badge-pill">Top rated</span>
             </div>
             <div class="service-meta-row">Facial AI &bull; Smart Maglocks</div>
             <p class="service-catalog-desc">
@@ -300,7 +304,7 @@
                 <span class="price-val">Zero-Touch</span> <span class="price-unit">/ Access</span>
               </div>
               <a href="contact.html" class="service-pill-btn">
-                <span>Book Now</span>
+                <span>Contact Us</span>
                 <span class="pill-btn-icon">
                   <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -315,12 +319,11 @@
         <!-- Service 5: Networking Solutions -->
         <div class="service-catalog-card">
           <div class="service-catalog-img-wrap">
-            <img src="assets/network_cabling.jpg" alt="Networking Solutions" class="service-catalog-img">
+            <video src="assets/services/network-switch/network-switch.mp4" autoplay loop muted playsinline preload="auto" class="service-catalog-video" poster="assets/services/network-switch/network-switch-thumb.jpg"></video>
           </div>
           <div class="service-catalog-body">
             <div class="service-title-row">
               <h3 class="service-catalog-title">Networking Solutions</h3>
-              <span class="service-badge-pill">Enterprise</span>
             </div>
             <div class="service-meta-row">Structured Mesh &bull; Gigabit Speed</div>
             <p class="service-catalog-desc">
@@ -331,7 +334,7 @@
                 <span class="price-val">High-Speed</span> <span class="price-unit">/ Mesh</span>
               </div>
               <a href="contact.html" class="service-pill-btn">
-                <span>Book Now</span>
+                <span>Contact Us</span>
                 <span class="pill-btn-icon">
                   <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -346,12 +349,11 @@
         <!-- Service 6: AMC & Support Services -->
         <div class="service-catalog-card">
           <div class="service-catalog-img-wrap">
-            <img src="assets/cctv_monitor.jpg" alt="AMC &amp; Support Services" class="service-catalog-img">
+            <video src="assets/services/router/router.mp4" autoplay loop muted playsinline preload="auto" class="service-catalog-video" poster="assets/services/router/router-thumb.jpg"></video>
           </div>
           <div class="service-catalog-body">
             <div class="service-title-row">
               <h3 class="service-catalog-title">AMC &amp; Support Services</h3>
-              <span class="service-badge-pill">Verified</span>
             </div>
             <div class="service-meta-row">Annual Plans &bull; Rapid Dispatch</div>
             <p class="service-catalog-desc">
@@ -362,7 +364,7 @@
                 <span class="price-val">Annual</span> <span class="price-unit">/ AMC Care</span>
               </div>
               <a href="contact.html" class="service-pill-btn">
-                <span>Book Now</span>
+                <span>Contact Us</span>
                 <span class="pill-btn-icon">
                   <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -445,7 +447,7 @@
             </span>
           </a>
           <a href="testimonials.html" class="btn-cta-navmatch secondary">
-            <span>View Client Projects</span>
+            <span>View Client Testimonials</span>
             <span class="btn-cta-arrow">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -473,7 +475,7 @@
         <!-- Brand Info -->
         <div class="graphy-brand-col">
           <a href="index.html" class="graphy-brand-link">
-            <img src="assets/logo.png" alt="P & S Security Solutions" class="graphy-brand-logo">
+            <img src="assets/logo/logo.png" alt="P & S Security Solutions" class="graphy-brand-logo">
           </a>
           <p class="graphy-brand-desc">
             P &amp; S Security Solutions empowers homes and enterprises with intelligent electronic surveillance, smart climate automation, life-safety defense, and enterprise cyber-hardened infrastructure.
@@ -603,9 +605,9 @@
           &copy; 2026 P &amp; S Security Solutions. All rights reserved.
         </div>
         <div class="graphy-legal-links">
-          <a href="contact.html">Privacy Policy</a>
-          <a href="contact.html">Terms of Service</a>
-          <a href="contact.html">Cookies Settings</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html"></a>
         </div>
       </div>
 
@@ -643,23 +645,39 @@
       }
     }
 
-    // Hover-to-Play Video Interaction for Service Catalog Cards
-    document.querySelectorAll('.service-catalog-card').forEach(card => {
-      const video = card.querySelector('video.service-catalog-video');
-      if (video) {
-        card.addEventListener('mouseenter', () => {
-          const playPromise = video.play();
-          if (playPromise !== undefined) {
-            playPromise.catch(() => {});
+    // Automatic Continuous Video Playback for Service Catalog Cards
+    const serviceVideos = document.querySelectorAll('video.service-catalog-video');
+    function startAutoplay() {
+      serviceVideos.forEach(video => {
+        video.muted = true;
+        video.setAttribute('muted', '');
+        video.setAttribute('playsinline', '');
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {});
+        }
+      });
+    }
+
+    startAutoplay();
+    document.addEventListener('DOMContentLoaded', startAutoplay);
+    window.addEventListener('load', startAutoplay);
+
+    // Keep videos playing when scrolled into viewport
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const video = entry.target;
+          if (entry.isIntersecting) {
+            video.play().catch(() => {});
           }
         });
-        card.addEventListener('mouseleave', () => {
-          video.pause();
-          video.currentTime = 0;
-        });
-      }
-    });
+      }, { threshold: 0.1 });
+
+      serviceVideos.forEach(video => observer.observe(video));
+    }
   </script>
 
 </body>
+  <script src="js/nav.js"></script>
 </html>

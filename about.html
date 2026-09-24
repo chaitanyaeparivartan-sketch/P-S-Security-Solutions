@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us | P &amp; S Security Solutions – Next-Gen Security &amp; Smart Living</title>
   <meta name="description" content="Learn about P & S Security Solutions. Over 12 years engineering intelligent CCTV surveillance, smart home climate automation, life-safety alarms, and enterprise network infrastructure.">
-  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo/favicon.png">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Main & Page Styles -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css?v=footerWidthMatch">
 </head>
 <body class="dedicated-page about-page">
 
@@ -25,16 +26,23 @@
 
         <!-- Logo -->
         <a href="index.html" class="nav-brand" id="nav-logo" aria-label="P & S Security Solutions – Home">
-          <img src="assets/logo.png" alt="P&S Security Solutions" class="nav-logo-img">
+          <img src="assets/logo/logo.png" alt="P&S Security Solutions" class="nav-logo-img">
         </a>
 
+        <!-- Mobile Hamburger Button -->
+        <button class="nav-hamburger" id="navHamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+
         <!-- Nav Links -->
-        <div class="nav-links" role="list">
+        <div class="nav-links" id="navLinks" role="list">
           <!-- Sliding active pill indicator -->
           <div class="nav-slider" id="navSlider" aria-hidden="true"></div>
 
           <a href="index.html"        class="nav-link"        id="nav-home"   role="listitem">Home</a>
-          <a href="about.html"        class="nav-link active" id="nav-about"  role="listitem">About</a>
+          <a href="about.html"        class="nav-link active" id="nav-about"  role="listitem">About Us</a>
           <a href="services.html"     class="nav-link"        id="nav-services" role="listitem">Services</a>
           <a href="testimonials.html" class="nav-link"        id="nav-testimonials" role="listitem">Testimonials</a>
           
@@ -84,7 +92,7 @@
        IMPACT STATS CARDS (Exact Match to Services Page Stats)
        ======================================================== -->
   <section class="services-stats-section">
-    <div class="container">
+    <div class="about-section-container">
       <div class="stats-cards-grid">
         
         <!-- Card 1: 2013 Founded -->
@@ -109,8 +117,8 @@
           </div>
         </div>
 
-        <!-- Card 2: 6+ Disciplines (Featured default like services) -->
-        <div class="stat-card-modern featured">
+        <!-- Card 2: 6+ Disciplines -->
+        <div class="stat-card-modern">
           <div class="stat-card-top">
             <div class="stat-card-icon-badge" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -194,13 +202,17 @@
         <div class="about-founder-card">
           <div class="about-founder-content">
             <h3 class="about-founder-name">E. Sai Pavan Kumar</h3>
-            <div class="about-founder-subtitle">Founder | Vision &amp; Growth | Technology Integration</div>
+            <div class="about-founder-chips">
+              <span class="founder-chip">Founder</span>
+              <span class="founder-chip">Vision &amp; Growth</span>
+              <span class="founder-chip">Technology Integration</span>
+            </div>
             <p class="about-founder-bio">
               Founder of P&amp;S Security Solutions. Has driven the firm's vision, business development, customer relationships, and expansion into new technology solutions. What started with a vision to provide dependable security solutions has evolved into a full-scale technology integration firm.
             </p>
           </div>
           <div class="about-founder-img-wrap">
-            <img src="assets/founder_pavan.jpg" alt="E. Sai Pavan Kumar" class="about-founder-img">
+            <img src="assets/about-us/founder-pavan.jpg" alt="E. Sai Pavan Kumar" class="about-founder-img">
           </div>
         </div>
 
@@ -208,13 +220,17 @@
         <div class="about-founder-card">
           <div class="about-founder-content">
             <h3 class="about-founder-name">B. Keshav Reddy</h3>
-            <div class="about-founder-subtitle">Key Backbone | Strategic Guidance | Operational Support</div>
+            <div class="about-founder-chips">
+              <span class="founder-chip">Key Backbone</span>
+              <span class="founder-chip">Strategic Guidance</span>
+              <span class="founder-chip">Operational Support</span>
+            </div>
             <p class="about-founder-bio">
               Has been a strong backbone of the organization, providing continuous support, guidance, and stability throughout the firm's journey. His contribution has played an important role in building the foundation on which P&amp;S Security Solutions continues to grow.
             </p>
           </div>
           <div class="about-founder-img-wrap">
-            <img src="assets/founder_keshav.jpg" alt="B. Keshav Reddy" class="about-founder-img">
+            <img src="assets/about-us/founder-keshav.jpg" alt="B. Keshav Reddy" class="about-founder-img">
           </div>
         </div>
       </div>
@@ -225,92 +241,85 @@
 
 
   <!-- ========================================================
-       CORE PHILOSOPHY & TECHNOLOGY PURPOSE (Image 1 Tech Style)
+       CORE PHILOSOPHY, MISSION & VISION (4 Cards with Custom Assets)
        ======================================================== -->
-  <section class="about-philosophy-section">
+  <section class="about-trio-section">
     <div class="about-section-container">
-      
-      <!-- Subtle Tech Circuit Lines in background -->
-      <svg class="tech-circuit-bg" viewBox="0 0 1200 420" fill="none" preserveAspectRatio="none">
-        <path d="M 60 210 H 260 V 90 H 580" stroke="#e2e8f0" stroke-width="1.5"/>
-        <path d="M 620 210 H 1140 V 320 H 920" stroke="#e2e8f0" stroke-width="1.5"/>
-        <circle cx="260" cy="90" r="3.5" fill="#3b82f6"/>
-        <circle cx="920" cy="320" r="3.5" fill="#3b82f6"/>
-      </svg>
-
-      <div class="about-philosophy-grid">
-        <!-- Box 1: More Than Installation (Card 1: Crisp Pure White + Blue Tab) -->
-        <div class="tech-spec-card card-pure-white tab-blue">
-          <div class="tech-card-tab-wrap">
-            <div class="tech-tab-notch"></div>
-            <div class="tech-tab-pill">Complete Solution</div>
+      <div class="about-quad-grid">
+        
+        <!-- Card 1: More Than Installation (Image: card-1.png) -->
+        <div class="about-trio-card card-about-bg card-about-1">
+          <div class="trio-card-top">
+            <div class="trio-icon-badge" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="trio-card-title">More Than Installation</h3>
+            <p class="trio-card-desc">
+              At P&amp;S Security Solutions, we believe security is not simply about installing a camera, alarm, or access control system. It is about creating a complete turnkey solution that provides protection, visibility, and control.
+            </p>
           </div>
-          <h3 class="about-philosophy-title">More Than Installation</h3>
-          <p class="about-philosophy-desc">
-            At P&amp;S Security Solutions, we believe security is not simply about installing a camera, alarm, or access control system.
-          </p>
-          <p class="about-philosophy-desc" style="margin-top: 14px;">
-            It is about creating a <strong>complete solution</strong> that provides protection, visibility, control, and peace of mind. We therefore work with customers from the initial requirement and system design through installation, configuration, integration, and after-sales support.
-          </p>
         </div>
 
-        <!-- Box 2: Technology With Purpose (Card 2: Blue Glow Radial + Ice Blue Tab) -->
-        <div class="tech-spec-card card-glow-blue tab-light">
-          <div class="tech-card-tab-wrap">
-            <div class="tech-tab-notch"></div>
-            <div class="tech-tab-pill">Practical &amp; Reliable</div>
+        <!-- Card 2: Technology With Purpose (Image: card-2.png) -->
+        <div class="about-trio-card card-about-bg card-about-2">
+          <div class="trio-card-top">
+            <div class="trio-icon-badge" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </div>
+            <h3 class="trio-card-title">Technology With Purpose</h3>
+            <p class="trio-card-desc">
+              Technology is changing rapidly. From AI-powered surveillance and intelligent alerts to smart automation, we adopt practical technologies that provide real-world value, rather than tech simply for the sake of it.
+            </p>
           </div>
-          <h3 class="about-philosophy-title">Technology With Purpose</h3>
-          <p class="about-philosophy-desc">
-            Technology is changing rapidly. From AI-powered surveillance and intelligent alerts to smart automation and mobile-based control, new possibilities are constantly emerging.
-          </p>
-          <p class="about-philosophy-desc" style="margin-top: 14px;">
-            We focus on adopting technologies that provide <strong>real-world value</strong>, rather than adding technology simply for the sake of it. Our goal is to make technology practical, reliable, scalable, and easy for our customers to use.
-          </p>
         </div>
+
+        <!-- Card 3: Our Mission (Image: card-3.png) -->
+        <div class="about-trio-card card-about-bg card-about-3">
+          <div class="trio-card-top">
+            <div class="trio-icon-badge" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="trio-card-title">Our Mission</h3>
+            <p class="trio-card-desc">
+              To provide reliable and practical security and automation solutions through quality technology, professional execution, responsive service, and continuous improvement.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4: Our Vision (Image: card-4.png) -->
+        <div class="about-trio-card card-about-bg card-about-4">
+          <div class="trio-card-top">
+            <div class="trio-icon-badge" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <line x1="12" y1="11" x2="12" y2="17"></line>
+                <line x1="9" y1="14" x2="15" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="trio-card-title">Our Vision</h3>
+            <p class="trio-card-desc">
+              To become a trusted technology partner for secure, smart, and connected spaces, delivering solutions that combine security, automation, convenience, and continuous innovation.
+            </p>
+          </div>
+        </div>
+
       </div>
-
-    </div>
-  </section>
-
-  <!-- ========================================================
-       OUR VISION & OUR MISSION (Image 1 Tech Style)
-       ======================================================== -->
-  <section class="about-vm-section">
-    <div class="about-section-container">
-      
-      <!-- Subtle Tech Circuit Lines in background -->
-      <svg class="tech-circuit-bg" viewBox="0 0 1200 360" fill="none" preserveAspectRatio="none">
-        <path d="M 80 180 H 320 V 270 H 580" stroke="#e2e8f0" stroke-width="1.5"/>
-        <path d="M 620 180 H 1120 V 90 H 880" stroke="#e2e8f0" stroke-width="1.5"/>
-        <circle cx="320" cy="270" r="3.5" fill="#3b82f6"/>
-        <circle cx="880" cy="90" r="3.5" fill="#3b82f6"/>
-      </svg>
-
-      <div class="about-vm-grid">
-        <!-- Mission (Card 1: Crisp Pure White + Blue Tab) -->
-        <div class="tech-spec-card card-pure-white tab-blue">
-          <div class="tech-card-tab-wrap">
-            <div class="tech-tab-notch"></div>
-            <div class="tech-tab-pill">Our Mission</div>
-          </div>
-          <p class="about-vm-desc">
-            To provide reliable and practical security and automation solutions through quality technology, professional execution, responsive service, and continuous improvement.
-          </p>
-        </div>
-
-        <!-- Vision (Card 2: Blue Glow Radial + Ice Blue Tab) -->
-        <div class="tech-spec-card card-glow-blue tab-light">
-          <div class="tech-card-tab-wrap">
-            <div class="tech-tab-notch"></div>
-            <div class="tech-tab-pill">Our Vision</div>
-          </div>
-          <p class="about-vm-desc">
-            To become a trusted technology partner for <strong>secure, smart, and connected spaces</strong>, delivering solutions that combine security, automation, convenience, and innovation.
-          </p>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -318,7 +327,7 @@
        CALL TO ACTION BANNER (Exact Match to Services Page CTA)
        ======================================================== -->
   <section class="page-section bg-white" style="background: #ffffff; padding: 10px 0 40px;">
-    <div class="container">
+    <div class="about-section-container">
       <div class="page-cta-banner">
         <div class="page-cta-content">
           <h3>Ready to Secure &amp; Automate Your Space?</h3>
@@ -335,7 +344,7 @@
             </span>
           </a>
           <a href="testimonials.html" class="btn-cta-navmatch secondary">
-            <span>View Client Projects</span>
+            <span>View Client Testimonials</span>
             <span class="btn-cta-arrow">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -363,7 +372,7 @@
         <!-- Brand Info -->
         <div class="graphy-brand-col">
           <a href="index.html" class="graphy-brand-link">
-            <img src="assets/logo.png" alt="P & S Security Solutions" class="graphy-brand-logo">
+            <img src="assets/logo/logo.png" alt="P & S Security Solutions" class="graphy-brand-logo">
           </a>
           <p class="graphy-brand-desc">
             P &amp; S Security Solutions empowers homes and enterprises with intelligent electronic surveillance, smart climate automation, life-safety defense, and enterprise cyber-hardened infrastructure.
@@ -493,9 +502,9 @@
           &copy; 2026 P &amp; S Security Solutions. All rights reserved.
         </div>
         <div class="graphy-legal-links">
-          <a href="contact.html">Privacy Policy</a>
-          <a href="contact.html">Terms of Service</a>
-          <a href="contact.html">Cookies Settings</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html"></a>
         </div>
       </div>
 
@@ -535,4 +544,5 @@
   </script>
 
 </body>
+  <script src="js/nav.js"></script>
 </html>

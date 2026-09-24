@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us &amp; Request Consultation | P &amp; S Security Solutions</title>
   <meta name="description" content="Speak directly with senior systems engineers at P & S Security Solutions. Schedule a site assessment, request architectural CAD blueprints, or get 24/7 technical support.">
-  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo/favicon.png">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Main & Page Styles -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="pages.css?v=equalColumns">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css?v=fontMatch">
 </head>
 <body class="dedicated-page contact-page">
 
@@ -25,20 +26,27 @@
 
         <!-- Logo -->
         <a href="index.html" class="nav-brand" id="nav-logo" aria-label="P & S Security Solutions – Home">
-          <img src="assets/logo.png" alt="P&S Security Solutions" class="nav-logo-img">
+          <img src="assets/logo/logo.png" alt="P&S Security Solutions" class="nav-logo-img">
         </a>
 
+        <!-- Mobile Hamburger Button -->
+        <button class="nav-hamburger" id="navHamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+
         <!-- Nav Links -->
-        <div class="nav-links" role="list">
+        <div class="nav-links" id="navLinks" role="list">
           <!-- Sliding active pill indicator -->
           <div class="nav-slider" id="navSlider" aria-hidden="true"></div>
 
           <a href="index.html"        class="nav-link"        id="nav-home"   role="listitem">Home</a>
-          <a href="about.html"        class="nav-link"        id="nav-about"  role="listitem">About</a>
+          <a href="about.html"        class="nav-link"        id="nav-about"  role="listitem">About Us</a>
           <a href="services.html"     class="nav-link"        id="nav-services" role="listitem">Services</a>
           <a href="testimonials.html" class="nav-link"        id="nav-testimonials" role="listitem">Testimonials</a>
           
-          <a href="contact.html" class="btn-contact active" id="nav-contact" role="button">
+          <a href="contact.html" class="btn-contact" id="nav-contact" role="button">
             <span>Contact</span>
             <span class="btn-contact-arrow">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -166,7 +174,13 @@
 
         <div class="faq-blue-card">
           <div class="faq-avatars-row">
-            <img src="assets/faq_team_avatars.png" alt="Support Team Avatars" class="faq-avatars-img">
+            <div class="faq-avatar-stack">
+              <img src="assets/contact/team-avatar-1.jpg" alt="Support Specialist" class="faq-avatar-item">
+              <img src="assets/contact/team-avatar-2.jpg" alt="Support Specialist" class="faq-avatar-item">
+              <img src="assets/contact/team-avatar-3.jpg" alt="Support Specialist" class="faq-avatar-item">
+            </div>
+            <span class="faq-avatar-plus">+</span>
+            <div class="faq-avatar-you">You</div>
           </div>
           <h3 class="faq-blue-title">Still have questions?</h3>
           <p class="faq-blue-desc">Reach out, and our team will guide you.</p>
@@ -362,7 +376,7 @@
                 </div>
                 <div class="location-detail-text">
                   <span class="detail-label">Working Hours</span>
-                  <span class="detail-val">10:00 AM - 6:00 PM<br><span style="font-size: 12px; opacity: 0.85;">Monday to Saturday</span></span>
+                  <span class="detail-val">10:00 AM - 6:00 PM<br><span style="font-size: 12px; color: #ffffff; opacity: 1;">Monday to Saturday</span></span>
                 </div>
               </div>
 
@@ -383,19 +397,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Send Message Pill Button -->
-          <div class="location-btn-wrapper">
-            <a href="javascript:void(0)" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); document.getElementById('name')?.focus();" class="location-send-btn">
-              <span>Send message</span>
-              <span class="location-send-arrow">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </span>
-            </a>
-          </div>
         </div>
       </div>
 
@@ -414,7 +415,7 @@
         <!-- Brand Info -->
         <div class="graphy-brand-col">
           <a href="index.html" class="graphy-brand-link">
-            <img src="assets/logo.png" alt="P & S Security Solutions" class="graphy-brand-logo">
+            <img src="assets/logo/logo.png" alt="P & S Security Solutions" class="graphy-brand-logo">
           </a>
           <p class="graphy-brand-desc">
             P &amp; S Security Solutions empowers homes and enterprises with intelligent electronic surveillance, smart climate automation, life-safety defense, and enterprise cyber-hardened infrastructure.
@@ -544,9 +545,9 @@
           &copy; 2026 P &amp; S Security Solutions. All rights reserved.
         </div>
         <div class="graphy-legal-links">
-          <a href="javascript:void(0)" onclick="openPrivacyModal()">Privacy Policy</a>
-          <a href="javascript:void(0)" onclick="openPrivacyModal()">Terms of Service</a>
-          <a href="javascript:void(0)" onclick="openPrivacyModal()">Cookies Settings</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html"></a>
         </div>
       </div>
 
@@ -722,5 +723,6 @@
   </script>
 
 </body>
+  <script src="js/nav.js"></script>
 </html>
 
