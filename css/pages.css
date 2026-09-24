@@ -1686,7 +1686,7 @@ body.about-page .section-head-center {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('../assets/hero-banners/contact-bg.png');
+  background-image: url('../assets/hero-banners/contact-bg.webp');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2086,7 +2086,7 @@ body.about-page .section-head-center {
       rgba(10, 18, 32, 0.26),
       rgba(10, 18, 32, 0.26)
     ),
-    url('../assets/hero-banners/contact-bg.png');
+    url('../assets/hero-banners/contact-bg.webp');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3056,13 +3056,13 @@ body.about-page .section-head-center {
   background: #001b52;
 }
 
-/* Call to action section banner — Universal with assets/card-bg/cta-bg.png */
+/* Call to action section banner — Universal with assets/card-bg/cta-bg.webp */
 .page-cta-banner,
 .services-page .page-cta-banner,
 .about-page .page-cta-banner,
 .testimonials-page .page-cta-banner {
   background: linear-gradient(135deg, rgba(8, 18, 36, 0.72) 0%, rgba(11, 27, 52, 0.62) 50%, rgba(8, 18, 36, 0.76) 100%), 
-              url('../assets/card-bg/cta-bg.png') no-repeat center center;
+              url('../assets/card-bg/cta-bg.webp') no-repeat center center;
   background-size: cover;
   border-radius: 28px;
   padding: 68px 40px 64px;
@@ -3465,7 +3465,7 @@ body.about-page .section-head-center {
 .location-info-card {
   position: relative;
   background-color: #065b79;
-  background-image: linear-gradient(to right, rgba(6, 91, 121, 0.72) 0%, rgba(6, 91, 121, 0.3) 55%, transparent 85%), url('../assets/card-bg/address-bg.png');
+  background-image: linear-gradient(to right, rgba(6, 91, 121, 0.72) 0%, rgba(6, 91, 121, 0.3) 55%, transparent 85%), url('../assets/card-bg/address-bg.webp');
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
@@ -5551,28 +5551,28 @@ body.about-page .section-head-center {
   background-color: #0f172a;
   background-image: 
     linear-gradient(180deg, rgba(8, 14, 26, 0.88) 0%, rgba(8, 14, 26, 0.70) 48%, rgba(8, 14, 26, 0.94) 100%), 
-    url('../assets/about-us/card-1.png');
+    url('../assets/about-us/card-1.webp');
 }
 
 .about-trio-card.card-about-2 {
   background-color: #0f172a;
   background-image: 
     linear-gradient(180deg, rgba(8, 14, 26, 0.88) 0%, rgba(8, 14, 26, 0.70) 48%, rgba(8, 14, 26, 0.94) 100%), 
-    url('../assets/about-us/card-2.png');
+    url('../assets/about-us/card-2.webp');
 }
 
 .about-trio-card.card-about-3 {
   background-color: #0f172a;
   background-image: 
     linear-gradient(180deg, rgba(8, 14, 26, 0.88) 0%, rgba(8, 14, 26, 0.70) 48%, rgba(8, 14, 26, 0.94) 100%), 
-    url('../assets/about-us/card-3.png');
+    url('../assets/about-us/card-3.webp');
 }
 
 .about-trio-card.card-about-4 {
   background-color: #0f172a;
   background-image: 
     linear-gradient(180deg, rgba(8, 14, 26, 0.88) 0%, rgba(8, 14, 26, 0.70) 48%, rgba(8, 14, 26, 0.94) 100%), 
-    url('../assets/about-us/card-4.png');
+    url('../assets/about-us/card-4.webp');
 }
 
 .trio-card-top {
@@ -5813,7 +5813,7 @@ body.contact-page .navbar .nav-links {
       rgba(10, 16, 29, 0.55) 54%, 
       rgba(10, 16, 29, 0) 74%
     ),
-    url('../assets/hero-banners/services-bg.png');
+    url('../assets/hero-banners/services-bg.webp');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -5838,7 +5838,7 @@ body.about-page .services-hero-card {
       rgba(10, 16, 29, 0.45) 54%, 
       rgba(10, 16, 29, 0) 74%
     ),
-    url('../assets/hero-banners/about-us-bg.png') !important;
+    url('../assets/hero-banners/about-us-bg.webp') !important;
   background-size: cover !important;
   background-position: center right !important;
   background-repeat: no-repeat !important;
@@ -5853,7 +5853,7 @@ body.testimonials-page .services-hero-card {
       rgba(10, 16, 29, 0.45) 54%, 
       rgba(10, 16, 29, 0) 74%
     ),
-    url('../assets/hero-banners/testimonials-bg.png') !important;
+    url('../assets/hero-banners/testimonials-bg.webp') !important;
   background-size: cover !important;
   background-position: center right !important;
   background-repeat: no-repeat !important;
@@ -5868,7 +5868,7 @@ body.privacy-page .services-hero-card {
       rgba(10, 16, 29, 0.45) 54%, 
       rgba(10, 16, 29, 0) 74%
     ),
-    url('../assets/hero-banners/privacy-policy-bg.png') !important;
+    url('../assets/hero-banners/privacy-policy-bg.webp') !important;
   background-size: cover !important;
   background-position: center right !important;
   background-repeat: no-repeat !important;
@@ -5883,7 +5883,7 @@ body.terms-page .services-hero-card {
       rgba(10, 16, 29, 0.45) 54%, 
       rgba(10, 16, 29, 0) 74%
     ),
-    url('../assets/hero-banners/terms-conditions-bg.png') !important;
+    url('../assets/hero-banners/terms-conditions-bg.webp') !important;
   background-size: cover !important;
   background-position: center right !important;
   background-repeat: no-repeat !important;
@@ -6328,7 +6328,7 @@ body.terms-page .services-hero-card {
         rgba(10, 16, 29, 0.9) 60%, 
         rgba(10, 16, 29, 0.8) 100%
       ),
-      url('../assets/hero-banners/services-bg.png');
+      url('../assets/hero-banners/services-bg.webp');
   }
   body.about-page .services-hero-card {
     background-image: 
@@ -6337,7 +6337,7 @@ body.terms-page .services-hero-card {
         rgba(10, 16, 29, 0.88) 60%, 
         rgba(10, 16, 29, 0.75) 100%
       ),
-      url('../assets/hero-banners/about-us-bg.png') !important;
+      url('../assets/hero-banners/about-us-bg.webp') !important;
   }
   body.testimonials-page .services-hero-card {
     background-image: 
@@ -6346,7 +6346,7 @@ body.terms-page .services-hero-card {
         rgba(10, 16, 29, 0.88) 60%, 
         rgba(10, 16, 29, 0.75) 100%
       ),
-      url('../assets/hero-banners/testimonials-bg.png') !important;
+      url('../assets/hero-banners/testimonials-bg.webp') !important;
   }
   body.privacy-page .services-hero-card {
     background-image: 
@@ -6355,7 +6355,7 @@ body.terms-page .services-hero-card {
         rgba(10, 16, 29, 0.88) 60%, 
         rgba(10, 16, 29, 0.75) 100%
       ),
-      url('../assets/hero-banners/privacy-policy-bg.png') !important;
+      url('../assets/hero-banners/privacy-policy-bg.webp') !important;
   }
   body.terms-page .services-hero-card {
     background-image: 
@@ -6364,7 +6364,7 @@ body.terms-page .services-hero-card {
         rgba(10, 16, 29, 0.88) 60%, 
         rgba(10, 16, 29, 0.75) 100%
       ),
-      url('../assets/hero-banners/terms-conditions-bg.png') !important;
+      url('../assets/hero-banners/terms-conditions-bg.webp') !important;
   }
   .services-hero-topbar {
     flex-direction: column;
