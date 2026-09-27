@@ -199,18 +199,23 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     chapter.images[0] = firstImg;
 
-    // Progressive non-blocking loading pipeline (in idle batches so network and UI never stutter)
+    // Progressive non-blocking loading pipeline with step sampling (150 keyframes per chapter)
     let hasStartedLoading = false;
     function loadRemainingFrames() {
       if (hasStartedLoading) return;
       hasStartedLoading = true;
+      
+      // Pass 1: Load alternate frames (step = 2) for rapid initial animation responsiveness
+      // Pass 2: Load remaining intermediate frames in background idle time
       let currentIdx = 1;
-      const batchSize = 6;
+      const step = 2; 
+      const batchSize = 8;
 
       function loadBatch() {
         if (currentIdx >= chapter.totalFrames) return;
-        const end = Math.min(currentIdx + batchSize, chapter.totalFrames);
-        for (let i = currentIdx; i < end; i++) {
+        const end = Math.min(currentIdx + batchSize * step, chapter.totalFrames);
+        for (let i = currentIdx; i < end; i += step) {
+          if (chapter.loaded[i]) continue;
           const img = new Image();
           img.src = getFramePath(chapter.folder, i);
           const frameIdx = i;
@@ -231,9 +236,9 @@ document.addEventListener('DOMContentLoaded', () => {
         currentIdx = end;
         if (currentIdx < chapter.totalFrames) {
           if ('requestIdleCallback' in window) {
-            requestIdleCallback(loadBatch, { timeout: 150 });
+            requestIdleCallback(loadBatch, { timeout: 120 });
           } else {
-            setTimeout(loadBatch, 40);
+            setTimeout(loadBatch, 30);
           }
         }
       }
@@ -241,11 +246,11 @@ document.addEventListener('DOMContentLoaded', () => {
       loadBatch();
     }
 
-    // Chapter 1 (intro hero) loads immediately after initial paint
+    // Chapter 1 (intro hero) preloads immediately after initial render
     if (chapterIndex === 0) {
-      setTimeout(loadRemainingFrames, 250);
+      setTimeout(loadRemainingFrames, 200);
     } else if (chapter.container && 'IntersectionObserver' in window) {
-      // Subsequent chapters only start loading when approaching the viewport (400px threshold)
+      // Subsequent chapters stagger fetch: start loading when preceding scroll reaches ~50%
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -253,10 +258,10 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.disconnect();
           }
         });
-      }, { rootMargin: '400px 0px 400px 0px' });
+      }, { rootMargin: '300px 0px 300px 0px' });
       observer.observe(chapter.container);
     } else {
-      setTimeout(loadRemainingFrames, 1500 + chapterIndex * 500);
+      setTimeout(loadRemainingFrames, 1200 + chapterIndex * 400);
     }
   });
 
