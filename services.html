@@ -199,7 +199,9 @@
         <!-- Service 1: CCTV & Video Surveillance -->
         <div class="service-catalog-card">
           <div class="service-catalog-img-wrap">
-            <video src="assets/services/cctv/cctv.mp4" autoplay loop muted playsinline preload="auto" class="service-catalog-video" poster="assets/services/cctv/cctv-thumb.jpg"></video>
+            <video autoplay loop muted playsinline webkit-playsinline disablePictureInPicture preload="metadata" class="service-catalog-video" poster="assets/services/cctv/cctv-thumb.jpg">
+              <source src="assets/services/cctv/cctv.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="service-catalog-body">
             <div class="service-title-row">
@@ -229,7 +231,9 @@
         <!-- Service 2: Home Automation -->
         <div class="service-catalog-card">
           <div class="service-catalog-img-wrap">
-            <video src="assets/services/home-automation/home-automation.mp4" autoplay loop muted playsinline preload="auto" class="service-catalog-video" poster="assets/services/home-automation/home-automation-thumb.jpg"></video>
+            <video autoplay loop muted playsinline webkit-playsinline disablePictureInPicture preload="metadata" class="service-catalog-video" poster="assets/services/home-automation/home-automation-thumb.jpg">
+              <source src="assets/services/home-automation/home-automation.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="service-catalog-body">
             <div class="service-title-row">
@@ -259,7 +263,9 @@
         <!-- Service 3: Alarm Systems -->
         <div class="service-catalog-card">
           <div class="service-catalog-img-wrap">
-            <video src="assets/services/alarm-systems/alarm-systems.mp4" autoplay loop muted playsinline preload="auto" class="service-catalog-video" poster="assets/services/alarm-systems/alarm-systems-thumb.jpg"></video>
+            <video autoplay loop muted playsinline webkit-playsinline disablePictureInPicture preload="metadata" class="service-catalog-video" poster="assets/services/alarm-systems/alarm-systems-thumb.jpg">
+              <source src="assets/services/alarm-systems/alarm-systems.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="service-catalog-body">
             <div class="service-title-row">
@@ -289,7 +295,9 @@
         <!-- Service 4: Access Control -->
         <div class="service-catalog-card">
           <div class="service-catalog-img-wrap">
-            <video src="assets/services/access-control/access-control.mp4" autoplay loop muted playsinline preload="auto" class="service-catalog-video" poster="assets/services/access-control/access-control-thumb.jpg"></video>
+            <video autoplay loop muted playsinline webkit-playsinline disablePictureInPicture preload="metadata" class="service-catalog-video" poster="assets/services/access-control/access-control-thumb.jpg">
+              <source src="assets/services/access-control/access-control.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="service-catalog-body">
             <div class="service-title-row">
@@ -319,7 +327,9 @@
         <!-- Service 5: Networking Solutions -->
         <div class="service-catalog-card">
           <div class="service-catalog-img-wrap">
-            <video src="assets/services/network-switch/network-switch.mp4" autoplay loop muted playsinline preload="auto" class="service-catalog-video" poster="assets/services/network-switch/network-switch-thumb.jpg"></video>
+            <video autoplay loop muted playsinline webkit-playsinline disablePictureInPicture preload="metadata" class="service-catalog-video" poster="assets/services/network-switch/network-switch-thumb.jpg">
+              <source src="assets/services/network-switch/network-switch.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="service-catalog-body">
             <div class="service-title-row">
@@ -349,7 +359,9 @@
         <!-- Service 6: AMC & Support Services -->
         <div class="service-catalog-card">
           <div class="service-catalog-img-wrap">
-            <video src="assets/services/router/router.mp4" autoplay loop muted playsinline preload="auto" class="service-catalog-video" poster="assets/services/router/router-thumb.jpg"></video>
+            <video autoplay loop muted playsinline webkit-playsinline disablePictureInPicture preload="metadata" class="service-catalog-video" poster="assets/services/router/router-thumb.jpg">
+              <source src="assets/services/router/router.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="service-catalog-body">
             <div class="service-title-row">
@@ -635,29 +647,49 @@
 
     // Automatic Continuous Video Playback for Service Catalog Cards
     const serviceVideos = document.querySelectorAll('video.service-catalog-video');
-    function startAutoplay() {
-      serviceVideos.forEach(video => {
-        video.muted = true;
-        video.setAttribute('muted', '');
-        video.setAttribute('playsinline', '');
-        const playPromise = video.play();
-        if (playPromise !== undefined) {
-          playPromise.catch(() => {});
-        }
-      });
+    
+    function safePlayVideo(video) {
+      if (!video) return;
+      video.muted = true;
+      video.defaultMuted = true;
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
+      video.setAttribute('webkit-playsinline', '');
+      
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // If browser policy blocks un-triggered autoplay, trigger on first user interaction
+          const unlock = () => {
+            video.play().catch(() => {});
+            window.removeEventListener('touchstart', unlock);
+            window.removeEventListener('click', unlock);
+            window.removeEventListener('scroll', unlock);
+          };
+          window.addEventListener('touchstart', unlock, { once: true, passive: true });
+          window.addEventListener('click', unlock, { once: true, passive: true });
+          window.addEventListener('scroll', unlock, { once: true, passive: true });
+        });
+      }
     }
 
-    startAutoplay();
-    document.addEventListener('DOMContentLoaded', startAutoplay);
-    window.addEventListener('load', startAutoplay);
+    function initVideos() {
+      serviceVideos.forEach(video => safePlayVideo(video));
+    }
 
-    // Keep videos playing when scrolled into viewport
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initVideos);
+    } else {
+      initVideos();
+    }
+
+    // IntersectionObserver guarantees playback resumes whenever video enters viewport
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           const video = entry.target;
           if (entry.isIntersecting) {
-            video.play().catch(() => {});
+            safePlayVideo(video);
           }
         });
       }, { threshold: 0.1 });

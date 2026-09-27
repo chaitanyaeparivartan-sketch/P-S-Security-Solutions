@@ -1,10 +1,12 @@
 # Ignore large video and archive files (exceeds GitHub 100MB limit)
 *.mov
-*.mp4
 *.zip
 *.tar
 *.tar.gz
 *.py
+
+# Exception for service catalog video assets
+!assets/services/**/*.mp4
 
 # macOS system files
 .DS_Store
