@@ -200,7 +200,10 @@ document.addEventListener('DOMContentLoaded', () => {
     chapter.images[0] = firstImg;
 
     // Progressive non-blocking loading pipeline (in idle batches so network and UI never stutter)
+    let hasStartedLoading = false;
     function loadRemainingFrames() {
+      if (hasStartedLoading) return;
+      hasStartedLoading = true;
       let currentIdx = 1;
       const batchSize = 6;
 
@@ -238,11 +241,21 @@ document.addEventListener('DOMContentLoaded', () => {
       loadBatch();
     }
 
-    // Chapter 1 loads after initial paint so hero rendering is 100% fluid
+    // Chapter 1 (intro hero) loads immediately after initial paint
     if (chapterIndex === 0) {
       setTimeout(loadRemainingFrames, 250);
+    } else if (chapter.container && 'IntersectionObserver' in window) {
+      // Subsequent chapters only start loading when approaching the viewport (400px threshold)
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            loadRemainingFrames();
+            observer.disconnect();
+          }
+        });
+      }, { rootMargin: '400px 0px 400px 0px' });
+      observer.observe(chapter.container);
     } else {
-      // Subsequent chapters load with idle stagger so they never contend with hero
       setTimeout(loadRemainingFrames, 1500 + chapterIndex * 500);
     }
   });
