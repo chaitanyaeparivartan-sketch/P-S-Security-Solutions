@@ -1,19 +1,44 @@
-# Ignore large video and archive files (exceeds GitHub 100MB limit)
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+.AppleDouble
+.LSOverride
+._*
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Ignore large archives
 *.mov
 *.zip
 *.tar
 *.tar.gz
 *.py
-
-# Exception for service catalog video assets
-!assets/services/**/*.mp4
-
-# macOS system files
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-
-# Unutilized files dump
-dump/
-
